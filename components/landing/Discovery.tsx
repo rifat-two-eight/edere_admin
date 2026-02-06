@@ -82,18 +82,18 @@ export default function Discovery() {
             </div>
 
             {/* Overlay: Safe (Right Side) */}
-            <div className="absolute top-1/2 -right-4 md:-right-12 transform -translate-y-1/2 w-40 shadow-lg rounded-xl overflow-hidden bg-white border border-gray-100 hidden md:block">
+            <div className="absolute top-60 -right-4 transform -translate-y-1/2 w-48 shadow-lg rounded-xl overflow-hidden bg-white border border-gray-100 hidden md:block">
                <Image 
                 src="/safe.png" 
                 alt="Safe options" 
-                width={228} 
+                width={222} 
                 height={193} 
                 className="w-full h-auto"
               />
             </div>
 
             {/* Overlay: Modification (Bottom Left) */}
-            <div className="absolute -bottom-4 -left-4 md:bottom-8 md:-left-8 bg-white p-2 rounded-xl shadow-lg flex items-center gap-3 pr-4 max-w-xs border border-gray-100">
+            <div className="absolute -bottom-4 -left-4 md:bottom-8 md:-left-16 bg-white p-2 rounded-xl shadow-lg flex items-center gap-3 pr-4 max-w-xs border border-gray-100">
                <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden">
                 <Image 
                   src="/modification.png" 
@@ -108,7 +108,7 @@ export default function Discovery() {
                </div>
             </div>
              {/* Retrying Verified as Image to be safe with user request */}
-             <div className="absolute bottom-20 -right-2 md:bottom-12 md:-right-6 w-32 hidden md:block">
+             <div className="absolute bottom-20 -right-2 md:bottom-12 w-32 hidden md:block">
                <Image src="/verified.png" alt="Verified" width={140} height={50} className="w-full h-auto drop-shadow-lg" />
              </div>
 
