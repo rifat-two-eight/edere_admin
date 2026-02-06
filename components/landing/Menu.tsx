@@ -1,17 +1,59 @@
+import Image from "next/image";
+
 export default function Menu() {
   return (
-    <section id="menu" className="py-20 bg-white dark:bg-black">
+    <section id="menu" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Our Menu</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Placeholder items */}
-          {[1, 2, 3].map((i) => (
-            <div key={i} className="p-6 rounded-2xl border border-gray-100 dark:border-zinc-800 shadow-sm hover:shadow-md transition-shadow">
-              <div className="h-48 bg-gray-200 dark:bg-zinc-800 rounded-xl mb-4"></div>
-              <h3 className="text-xl font-semibold mb-2">Delicious Item {i}</h3>
-              <p className="text-gray-500 dark:text-gray-400">Description of the item goes here.</p>
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-gray-900 leading-tight">
+            Skip the endless menu
+            <br />
+            homework before going to a restaurant.
+          </h2>
+          <p className="text-2xl md:text-3xl font-bold text-green-700">
+            No more guessing games.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+          {/* Item 1 */}
+          <div className="flex flex-col items-center text-center">
+            <div className="relative w-32 h-32 mb-6">
+              <Image
+                src="/menu1.png"
+                alt="Zero research"
+                fill
+                className="object-contain"
+              />
             </div>
-          ))}
+            <h3 className="text-xl font-bold text-gray-800">Zero research</h3>
+          </div>
+
+          {/* Item 2 */}
+          <div className="flex flex-col items-center text-center">
+            <div className="relative w-32 h-32 mb-6">
+              <Image
+                src="/menu2.png"
+                alt="Zero phone calls"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <h3 className="text-xl font-bold text-gray-800">Zero phone calls</h3>
+          </div>
+
+          {/* Item 3 */}
+          <div className="flex flex-col items-center text-center">
+            <div className="relative w-32 h-32 mb-6">
+              <Image
+                src="/menu3.png"
+                alt="Zero stress"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <h3 className="text-xl font-bold text-gray-800">Zero stress</h3>
+          </div>
         </div>
       </div>
     </section>

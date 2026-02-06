@@ -10,7 +10,7 @@ import Footer from "@/components/landing/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="min-h-screen flex flex-col">
       <Navbar />
       <Hero />
       <Menu />
