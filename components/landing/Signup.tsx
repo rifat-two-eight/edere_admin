@@ -6,13 +6,14 @@ export default function Signup() {
         <form className="space-y-4">
           <div>
             <label htmlFor="email" className="block text-sm font-medium mb-1">Email</label>
-            <input 
-              type="email" 
-              id="email" 
+            <input
+              type="email"
+              id="email"
               className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent"
               placeholder="you@example.com"
             />
           </div>
+          {/* button */}
           <button type="submit" className="w-full py-3 bg-black text-white dark:bg-white dark:text-black rounded-lg font-semibold">
             Create Account
           </button>
