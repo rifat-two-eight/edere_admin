@@ -1,23 +1,40 @@
-export default function Signup() {
+"use client";
+
+import { Mail } from "lucide-react";
+
+export default function Signup({ transparent = false }: { transparent?: boolean }) {
   return (
-    <section id="signup" className="py-20 bg-white dark:bg-black">
-      <div className="container mx-auto px-4 max-w-md">
-        <h2 className="text-3xl font-bold mb-8 text-center">Sign Up</h2>
-        <form className="space-y-4">
-          <div>
-            <label htmlFor="email" className="block text-sm font-medium mb-1">Email</label>
+    <section
+      id="signup"
+      className={`py-20 ${transparent ? "bg-transparent" : "bg-[#F5F2EE]"
+        } relative`}
+    >
+      <div className="container mx-auto px-4 max-w-4xl text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-[#2D2A26] leading-tight flex flex-wrap justify-center items-center gap-x-3">
+          <span>Sign up for</span>
+          <span className="inline-block relative">
+            <Mail className="w-12 h-12 text-[#BD6E00] inline-block mb-2" strokeWidth={1.5} />
+            {/* Decorative envelope details could go here if using a custom SVG */}
+          </span>
+          <span>the latest news</span>
+          <span className="w-full"> and verified restaurants!</span>
+        </h2>
+
+        <div className="max-w-xl mx-auto">
+          <form className="relative flex items-center">
             <input
               type="email"
-              id="email"
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-transparent"
-              placeholder="you@example.com"
+              placeholder="Enter email address"
+              className="w-full pl-8 pr-32 py-4 rounded-full bg-white border-none shadow-sm focus:ring-2 focus:ring-[#055E2C] outline-none text-gray-700 placeholder-gray-400"
             />
-          </div>
-          {/* button */}
-          <button type="submit" className="w-full py-3 bg-black text-white dark:bg-white dark:text-black rounded-lg font-semibold">
-            Create Account
-          </button>
-        </form>
+            <button
+              type="submit"
+              className="absolute right-2 top-2 bottom-2 px-8 bg-[#2D2A26] text-white rounded-full font-medium hover:bg-black transition-colors"
+            >
+              Sign up
+            </button>
+          </form>
+        </div>
       </div>
     </section>
   );

@@ -5,8 +5,7 @@ import Discovery from "@/components/landing/Discovery";
 import HowItWorks from "@/components/landing/HowItWorks";
 import EdereFor from "@/components/landing/EdereFor";
 import AreYouRestaurant from "@/components/landing/AreYouRestaurant";
-import Signup from "@/components/landing/Signup";
-import Footer from "@/components/landing/Footer";
+import SignupFooter from "@/components/landing/SignupFooter";
 
 export default function Home() {
   return (
@@ -18,8 +17,7 @@ export default function Home() {
       <HowItWorks />
       <EdereFor />
       <AreYouRestaurant />
-      <Signup />
-      <Footer />
+      <SignupFooter />
     </main>
   );
 }
