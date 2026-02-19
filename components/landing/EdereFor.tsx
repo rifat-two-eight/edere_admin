@@ -11,7 +11,7 @@ const items = [
     id: 1,
     title: "For the ones with food allergies, restrictions & preferences",
     description: "Researching menus to find safe options is exhausting. Without clear allergen labels, it's all guesswork. We remove the uncertainty so you can pick what you want and enjoy your meal.",
-    image: "/edere1.jpg",
+    image: "/edere1.png",
     icon: HeartPulse,
     iconBg: "bg-[#055E2C]",
   },
@@ -27,7 +27,7 @@ const items = [
     id: 3,
     title: "For the ones trying out gluten-free for a month",
     description: "Listening to your body and testing things out? Our app supports your journey, whether it's temporary or long-term.",
-    image: "/edere3.jpg",
+    image: "/edere3.png",
     icon: Utensils,
     iconBg: "bg-[#2D2A26]",
   },
@@ -42,7 +42,7 @@ export default function EdereFor() {
   };
 
   return (
-    <section id="edere-for" className="py-20 bg-[#F9F7F5]">
+    <section id="why-us" className="py-20 bg-[#F9F7F5]">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center text-[#2D2A26]">
           Who is Edere for?

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function AreYouRestaurant() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white" id="for-restaurants">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center text-[#2D2A26]">
           Are you a restaurant?
@@ -38,67 +38,85 @@ export default function AreYouRestaurant() {
             <span className="text-[#055E2C] font-bold">chef-verified</span> on
             Edere!
           </h3>
-          <button className="px-8 py-3 bg-[#2D2A26] text-white rounded-full font-bold hover:bg-black transition-colors">
-            Say hello to us!
-          </button>
+          <a href="mailto:hello@edere.com">
+            <button className="px-8 py-3 bg-[#2D2A26] text-white rounded-full font-bold hover:bg-black transition-colors">
+              Say hello to us!
+            </button>
+          </a>
         </div>
 
         {/* Enterprise Banner */}
-        <div className="relative w-full h-[550px] rounded-[32px] overflow-hidden flex items-end">
+        {/* Enterprise Banner */}
+        <div className="relative w-full h-[650px] rounded-[32px] overflow-hidden">
           {/* Background Image */}
           <Image
-            src="/edere2.jpg"
+            src="/need.png"
             alt="Restaurant Service"
             fill
             className="object-cover"
           />
-          {/* Dark Overlay with Gradient */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
 
-          {/* Content */}
-          <div className="relative z-10 w-full p-8 md:p-12 flex flex-col md:flex-row justify-between items-end">
-            <div className="w-full md:w-1/2 text-left">
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          {/* Dark Overlay with Gradient */}
+          <div className="absolute inset-0" />
+
+          {/* Content — centered vertically, split left/right */}
+          <div className="absolute inset-0 z-10 flex items-center px-8 md:px-12">
+            <div className="flex-1 flex flex-col justify-center gap-6">
+              {/* Heading */}
+              <h3 className="text-3xl md:text-5xl font-bold text-white leading-tight">
                 Need more for
                 <br />
                 your business?
               </h3>
-              <p className="text-white/90 text-lg mb-8 max-w-md">
+
+              {/* Description */}
+              <p className="text-white/90 text-lg max-w-md">
                 We offer turnkey solutions to bring the Edere experience to you.
                 Let's partner together!
               </p>
-              <button className="px-6 py-2 bg-[#055E2C] text-white rounded-full font-bold hover:bg-[#044c23] transition-colors mb-12">
-                Contact us
-              </button>
-              <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-                <div className="text-white">
-                  <Rocket className="w-8 h-8 mb-2" />
-                  <h4 className="font-bold mb-1">Edere-Powered Menu</h4>
-                  <p className="text-sm opacity-80 max-w-[300px]">
-                    Dynamic hosted menu page for customers to filter dishes by
-                    allergens and preferences
-                  </p>
-                </div>
-                <div className="text-white">
-                  <FileCode className="w-8 h-8 mb-2" />
-                  <h4 className="font-bold mb-1">Edere API Integration</h4>
-                  <p className="text-sm opacity-80 max-w-[300px]">
-                    Leverage our API within your website for a seamless,
-                    frictionless menu-filtering experience
-                  </p>
-                </div>
-              </div>
-            </div>
 
-            {/* Enterprise Logo / Text */}
-            <div className="mt-8 md:mt-0">
-              <div className="border border-white/50 rounded-full w-32 h-32 flex flex-col items-center justify-center text-white text-center p-4">
-                <span className="text-xl font-bold leading-none">edere</span>
-                <span className="text-[10px] tracking-widest uppercase mt-1">Enterprise</span>
+              {/* Contact Button */}
+              <a href="mailto:hello@edere.com">
+                <button className="px-8 py-3 bg-[#055E2C] text-white rounded-full font-bold hover:bg-[#044c23] transition-colors">
+                  Contact us
+                </button>
+              </a>
+
+              {/* Full-width HR */}
+              <hr className="border-white/30 my-6 w-full" />
+
+              {/* Features + Logo: 3 blocks evenly spaced */}
+              <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+                {/* Feature 1 */}
+                <div className="text-white flex-1 flex flex-col gap-2 ">
+                  <Rocket className="w-8 h-8" />
+                  <h4 className="font-bold text-lg">Edere-Powered Menu</h4>
+                  <p className="text-sm opacity-80">
+                    Dynamic hosted menu page for customers to <br /> filter dishes by allergens and preferences
+                  </p>
+                </div>
+
+                {/* Feature 2 */}
+                <div className="text-white flex-1 flex flex-col gap-2">
+                  <FileCode className="w-8 h-8" />
+                  <h4 className="font-bold text-lg">Edere API Integration</h4>
+                  <p className="text-sm opacity-80">
+                    Leverage our API within your website for a <br /> seamless, frictionless menu-filtering experience
+                  </p>
+                </div>
+
+                {/* Logo */}
+                <div className="flex-1 flex items-center justify-center">
+                  <div className="border border-white/50 rounded-full w-32 h-32 flex flex-col items-center justify-center text-white text-center p-4">
+                    <span className="text-xl font-bold leading-none">edere</span>
+                    <span className="text-[10px] tracking-widest uppercase mt-1">Enterprise</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
   );

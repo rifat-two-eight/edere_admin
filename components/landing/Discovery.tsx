@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Discovery() {
   return (
-    <section id="discovery" className="py-20 bg-[#f9f7f5]">
+    <section id="about" className="py-20 bg-[#f9f7f5]">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-60">
           {/* Left Content */}
