@@ -10,9 +10,9 @@ export default function Discovery() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 leading-tight">
               Restaurant
               <br />
-              discovery <span className="text-green-700">simplified</span>
+              discovery <span className="text-[#055E2C]">simplified</span>
             </h2>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-2xl text-gray-600 mb-8 font-semibold">
               Discover restaurants that work for you
             </p>
 
@@ -52,7 +52,7 @@ export default function Discovery() {
               </li>
             </ul>
 
-            <button className="bg-green-800 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700 transition-colors">
+            <button className="bg-[#055E2C] text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700 transition-colors">
               Download app
             </button>
           </div>
@@ -72,45 +72,45 @@ export default function Discovery() {
 
             {/* Overlay: Location (Top Left) */}
             <div className="absolute -top-6 -left-6 md:top-8 md:-left-12 w-48 shadow-lg rounded-xl overflow-hidden bg-white border border-gray-100 hidden md:block">
-              <Image 
-                src="/location.png" 
-                alt="Nearby restaurants" 
-                width={222} 
-                height={193} 
+              <Image
+                src="/location.png"
+                alt="Nearby restaurants"
+                width={222}
+                height={193}
                 className="w-full h-auto"
               />
             </div>
 
             {/* Overlay: Safe (Right Side) */}
             <div className="absolute top-60 -right-4 transform -translate-y-1/2 w-48 shadow-lg rounded-xl overflow-hidden bg-white border border-gray-100 hidden md:block">
-               <Image 
-                src="/safe.png" 
-                alt="Safe options" 
-                width={222} 
-                height={193} 
+              <Image
+                src="/safe.png"
+                alt="Safe options"
+                width={222}
+                height={193}
                 className="w-full h-auto"
               />
             </div>
 
             {/* Overlay: Modification (Bottom Left) */}
             <div className="absolute -bottom-4 -left-4 md:bottom-8 md:-left-16 bg-white p-2 rounded-xl shadow-lg flex items-center gap-3 pr-4 max-w-xs border border-gray-100">
-               <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden">
-                <Image 
-                  src="/modification.png" 
-                  alt="Modification" 
+              <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden">
+                <Image
+                  src="/modification.png"
+                  alt="Modification"
                   fill
                   className="object-cover"
                 />
-               </div>
-               <div>
-                  <p className="text-sm font-bold text-gray-900">Modification Options</p>
-                  <p className="text-xs text-orange-500 font-medium">Remove cheese to make dairy-free</p>
-               </div>
+              </div>
+              <div>
+                <p className="text-sm font-bold text-gray-900">Modification Options</p>
+                <p className="text-xs text-orange-500 font-medium">Remove cheese to make dairy-free</p>
+              </div>
             </div>
-             {/* Retrying Verified as Image to be safe with user request */}
-             <div className="absolute bottom-20 -right-2 md:bottom-12 w-32 hidden md:block">
-               <Image src="/verified.png" alt="Verified" width={140} height={50} className="w-full h-auto drop-shadow-lg" />
-             </div>
+            {/* Retrying Verified as Image to be safe with user request */}
+            <div className="absolute bottom-20 -right-2 md:bottom-12 w-32 hidden md:block">
+              <Image src="/verified.png" alt="Verified" width={140} height={50} className="w-full h-auto drop-shadow-lg" />
+            </div>
 
           </div>
         </div>

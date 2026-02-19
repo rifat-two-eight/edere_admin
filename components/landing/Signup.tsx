@@ -1,6 +1,7 @@
 "use client";
 
 import { Mail } from "lucide-react";
+import Image from "next/image";
 
 export default function Signup({ transparent = false }: { transparent?: boolean }) {
   return (
@@ -13,8 +14,7 @@ export default function Signup({ transparent = false }: { transparent?: boolean 
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-[#2D2A26] leading-tight flex flex-wrap justify-center items-center gap-x-3">
           <span>Sign up for</span>
           <span className="inline-block relative">
-            <Mail className="w-12 h-12 text-[#BD6E00] inline-block mb-2" strokeWidth={1.5} />
-            {/* Decorative envelope details could go here if using a custom SVG */}
+            <Image src="/mail.svg" alt="Mail" width={60} height={60} />
           </span>
           <span>the latest news</span>
           <span className="w-full"> and verified restaurants!</span>

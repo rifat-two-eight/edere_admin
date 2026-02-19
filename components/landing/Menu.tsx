@@ -5,14 +5,14 @@ export default function Menu() {
     <section id="menu" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-gray-900 leading-tight">
+          <h2 className="text-3xl font-bold text-gray-900 leading-tight">
             Skip the endless menu
             <br />
             homework before going to a restaurant.
           </h2>
-          <p className="text-2xl md:text-3xl font-bold text-green-700">
+          <h2 className="text-3xl font-bold text-[#055E2C]">
             No more guessing games.
-          </p>
+          </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">

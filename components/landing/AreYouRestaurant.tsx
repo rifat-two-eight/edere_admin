@@ -70,11 +70,11 @@ export default function AreYouRestaurant() {
               <button className="px-6 py-2 bg-[#055E2C] text-white rounded-full font-bold hover:bg-[#044c23] transition-colors mb-12">
                 Contact us
               </button>
-              <div className="flex flex-col md:flex-row gap-8">
+              <div className="flex flex-col md:flex-row items-center justify-between gap-8">
                 <div className="text-white">
                   <Rocket className="w-8 h-8 mb-2" />
                   <h4 className="font-bold mb-1">Edere-Powered Menu</h4>
-                  <p className="text-sm opacity-80 max-w-[200px]">
+                  <p className="text-sm opacity-80 max-w-[300px]">
                     Dynamic hosted menu page for customers to filter dishes by
                     allergens and preferences
                   </p>
@@ -82,7 +82,7 @@ export default function AreYouRestaurant() {
                 <div className="text-white">
                   <FileCode className="w-8 h-8 mb-2" />
                   <h4 className="font-bold mb-1">Edere API Integration</h4>
-                  <p className="text-sm opacity-80 max-w-[200px]">
+                  <p className="text-sm opacity-80 max-w-[300px]">
                     Leverage our API within your website for a seamless,
                     frictionless menu-filtering experience
                   </p>
