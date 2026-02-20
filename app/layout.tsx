@@ -16,7 +16,6 @@ export default function RootLayout({
       <body className="antialiased bg-white text-slate-900">
         {children}
       </body>
-      
     </html>
   );
 }

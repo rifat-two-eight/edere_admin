@@ -13,7 +13,7 @@ export default function SignupFooter() {
                     src="/vector.svg"
                     alt="Background Swoosh"
                     fill
-                    className="object-cover opacity-100"
+                    className="object-contain opacity-100"
                 />
             </div>
 
