@@ -67,7 +67,7 @@ export default function Navbar() {
             <button
               key={link.href}
               onClick={() => handleScroll(link.href)}
-              className={`transition-colors cursor-pointer hover:opacity-70 ${active === link.href ? "text-[#055E2C] font-bold" : "text-black"
+              className={`transition-colors font-semibold cursor-pointer hover:opacity-70 dm-sans ${active === link.href ? "text-[#055E2C] font-semibold" : "text-black"
                 }`}
             >
               {link.label}
@@ -91,7 +91,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-4">
           <button
             onClick={() => handleScroll("download")}
-            className="px-6 py-3 bg-[#055E2C] text-white rounded-full font-medium hover:opacity-90 transition-opacity"
+            className="px-6 py-3 dm-sans bg-[#055E2C] text-white rounded-full font-medium hover:opacity-90 transition-opacity"
           >
             Download app
           </button>
@@ -122,7 +122,7 @@ export default function Navbar() {
                   <button
                     key={link.href}
                     onClick={() => handleScroll(link.href)}
-                    className={`transition-colors hover:opacity-70 ${active === link.href ? "text-[#055E2C] font-bold" : "text-black"
+                    className={`transition-colors font-semibold hover:opacity-70 dm-sans ${active === link.href ? "text-[#055E2C] font-semibold" : "text-black"
                       }`}
                   >
                     {link.label}
@@ -133,7 +133,7 @@ export default function Navbar() {
               <div className="mt-auto pb-8">
                 <button
                   onClick={() => handleScroll("download")}
-                  className="block w-full text-center px-6 py-3 bg-[#055E2C] text-white rounded-full font-medium text-lg hover:opacity-90 transition-opacity"
+                  className="block dm-sans w-full text-center px-6 py-3 bg-[#055E2C] text-white rounded-full font-medium text-lg hover:opacity-90 transition-opacity"
                 >
                   Download app
                 </button>

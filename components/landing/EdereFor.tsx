@@ -54,7 +54,7 @@ export default function EdereFor() {
            On desktop: Row.
            We want them to stretch.
         */}
-        <div className="flex flex-col md:flex-row gap-6 justify-center items-stretch min-h-[600px]">
+        <div className="flex flex-col md:flex-row gap-6 dm-sans  justify-center items-stretch min-h-[600px]">
           {items.map((item) => (
             <Card
               key={item.id}

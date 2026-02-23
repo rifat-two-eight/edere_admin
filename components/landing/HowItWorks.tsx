@@ -52,16 +52,16 @@ export default function HowItWorks() {
               <h3 className="text-3xl md:text-4xl font-bold mb-4 text-[#2D2A26]" style={{ fontFamily: 'athletics' }}>
                 Set your profile
               </h3>
-              <p className="text-[#2D2A26]/80 text-lg mb-8 max-w-md">
-                Customize your profile to match your dietary needs.
-                Set your allergies, restrictions, and preferences –
+              <p className="text-[#2D2A26]/80 text-lg mb-8 dm-sans font-semibold">
+                Customize your profile to match your dietary needs. <br />
+                Set your allergies, restrictions, and preferences – <br />
                 including gluten sensitivity – in seconds.
               </p>
               <div className="bg-white rounded-full py-3 px-6 inline-flex items-center gap-3 w-fit shadow-sm">
                 <div className="w-6 h-6 rounded-full bg-[#055E2C] flex items-center justify-center">
                   <Lightbulb size={16} className="text-white" />
                 </div>
-                <span className="text-sm text-gray-700 font-medium">
+                <span className="text-sm text-gray-700 font-medium dm-sans">
                   Always inform staff about your allergies! We help you discover your options.
                 </span>
               </div>
@@ -101,17 +101,17 @@ export default function HowItWorks() {
               <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white" style={{ fontFamily: 'athletics' }}>
                 Explore restaurants
               </h3>
-              <p className="text-white/80 text-lg mb-8 max-w-md">
-                Browse restaurants near you and see how many dishes
-                you can have. Green indicates dishes that are completely
-                safe as prepared. Copper orange shows dishes you can
+              <p className="text-white/80 text-lg mb-8 dm-sans font-semibold">
+                Browse restaurants near you and see how many dishes <br />
+                you can have. Green indicates dishes that are completely <br />
+                safe as prepared. Copper orange shows dishes you can <br />
                 modify to fit your needs.
               </p>
               <div className="bg-white rounded-full py-3 px-6 inline-flex items-center gap-3 w-fit shadow-sm">
                 <div className="w-6 h-6 rounded-full bg-[#BD6E00] flex items-center justify-center">
                   <Lightbulb size={16} className="text-white" />
                 </div>
-                <span className="text-sm text-gray-700 font-medium">
+                <span className="text-sm text-gray-700 font-medium dm-sans">
                   Green checkmarks indicate chef-verified restaurants!
                 </span>
               </div>
@@ -155,16 +155,16 @@ export default function HowItWorks() {
               <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white" style={{ fontFamily: 'athletics' }}>
                 Dish-level recommendations
               </h3>
-              <p className="text-white/80 text-lg mb-8 max-w-md">
-                Browse menus at the dish level. See safe options
-                and get specific modification recommendations for
+              <p className="text-white/80 text-lg mb-8 dm-sans font-semibold">
+                Browse menus at the dish level. See safe options <br />
+                and get specific modification recommendations for <br />
                 dishes that can be adapted to your needs.
               </p>
               <div className="bg-white rounded-full py-3 px-6 inline-flex items-center gap-3 w-fit shadow-sm">
                 <div className="w-6 h-6 rounded-full bg-[#2D2A26] flex items-center justify-center">
                   <Lightbulb size={16} className="text-white" />
                 </div>
-                <span className="text-sm text-gray-700 font-medium">
+                <span className="text-sm text-gray-700 font-medium dm-sans">
                   Build collections and save your favorite restaurants for quick reference.
                 </span>
               </div>

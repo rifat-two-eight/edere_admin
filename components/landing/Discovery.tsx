@@ -18,41 +18,41 @@ export default function Discovery() {
 
             <ul className="space-y-6 mb-10">
               <li className="flex gap-4">
-                <div className="w-6 h-6 rounded bg-green-700 flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-5 h-5 rounded bg-[#055E2C] flex items-center justify-center flex-shrink-0 mt-1">
                   <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-gray-900 font-medium">Browse menus at the dish level</p>
-                  <p className="text-gray-500 text-sm">– see exactly what’s safe for you</p>
+                  <p className="text-gray-900 font-medium dm-sans">Browse menus at the dish level</p>
+                  <p className="text-gray-500 text-sm dm-sans">– see exactly what’s safe for you</p>
                 </div>
               </li>
               <li className="flex gap-4">
-                <div className="w-6 h-6 rounded bg-green-700 flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-5 h-5 rounded bg-[#055E2C] flex items-center justify-center flex-shrink-0 mt-1">
                   <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-gray-900 font-medium">Get personalized modifications</p>
-                  <p className="text-gray-500 text-sm">– tailored recommendations for your needs</p>
+                  <p className="text-gray-900 font-medium dm-sans">Get personalized modifications</p>
+                  <p className="text-gray-500 text-sm dm-sans">– tailored recommendations for your needs</p>
                 </div>
               </li>
               <li className="flex gap-4">
-                <div className="w-6 h-6 rounded bg-green-700 flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-5 h-5 rounded bg-[#055E2C] flex items-center justify-center flex-shrink-0 mt-1">
                   <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-gray-900 font-medium">Find inclusive restaurants</p>
-                  <p className="text-gray-500 text-sm">– find places that welcome your dietary restrictions</p>
+                  <p className="text-gray-900 font-medium dm-sans">Find inclusive restaurants</p>
+                  <p className="text-gray-500 text-sm dm-sans">– find places that welcome your dietary restrictions</p>
                 </div>
               </li>
             </ul>
 
-            <button className="bg-[#055E2C] text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700 transition-colors">
+            <button className="bg-[#055E2C] text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700 transition-colors dm-sans">
               Download app
             </button>
           </div>

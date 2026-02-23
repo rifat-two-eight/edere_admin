@@ -11,19 +11,19 @@ export default function Hero() {
             className="inline-block"
             src="/spoon.svg"
             alt="Spoon"
-            width={100}
+            width={80}
             height={100}
           />
         </h1>
-        <p className="text-xl text-zinc-800 mb-8 max-w-2xl mx-auto">
+        <p className="text-xl text-zinc-800 mb-8 max-w-3xl mx-auto dm-sans font-semibold">
           The ultimate restaurant discovery app for food allergies, dietary
           restrictions &amp; preferences... all before you step through the
           doors.
         </p>
-        <button className="px-8 py-3 mr-4 bg-[#055E2C] text-white rounded-full text-md font-semibold hover:opacity-90 transition-opacity">
+        <button className="px-8 py-3 mr-4 bg-[#055E2C] dm-sans text-white rounded-full text-md font-semibold hover:opacity-90 transition-opacity">
           Download App
         </button>
-        <button className="px-8 py-3 bg-[#2D2A26] text-white rounded-full text-md font-semibold hover:opacity-90 transition-opacity">
+        <button className="px-8 py-3 bg-[#2D2A26] dm-sans text-white rounded-full text-md font-semibold hover:opacity-90 transition-opacity">
           Join Us
         </button>
       </div>
@@ -70,7 +70,7 @@ export default function Hero() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
             </svg>
           </span>
-          <span className="text-xs font-semibold text-gray-800">Chef Verified</span>
+          <span className="text-xs font-semibold text-gray-800 dm-sans">Chef Verified</span>
         </div>
 
         {/* Personalized Filtering badge - floats over hero3 */}
@@ -80,7 +80,7 @@ export default function Hero() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-.293.707L13 13.414V19a1 1 0 01-.553.894l-4 2A1 1 0 017 21v-7.586L3.293 6.707A1 1 0 013 6V4z" />
             </svg>
           </span>
-          <span className="text-xs font-semibold text-gray-800">Personalized Filtering</span>
+          <span className="text-xs font-semibold text-gray-800 dm-sans">Personalized Filtering</span>
         </div>
 
         {/* Dine Assured badge - floats over phone, bottom */}
@@ -90,7 +90,7 @@ export default function Hero() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
           </span>
-          <span className="text-xs font-semibold text-gray-800">Dine Assured</span>
+          <span className="text-xs font-semibold text-gray-800 dm-sans">Dine Assured</span>
         </div>
 
       </div>
