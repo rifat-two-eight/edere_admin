@@ -11,7 +11,7 @@ export default function PrivacyPolicyPage() {
                     {/* Header */}
                     <section className="text-center mb-20">
 
-                        <h1 className="text-4xl md:text-6xl font-bold text-zinc-900 mb-6">
+                        <h1 className="text-4xl md:text-6xl font-bold text-zinc-900 mb-6" style={{ fontFamily: 'athletics' }}>
                             Privacy Policy
                         </h1>
 

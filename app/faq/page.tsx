@@ -57,7 +57,7 @@ export default function FAQPage() {
 
                     {/* Header */}
                     <div className="text-center mb-24">
-                        <h1 className="text-4xl md:text-6xl font-bold text-zinc-900 mb-6">
+                        <h1 className="text-4xl md:text-6xl font-bold text-zinc-900 mb-6" style={{ fontFamily: 'athletics' }}>
                             FAQs
                         </h1>
                         <p className="text-lg text-zinc-600 max-w-2xl mx-auto">
@@ -169,7 +169,7 @@ export default function FAQPage() {
 
                     {/* Contact CTA */}
                     <div className="mt-24 text-center bg-[#055E2C] rounded-3xl px-8 py-14 text-white">
-                        <h2 className="text-3xl font-semibold mb-4">
+                        <h2 className="text-3xl font-semibold mb-4" style={{ fontFamily: 'athletics' }}>
                             Still have questions?
                         </h2>
                         <p className="text-white/90 mb-8">

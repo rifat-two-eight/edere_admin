@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="h-[950px] w-full flex flex-col mt-20 items-center pt-24 overflow-hidden">
       {/* Text + Buttons */}
       <div className="container mx-auto px-4 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight text-black">
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight text-black" style={{ fontFamily: 'athletics' }}>
           Find restaurants you can <br /> actually eat at{" "}
           <Image
             className="inline-block"

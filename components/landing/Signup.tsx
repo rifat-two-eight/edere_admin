@@ -9,7 +9,7 @@ export default function Signup({ transparent = false }: { transparent?: boolean 
       className={`py-20 ${transparent ? "bg-transparent" : "bg-[#F5F2EE]"} relative`}
     >
       <div className="container mx-auto px-4 max-w-4xl text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-[#2D2A26] leading-tight flex flex-wrap justify-center items-center gap-x-3">
+        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-[#2D2A26] leading-tight flex flex-wrap justify-center items-center gap-x-3" style={{ fontFamily: 'athletics' }}>
           <span>Sign up for</span>
           <span className="inline-block relative">
             <Image src="/mail.svg" alt="Mail" width={60} height={60} />

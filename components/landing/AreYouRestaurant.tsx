@@ -7,7 +7,7 @@ export default function AreYouRestaurant() {
   return (
     <section className="py-20 bg-white" id="for-restaurants">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center text-[#2D2A26]">
+        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center text-[#2D2A26]" style={{ fontFamily: 'athletics' }}>
           Are you a restaurant?
         </h2>
 
@@ -33,7 +33,7 @@ export default function AreYouRestaurant() {
         <hr className="mb-8 -mt-8" />
         {/* Middle CTA */}
         <div className="text-center mb-20">
-          <h3 className="text-2xl md:text-3xl font-medium mb-8 text-[#2D2A26]">
+          <h3 className="text-2xl md:text-3xl font-medium mb-8 text-[#2D2A26]" style={{ fontFamily: 'athletics' }}>
             We want to get your menu{" "}
             <span className="text-[#055E2C] font-bold">chef-verified</span> on
             Edere!
@@ -63,7 +63,7 @@ export default function AreYouRestaurant() {
           <div className="absolute inset-0 z-10 flex items-center px-8 md:px-12">
             <div className="flex-1 flex flex-col justify-center gap-6">
               {/* Heading */}
-              <h3 className="text-3xl md:text-5xl font-bold text-white leading-tight">
+              <h3 className="text-3xl md:text-5xl font-bold text-white leading-tight" style={{ fontFamily: 'athletics' }}>
                 Need more for
                 <br />
                 your business?
@@ -90,7 +90,7 @@ export default function AreYouRestaurant() {
                 {/* Feature 1 */}
                 <div className="text-white flex-1 flex flex-col gap-2 ">
                   <Rocket className="w-8 h-8" />
-                  <h4 className="font-bold text-lg">Edere-Powered Menu</h4>
+                  <h4 className="font-bold text-lg" style={{ fontFamily: 'athletics' }}>Edere-Powered Menu</h4>
                   <p className="text-sm opacity-80">
                     Dynamic hosted menu page for customers to <br /> filter dishes by allergens and preferences
                   </p>
@@ -99,7 +99,7 @@ export default function AreYouRestaurant() {
                 {/* Feature 2 */}
                 <div className="text-white flex-1 flex flex-col gap-2">
                   <FileCode className="w-8 h-8" />
-                  <h4 className="font-bold text-lg">Edere API Integration</h4>
+                  <h4 className="font-bold text-lg" style={{ fontFamily: 'athletics' }}>Edere API Integration</h4>
                   <p className="text-sm opacity-80">
                     Leverage our API within your website for a <br /> seamless, frictionless menu-filtering experience
                   </p>
@@ -124,13 +124,13 @@ export default function AreYouRestaurant() {
 
 function StatCard({ value, desc }: { value: string; desc: string }) {
   return (
-    <div className="bg-[#F9F7F5] rounded-[16px] overflow-hidden flex flex-col h-full">
-      <div className="bg-[#055E2C] py-6 flex items-center justify-center">
-        <span className="text-4xl md:text-5xl font-bold text-white">
+    <div className="bg-[#F9F7F5] rounded-[12px] pt-2 px-2 overflow-hidden flex flex-col">
+      <div className="bg-[#055E2C] py-5 flex items-center justify-center rounded-[12px]">
+        <span className="text-4xl md:text-5xl font-bold text-white" style={{ fontFamily: 'athletics' }}>
           {value}
         </span>
       </div>
-      <div className="p-6 flex-1 flex items-center justify-center text-center">
+      <div className="p-5 flex-1 flex items-center justify-center text-center">
         <p className="text-[#2D2A26] font-medium leading-relaxed">{desc}</p>
       </div>
     </div>

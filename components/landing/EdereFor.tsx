@@ -44,7 +44,7 @@ export default function EdereFor() {
   return (
     <section id="why-us" className="py-20 bg-[#F9F7F5]">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center text-[#2D2A26]">
+        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center text-[#2D2A26]" style={{ fontFamily: 'athletics' }}>
           Who is Edere for?
         </h2>
 

@@ -24,7 +24,7 @@ export default function HowItWorks() {
       className="py-20 bg-white"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center text-black text-start">
+        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center text-black text-start" style={{ fontFamily: 'athletics' }}>
           How it <span className="text-[#055E2C]">works</span>
         </h2>
 
@@ -49,7 +49,7 @@ export default function HowItWorks() {
               <div className="mb-6">
                 <Image src="/user1.svg" alt="User" width={64} height={64} />
               </div>
-              <h3 className="text-3xl md:text-4xl font-bold mb-4 text-[#2D2A26]">
+              <h3 className="text-3xl md:text-4xl font-bold mb-4 text-[#2D2A26]" style={{ fontFamily: 'athletics' }}>
                 Set your profile
               </h3>
               <p className="text-[#2D2A26]/80 text-lg mb-8 max-w-md">
@@ -98,7 +98,7 @@ export default function HowItWorks() {
               <div className="mb-6">
                 <Image src="/home.svg" alt="Store" width={64} height={64} />
               </div>
-              <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+              <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white" style={{ fontFamily: 'athletics' }}>
                 Explore restaurants
               </h3>
               <p className="text-white/80 text-lg mb-8 max-w-md">
@@ -152,7 +152,7 @@ export default function HowItWorks() {
                   className="object-contain brightness-0 invert"
                 />
               </div>
-              <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+              <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white" style={{ fontFamily: 'athletics' }}>
                 Dish-level recommendations
               </h3>
               <p className="text-white/80 text-lg mb-8 max-w-md">

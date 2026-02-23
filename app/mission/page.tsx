@@ -12,7 +12,7 @@ export default function OurMissionPage() {
                     {/* Hero Header */}
                     <section className="text-center mb-20">
 
-                        <h1 className="text-4xl md:text-6xl font-bold text-zinc-900 mb-6">
+                        <h1 className="text-4xl md:text-6xl font-bold text-zinc-900 mb-6" style={{ fontFamily: 'athletics' }}>
                             Our Mission
                         </h1>
 
@@ -61,7 +61,7 @@ export default function OurMissionPage() {
 
                     {/* What We Do */}
                     <section className="mb-20">
-                        <h2 className="text-3xl md:text-4xl font-semibold text-zinc-900 mb-8">
+                        <h2 className="text-3xl md:text-4xl font-semibold text-zinc-900 mb-8" style={{ fontFamily: 'athletics' }}>
                             What We Do
                         </h2>
 
@@ -100,7 +100,7 @@ export default function OurMissionPage() {
 
                     {/* Values */}
                     <section className="mb-24">
-                        <h2 className="text-3xl md:text-4xl font-semibold text-zinc-900 mb-10">
+                        <h2 className="text-3xl md:text-4xl font-semibold text-zinc-900 mb-10" style={{ fontFamily: 'athletics' }}>
                             Our Values
                         </h2>
 
@@ -139,7 +139,7 @@ export default function OurMissionPage() {
 
                     {/* CTA */}
                     <section className="text-center bg-[#055E2C] rounded-3xl px-8 py-14 text-white">
-                        <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+                        <h2 className="text-3xl md:text-4xl font-semibold mb-4" style={{ fontFamily: 'athletics' }}>
                             Join Us
                         </h2>
 

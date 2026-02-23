@@ -10,7 +10,7 @@ export default function TermsAndConditionsPage() {
 
                     {/* Header */}
                     <section className="text-center mb-20">
-                        <h1 className="text-4xl md:text-6xl font-bold text-zinc-900 mb-6">
+                        <h1 className="text-4xl md:text-6xl font-bold text-zinc-900 mb-6" style={{ fontFamily: 'athletics' }}>
                             Terms & Conditions
                         </h1>
                         <p className="text-zinc-600">
@@ -37,7 +37,7 @@ export default function TermsAndConditionsPage() {
 
                     {/* Critical Safety Warning */}
                     <section className="bg-red-50 border border-red-200 rounded-3xl p-8 md:p-10 shadow-sm mb-10">
-                        <h2 className="text-2xl font-semibold text-red-700 mb-4">
+                        <h2 className="text-2xl font-semibold text-red-700 mb-4" style={{ fontFamily: 'athletics' }}>
                             ⚠️ Critical Medical & Safety Disclaimer
                         </h2>
                         <div className="leading-relaxed text-zinc-700 space-y-4">

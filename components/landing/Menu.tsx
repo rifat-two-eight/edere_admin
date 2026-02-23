@@ -5,7 +5,7 @@ export default function Menu() {
     <section id="menu" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-3xl font-bold text-gray-900 leading-tight" style={{ fontFamily: 'athletics' }}>
             Skip the endless menu
             <br />
             homework before going to a restaurant.
@@ -26,7 +26,7 @@ export default function Menu() {
                 className="object-contain"
               />
             </div>
-            <h3 className="text-xl font-bold text-gray-800">Zero research</h3>
+            <h3 className="text-xl font-bold text-gray-800" style={{ fontFamily: 'athletics' }}>Zero research</h3>
           </div>
 
           {/* Item 2 */}
@@ -39,7 +39,7 @@ export default function Menu() {
                 className="object-contain"
               />
             </div>
-            <h3 className="text-xl font-bold text-gray-800">Zero phone calls</h3>
+            <h3 className="text-xl font-bold text-gray-800" style={{ fontFamily: 'athletics' }}>Zero phone calls</h3>
           </div>
 
           {/* Item 3 */}
@@ -52,7 +52,7 @@ export default function Menu() {
                 className="object-contain"
               />
             </div>
-            <h3 className="text-xl font-bold text-gray-800">Zero stress</h3>
+            <h3 className="text-xl font-bold text-gray-800" style={{ fontFamily: 'athletics' }}>Zero stress</h3>
           </div>
         </div>
       </div>

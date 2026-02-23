@@ -7,12 +7,12 @@ export default function Discovery() {
         <div className="flex flex-col lg:flex-row items-center gap-60">
           {/* Left Content */}
           <div className="flex-1 lg:max-w-xl">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 leading-tight" style={{ fontFamily: 'athletics' }}>
               Restaurant
               <br />
               discovery <span className="text-[#055E2C]">simplified</span>
             </h2>
-            <p className="text-2xl text-gray-600 mb-8 font-semibold">
+            <p className="text-2xl text-gray-600 mb-8 font-semibold" style={{ fontFamily: 'athletics' }}>
               Discover restaurants that work for you
             </p>
 
@@ -103,7 +103,7 @@ export default function Discovery() {
                 />
               </div>
               <div>
-                <p className="text-sm font-bold text-gray-900">Modification Options</p>
+                <p className="text-sm font-bold text-gray-900" style={{ fontFamily: 'athletics' }}>Modification Options</p>
                 <p className="text-xs text-orange-500 font-medium">Remove cheese to make dairy-free</p>
               </div>
             </div>
