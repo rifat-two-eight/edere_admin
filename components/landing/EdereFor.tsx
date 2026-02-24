@@ -48,13 +48,73 @@ export default function EdereFor() {
           Who is Edere for?
         </h2>
 
-        {/* 
-           Grid/Flex Layout
-           On mobile: Stack vertically.
-           On desktop: Row.
-           We want them to stretch.
-        */}
-        <div className="flex flex-col md:flex-row gap-6 dm-sans  justify-center items-stretch min-h-[600px]">
+        {/* ── MOBILE/TABLET layout (< lg) ── */}
+        <div className="lg:hidden flex flex-col gap-6 dm-sans items-center">
+          {items.map((item) => (
+            <div
+              key={item.id}
+              onClick={() => handleCardClick(item.id)}
+              className="relative rounded-[24px] overflow-hidden cursor-pointer transition-all duration-500 ease-in-out w-full max-w-lg h-[400px] group"
+            >
+              {/* Background Image */}
+              <div className="absolute inset-0 z-0">
+                <Image
+                  src={item.image}
+                  alt="Background"
+                  fill
+                  className="object-cover"
+                />
+                {/* Dark Overlay - Visible when active */}
+                <div
+                  className={`absolute inset-0 bg-black/60 transition-opacity duration-500 ${activeId === item.id ? "opacity-100" : "opacity-0"
+                    }`}
+                />
+              </div>
+
+              {/* Content Box */}
+              <div className="absolute bottom-4 left-4 right-4 z-10">
+                <motion.div
+                  layout
+                  className="bg-white rounded-[20px] p-4 sm:p-5 shadow-lg"
+                >
+                  <div className="flex items-start gap-3 sm:gap-4">
+                    {/* Icon Box */}
+                    <div
+                      className={`w-8 h-8 sm:w-10 sm:h-10 rounded-lg ${item.iconBg} flex items-center justify-center shrink-0`}
+                    >
+                      <item.icon className="text-white w-4 h-4 sm:w-5 sm:h-5" />
+                    </div>
+
+                    {/* Text Content */}
+                    <div className="flex-1">
+                      <h3 className="text-base sm:text-lg font-bold text-[#2D2A26] leading-tight">
+                        {item.title}
+                      </h3>
+
+                      <AnimatePresence>
+                        {activeId === item.id && (
+                          <motion.div
+                            initial={{ opacity: 0, height: 0, marginTop: 0 }}
+                            animate={{ opacity: 1, height: "auto", marginTop: 8 }}
+                            exit={{ opacity: 0, height: 0, marginTop: 0 }}
+                            transition={{ duration: 0.3 }}
+                          >
+                            <p className="text-[#2D2A26]/70 text-xs sm:text-sm">
+                              {item.description}
+                            </p>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* ── DESKTOP layout (lg+) — 100% ORIGINAL ── */}
+        <div className="hidden lg:flex flex-row gap-6 dm-sans justify-center items-stretch min-h-[600px]">
           {items.map((item) => (
             <Card
               key={item.id}

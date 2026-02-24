@@ -10,7 +10,7 @@ import SignupFooter from "@/components/landing/SignupFooter";
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
-      <div className="bg-[#F7F3EF] bg-[url('/vector.svg')] bg-contain bg-center bg-no-repeat">
+      <div className="bg-[#F7F3EF] bg-[url('/vector.svg')] bg-center bg-no-repeat">
         <Navbar />
         <Hero />
       </div>

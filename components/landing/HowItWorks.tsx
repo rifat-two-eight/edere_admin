@@ -21,61 +21,103 @@ export default function HowItWorks() {
     <section
       ref={sectionRef}
       id="how-it-works"
-      className="py-20 bg-white"
+      className="py-16 lg:py-20 bg-white"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center text-black text-start" style={{ fontFamily: 'athletics' }}>
+        {/* Heading: Mobile/Tablet (< lg) */}
+        <h2 className="lg:hidden text-3xl sm:text-4xl md:text-5xl font-bold mb-8 md:mb-12 text-center text-black" style={{ fontFamily: 'athletics' }}>
           How it <span className="text-[#055E2C]">works</span>
         </h2>
 
-        <div className="flex flex-col gap-8">
+        {/* Heading: Desktop (lg+) — 100% Original Style */}
+        <h2 className="hidden lg:block text-4xl md:text-5xl font-bold mb-8 text-center text-black text-start" style={{ fontFamily: 'athletics' }}>
+          How it <span className="text-[#055E2C]">works</span>
+        </h2>
+
+        <div className="flex flex-col gap-6 md:gap-8">
           {/* Card 1 */}
           <motion.div
             style={{ scale: scale1 }}
-            className="sticky top-[100px] relative overflow-hidden rounded-[40px] bg-[#EFE5D6] h-[450px] flex flex-col md:flex-row"
+            className="sticky top-[80px] md:top-[100px] relative overflow-hidden rounded-[30px] md:rounded-[40px] bg-[#EFE5D6] h-auto min-h-[550px] md:min-h-[500px] lg:h-[450px] flex flex-col md:flex-row"
           >
-            {/* Background Curve */}
-            <div className="absolute top-0 right-0 h-full w-full md:w-3/5 z-0 pointer-events-none">
-              <Image
-                src="/how1.svg"
-                alt="Background"
-                fill
-                className="object-left md:object-center"
-              />
-            </div>
-
-            {/* Content */}
-            <div className="relative z-10 p-8 md:p-16 md:w-1/2 flex flex-col justify-center text-left items-start md:h-[500px]">
-              <div className="mb-6">
-                <Image src="/user1.svg" alt="User" width={64} height={64} />
-              </div>
-              <h3 className="text-3xl md:text-4xl font-bold mb-4 text-[#2D2A26]" style={{ fontFamily: 'athletics' }}>
-                Set your profile
-              </h3>
-              <p className="text-[#2D2A26]/80 text-lg mb-8 dm-sans font-semibold">
-                Customize your profile to match your dietary needs. <br />
-                Set your allergies, restrictions, and preferences – <br />
-                including gluten sensitivity – in seconds.
-              </p>
-              <div className="bg-white rounded-full py-3 px-6 inline-flex items-center gap-3 w-fit shadow-sm">
-                <div className="w-6 h-6 rounded-full bg-[#055E2C] flex items-center justify-center">
-                  <Lightbulb size={16} className="text-white" />
-                </div>
-                <span className="text-sm text-gray-700 font-medium dm-sans">
-                  Always inform staff about your allergies! We help you discover your options.
-                </span>
-              </div>
-            </div>
-
-            {/* Phone Image */}
-            <div className="relative z-10 md:w-1/2 flex justify-center md:justify-end items-end h-[400px] md:h-auto mr-12 self-end">
-              <div className="relative w-[300px] h-[450px] md:h-[500px] md:translate-y-10">
+            {/* MOBILE/TABLET CONTENT (< lg) */}
+            <div className="lg:hidden flex flex-col h-full w-full">
+              <div className="absolute top-0 right-0 h-full w-full z-0 pointer-events-none">
                 <Image
-                  src="/phone.svg"
-                  alt="App Screenshot"
+                  src="/how1.svg"
+                  alt="Background"
                   fill
-                  className="object-bottom"
+                  className="object-cover opacity-50"
                 />
+              </div>
+              <div className="relative z-10 p-6 sm:p-8 md:p-12 flex flex-col justify-center text-left items-start">
+                <div className="mb-4 md:mb-6">
+                  <Image src="/user1.svg" alt="User" width={48} height={48} className="md:w-16 md:h-16" />
+                </div>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-[#2D2A26]" style={{ fontFamily: 'athletics' }}>
+                  Set your profile
+                </h3>
+                <p className="text-[#2D2A26]/80 text-base sm:text-lg mb-6 md:mb-8 dm-sans font-semibold">
+                  Customize your profile to match your dietary needs. <br className="hidden md:block" />
+                  Set your allergies, restrictions, and preferences – <br className="hidden md:block" />
+                  including gluten sensitivity – in seconds.
+                </p>
+                <div className="bg-white rounded-2xl md:rounded-full py-3 px-4 md:px-6 inline-flex items-center gap-3 w-fit shadow-sm">
+                  <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-[#055E2C] flex items-center justify-center flex-shrink-0">
+                    <Lightbulb size={14} className="text-white" />
+                  </div>
+                  <span className="text-xs sm:text-sm text-gray-700 font-medium dm-sans">
+                    Always inform staff about your allergies! We help you discover your options.
+                  </span>
+                </div>
+              </div>
+              <div className="relative z-10 flex justify-center items-end h-[250px] sm:h-[300px] md:h-[350px] mt-auto">
+                <div className="relative w-[220px] sm:w-[260px] h-full translate-y-6 sm:translate-y-10">
+                  <Image src="/phone.svg" alt="App Screenshot" fill className="object-contain object-bottom" />
+                </div>
+              </div>
+            </div>
+
+            {/* DESKTOP CONTENT (lg+) — 100% ORIGINAL */}
+            <div className="hidden lg:flex flex-row w-full h-full relative">
+              <div className="absolute top-0 right-0 h-full w-full md:w-3/5 z-0 pointer-events-none">
+                <Image
+                  src="/how1.svg"
+                  alt="Background"
+                  fill
+                  className="object-left md:object-center"
+                />
+              </div>
+              <div className="relative z-10 p-8 md:p-16 md:w-1/2 flex flex-col justify-center text-left items-start md:h-[500px]">
+                <div className="mb-6">
+                  <Image src="/user1.svg" alt="User" width={64} height={64} />
+                </div>
+                <h3 className="text-3xl md:text-4xl font-bold mb-4 text-[#2D2A26]" style={{ fontFamily: 'athletics' }}>
+                  Set your profile
+                </h3>
+                <p className="text-[#2D2A26]/80 text-lg mb-8 dm-sans font-semibold">
+                  Customize your profile to match your dietary needs. <br />
+                  Set your allergies, restrictions, and preferences – <br />
+                  including gluten sensitivity – in seconds.
+                </p>
+                <div className="bg-white rounded-full py-3 px-6 inline-flex items-center gap-3 w-fit shadow-sm">
+                  <div className="w-6 h-6 rounded-full bg-[#055E2C] flex items-center justify-center">
+                    <Lightbulb size={16} className="text-white" />
+                  </div>
+                  <span className="text-sm text-gray-700 font-medium dm-sans">
+                    Always inform staff about your allergies! We help you discover your options.
+                  </span>
+                </div>
+              </div>
+              <div className="relative z-10 md:w-1/2 flex justify-center md:justify-end items-end h-[400px] md:h-auto mr-12 self-end">
+                <div className="relative w-[300px] h-[450px] md:h-[500px] md:translate-y-10">
+                  <Image
+                    src="/phone.svg"
+                    alt="App Screenshot"
+                    fill
+                    className="object-bottom"
+                  />
+                </div>
               </div>
             </div>
           </motion.div>
@@ -83,48 +125,88 @@ export default function HowItWorks() {
           {/* Card 2 */}
           <motion.div
             style={{ scale: scale2 }}
-            className="sticky top-[100px] relative overflow-hidden rounded-[40px] bg-[#2D2A26] h-[450px] flex flex-col md:flex-row"
+            className="sticky top-[80px] md:top-[100px] relative overflow-hidden rounded-[30px] md:rounded-[40px] bg-[#2D2A26] h-auto min-h-[550px] md:min-h-[500px] lg:h-[450px] flex flex-col md:flex-row"
           >
-            <div className="absolute top-0 right-0 w-full h-full z-0 pointer-events-none">
-              <Image
-                src="/how2.svg"
-                alt="Background shape"
-                fill
-                className="object-right ml-[550px]"
-              />
-            </div>
-
-            <div className="relative z-10 p-8 md:p-16 md:w-1/2 flex flex-col justify-center text-left items-start md:h-[500px]">
-              <div className="mb-6">
-                <Image src="/home.svg" alt="Store" width={64} height={64} />
-              </div>
-              <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white" style={{ fontFamily: 'athletics' }}>
-                Explore restaurants
-              </h3>
-              <p className="text-white/80 text-lg mb-8 dm-sans font-semibold">
-                Browse restaurants near you and see how many dishes <br />
-                you can have. Green indicates dishes that are completely <br />
-                safe as prepared. Copper orange shows dishes you can <br />
-                modify to fit your needs.
-              </p>
-              <div className="bg-white rounded-full py-3 px-6 inline-flex items-center gap-3 w-fit shadow-sm">
-                <div className="w-6 h-6 rounded-full bg-[#BD6E00] flex items-center justify-center">
-                  <Lightbulb size={16} className="text-white" />
-                </div>
-                <span className="text-sm text-gray-700 font-medium dm-sans">
-                  Green checkmarks indicate chef-verified restaurants!
-                </span>
-              </div>
-            </div>
-
-            <div className="relative z-10 md:w-1/2 flex justify-center md:justify-end items-end h-[400px] md:h-auto mr-12 self-end">
-              <div className="relative w-[300px] h-[450px] md:h-[500px] md:translate-y-10">
+            {/* MOBILE/TABLET CONTENT (< lg) */}
+            <div className="lg:hidden flex flex-col h-full w-full">
+              <div className="absolute top-0 right-0 w-full h-full z-0 pointer-events-none">
                 <Image
-                  src="/phone.svg"
-                  alt="App Screenshot"
+                  src="/how2.svg"
+                  alt="Background shape"
                   fill
-                  className="object-bottom"
+                  className="object-cover opacity-30"
                 />
+              </div>
+              <div className="relative z-10 p-6 sm:p-8 md:p-12 flex flex-col justify-center text-left items-start">
+                <div className="mb-4 md:mb-6">
+                  <Image src="/home.svg" alt="Store" width={48} height={48} className="md:w-16 md:h-16" />
+                </div>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-white" style={{ fontFamily: 'athletics' }}>
+                  Explore restaurants
+                </h3>
+                <p className="text-white/80 text-base sm:text-lg mb-6 md:mb-8 dm-sans font-semibold">
+                  Browse restaurants near you and see how many dishes <br className="hidden md:block" />
+                  you can have. Green indicates dishes that are completely <br className="hidden md:block" />
+                  safe as prepared. Copper orange shows dishes you can <br className="hidden md:block" />
+                  modify to fit your needs.
+                </p>
+                <div className="bg-white rounded-2xl md:rounded-full py-3 px-4 md:px-6 inline-flex items-center gap-3 w-fit shadow-sm">
+                  <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-[#BD6E00] flex items-center justify-center flex-shrink-0">
+                    <Lightbulb size={14} className="text-white" />
+                  </div>
+                  <span className="text-xs sm:text-sm text-gray-700 font-medium dm-sans">
+                    Green checkmarks indicate chef-verified restaurants!
+                  </span>
+                </div>
+              </div>
+              <div className="relative z-10 flex justify-center items-end h-[250px] sm:h-[300px] md:h-[350px] mt-auto">
+                <div className="relative w-[220px] sm:w-[260px] h-full translate-y-6 sm:translate-y-10">
+                  <Image src="/phone.svg" alt="App Screenshot" fill className="object-contain object-bottom" />
+                </div>
+              </div>
+            </div>
+
+            {/* DESKTOP CONTENT (lg+) — 100% ORIGINAL */}
+            <div className="hidden lg:flex flex-row w-full h-full relative">
+              <div className="absolute top-0 right-0 w-full h-full z-0 pointer-events-none">
+                <Image
+                  src="/how2.svg"
+                  alt="Background shape"
+                  fill
+                  className="object-right ml-[550px]"
+                />
+              </div>
+              <div className="relative z-10 p-8 md:p-16 md:w-1/2 flex flex-col justify-center text-left items-start md:h-[500px]">
+                <div className="mb-6">
+                  <Image src="/home.svg" alt="Store" width={64} height={64} />
+                </div>
+                <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white" style={{ fontFamily: 'athletics' }}>
+                  Explore restaurants
+                </h3>
+                <p className="text-white/80 text-lg mb-8 dm-sans font-semibold">
+                  Browse restaurants near you and see how many dishes <br />
+                  you can have. Green indicates dishes that are completely <br />
+                  safe as prepared. Copper orange shows dishes you can <br />
+                  modify to fit your needs.
+                </p>
+                <div className="bg-white rounded-full py-3 px-6 inline-flex items-center gap-3 w-fit shadow-sm">
+                  <div className="w-6 h-6 rounded-full bg-[#BD6E00] flex items-center justify-center">
+                    <Lightbulb size={16} className="text-white" />
+                  </div>
+                  <span className="text-sm text-gray-700 font-medium dm-sans">
+                    Green checkmarks indicate chef-verified restaurants!
+                  </span>
+                </div>
+              </div>
+              <div className="relative z-10 md:w-1/2 flex justify-center md:justify-end items-end h-[400px] md:h-auto mr-12 self-end">
+                <div className="relative w-[300px] h-[450px] md:h-[500px] md:translate-y-10">
+                  <Image
+                    src="/phone.svg"
+                    alt="App Screenshot"
+                    fill
+                    className="object-bottom"
+                  />
+                </div>
               </div>
             </div>
           </motion.div>
@@ -132,52 +214,96 @@ export default function HowItWorks() {
           {/* Card 3 */}
           <motion.div
             style={{ scale: scale3 }}
-            className="sticky top-[100px] relative overflow-hidden rounded-[40px] bg-[#055E2C] h-[450px] flex flex-col md:flex-row"
+            className="sticky top-[80px] md:top-[100px] relative overflow-hidden rounded-[30px] md:rounded-[40px] bg-[#055E2C] h-auto min-h-[550px] md:min-h-[500px] lg:h-[450px] flex flex-col md:flex-row"
           >
-            <div className="absolute top-0 right-0 w-full md:w-3/4 h-full z-0 pointer-events-none">
-              <Image
-                src="/how3.svg"
-                alt="Background"
-                fill
-                className="object-left md:object-center ml-[220px]"
-              />
-            </div>
-
-            <div className="relative z-10 p-8 md:p-16 md:w-1/2 flex flex-col justify-center text-left items-start md:h-[500px]">
-              <div className="mb-6 w-16 h-16 relative">
+            {/* MOBILE/TABLET CONTENT (< lg) */}
+            <div className="lg:hidden flex flex-col h-full w-full">
+              <div className="absolute top-0 right-0 w-full h-full z-0 pointer-events-none">
                 <Image
-                  src="/dish.svg"
-                  alt="Dish"
+                  src="/how3.svg"
+                  alt="Background"
                   fill
-                  className="object-contain brightness-0 invert"
+                  className="object-cover opacity-30"
                 />
               </div>
-              <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white" style={{ fontFamily: 'athletics' }}>
-                Dish-level recommendations
-              </h3>
-              <p className="text-white/80 text-lg mb-8 dm-sans font-semibold">
-                Browse menus at the dish level. See safe options <br />
-                and get specific modification recommendations for <br />
-                dishes that can be adapted to your needs.
-              </p>
-              <div className="bg-white rounded-full py-3 px-6 inline-flex items-center gap-3 w-fit shadow-sm">
-                <div className="w-6 h-6 rounded-full bg-[#2D2A26] flex items-center justify-center">
-                  <Lightbulb size={16} className="text-white" />
+              <div className="relative z-10 p-6 sm:p-8 md:p-12 flex flex-col justify-center text-left items-start">
+                <div className="mb-4 md:mb-6 w-12 h-12 md:w-16 md:h-16 relative">
+                  <Image
+                    src="/dish.svg"
+                    alt="Dish"
+                    fill
+                    className="object-contain brightness-0 invert"
+                  />
                 </div>
-                <span className="text-sm text-gray-700 font-medium dm-sans">
-                  Build collections and save your favorite restaurants for quick reference.
-                </span>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-white" style={{ fontFamily: 'athletics' }}>
+                  Dish-level recommendations
+                </h3>
+                <p className="text-white/80 text-base sm:text-lg mb-6 md:mb-8 dm-sans font-semibold">
+                  Browse menus at the dish level. See safe options <br className="hidden md:block" />
+                  and get specific modification recommendations for <br className="hidden md:block" />
+                  dishes that can be adapted to your needs.
+                </p>
+                <div className="bg-white rounded-2xl md:rounded-full py-3 px-4 md:px-6 inline-flex items-center gap-3 w-fit shadow-sm">
+                  <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-[#2D2A26] flex items-center justify-center flex-shrink-0">
+                    <Lightbulb size={14} className="text-white" />
+                  </div>
+                  <span className="text-xs sm:text-sm text-gray-700 font-medium dm-sans">
+                    Build collections and save your favorite restaurants for quick reference.
+                  </span>
+                </div>
+              </div>
+              <div className="relative z-10 flex justify-center items-end h-[250px] sm:h-[300px] md:h-[350px] mt-auto">
+                <div className="relative w-[220px] sm:w-[260px] h-full translate-y-6 sm:translate-y-10">
+                  <Image src="/phone.svg" alt="App Screenshot" fill className="object-contain object-bottom" />
+                </div>
               </div>
             </div>
 
-            <div className="relative z-10 md:w-1/2 flex justify-center md:justify-end items-end h-[400px] md:h-auto mr-12 self-end">
-              <div className="relative w-[300px] h-[450px] md:h-[500px] md:translate-y-10">
+            {/* DESKTOP CONTENT (lg+) — 100% ORIGINAL */}
+            <div className="hidden lg:flex flex-row w-full h-full relative">
+              <div className="absolute top-0 right-0 w-full md:w-3/4 h-full z-0 pointer-events-none">
                 <Image
-                  src="/phone.svg"
-                  alt="App Screenshot"
+                  src="/how3.svg"
+                  alt="Background"
                   fill
-                  className="object-bottom"
+                  className="object-left md:object-center ml-[220px]"
                 />
+              </div>
+              <div className="relative z-10 p-8 md:p-16 md:w-1/2 flex flex-col justify-center text-left items-start md:h-[500px]">
+                <div className="mb-6 w-16 h-16 relative">
+                  <Image
+                    src="/dish.svg"
+                    alt="Dish"
+                    fill
+                    className="object-contain brightness-0 invert"
+                  />
+                </div>
+                <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white" style={{ fontFamily: 'athletics' }}>
+                  Dish-level recommendations
+                </h3>
+                <p className="text-white/80 text-lg mb-8 dm-sans font-semibold">
+                  Browse menus at the dish level. See safe options <br />
+                  and get specific modification recommendations for <br />
+                  dishes that can be adapted to your needs.
+                </p>
+                <div className="bg-white rounded-full py-3 px-6 inline-flex items-center gap-3 w-fit shadow-sm">
+                  <div className="w-6 h-6 rounded-full bg-[#2D2A26] flex items-center justify-center">
+                    <Lightbulb size={16} className="text-white" />
+                  </div>
+                  <span className="text-sm text-gray-700 font-medium dm-sans">
+                    Build collections and save your favorite restaurants for quick reference.
+                  </span>
+                </div>
+              </div>
+              <div className="relative z-10 md:w-1/2 flex justify-center md:justify-end items-end h-[400px] md:h-auto mr-12 self-end">
+                <div className="relative w-[300px] h-[450px] md:h-[500px] md:translate-y-10">
+                  <Image
+                    src="/phone.svg"
+                    alt="App Screenshot"
+                    fill
+                    className="object-bottom"
+                  />
+                </div>
               </div>
             </div>
           </motion.div>
