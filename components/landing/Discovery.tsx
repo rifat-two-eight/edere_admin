@@ -7,47 +7,45 @@ export default function Discovery() {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-60">
           {/* Left Content */}
           <div className="flex-1 lg:max-w-xl text-center lg:text-left">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-gray-900 leading-tight" style={{ fontFamily: 'athletics' }}>
-              Restaurant
-              <br className="hidden lg:block" />
-              discovery <span className="text-[#055E2C]">simplified</span>
+            <h2 className="text-3xl sm:text-4xl md:text-[64px] font-bold mb-6 text-gray-900 leading-tight" style={{ fontFamily: 'athletics' }}>
+              Restaurant discovery <span className="text-[#055E2C]">simplified</span>
             </h2>
-            <p className="text-xl sm:text-2xl text-gray-600 mb-8 font-semibold" style={{ fontFamily: 'athletics' }}>
+            <p className="text-xl sm:text-2xl md:text-[32px] text-gray-600 mb-8 font-semibold" style={{ fontFamily: 'athletics' }}>
               Discover restaurants that work for you
             </p>
 
             <ul className="space-y-6 mb-10 text-left max-w-lg mx-auto lg:mx-0">
-              <li className="flex gap-4">
+              <li className="flex items-start gap-4">
                 <div className="w-5 h-5 rounded bg-[#055E2C] flex items-center justify-center flex-shrink-0 mt-1">
                   <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-gray-900 font-medium dm-sans">Browse menus at the dish level</p>
-                  <p className="text-gray-500 text-sm dm-sans">– see exactly what’s safe for you</p>
+                  <p className="text-gray-900  text-2xl font-medium dm-sans">Browse menus at the dish level</p>
+                  <p className="text-gray-500 text-xl dm-sans">– see exactly what’s safe for you</p>
                 </div>
               </li>
-              <li className="flex gap-4">
+              <li className="flex items-start gap-4">
                 <div className="w-5 h-5 rounded bg-[#055E2C] flex items-center justify-center flex-shrink-0 mt-1">
                   <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-gray-900 font-medium dm-sans">Get personalized modifications</p>
-                  <p className="text-gray-500 text-sm dm-sans">– tailored recommendations for your needs</p>
+                  <p className="text-gray-900 text-2xl font-medium dm-sans">Get personalized modifications</p>
+                  <p className="text-gray-500 text-xl dm-sans">– tailored recommendations for your needs</p>
                 </div>
               </li>
-              <li className="flex gap-4">
+              <li className="flex items-start gap-4">
                 <div className="w-5 h-5 rounded bg-[#055E2C] flex items-center justify-center flex-shrink-0 mt-1">
                   <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-gray-900 font-medium dm-sans">Find inclusive restaurants</p>
-                  <p className="text-gray-500 text-sm dm-sans">– find places that welcome your dietary restrictions</p>
+                  <p className="text-gray-900 text-2xl font-medium dm-sans">Find inclusive restaurants</p>
+                  <p className="text-gray-500 text-xl dm-sans">– find places that welcome your dietary restrictions</p>
                 </div>
               </li>
             </ul>
