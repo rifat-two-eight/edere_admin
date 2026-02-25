@@ -22,7 +22,7 @@ export default function Footer({
         <div className="lg:hidden flex flex-col gap-12 mb-12">
           {/* Top Row: Logo & Social */}
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-8">
-            <Image src="/logo.png" alt="Logo" width={80} height={80} />
+            <Image src="/logo1.png" alt="Logo" width={80} height={80} />
             <div>
               <h4 className="font-bold text-[#2D2A26] mb-3">Follow us</h4>
               <div className="flex gap-4">

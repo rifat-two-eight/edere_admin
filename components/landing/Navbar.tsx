@@ -82,7 +82,7 @@ export default function Navbar() {
             className="block"
           >
             <Link href="/" className="text-2xl font-bold text-[#055E2C]">
-              <Image src="/logo.png" alt="Edere Logo" width={100} height={40} className="object-contain cursor-pointer" />
+              <Image src="/logo1.png" alt="Edere Logo" width={100} height={40} className="object-contain cursor-pointer" />
             </Link>
           </button>
         </div>

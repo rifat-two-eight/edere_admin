@@ -169,10 +169,13 @@ export default function AreYouRestaurant() {
 
                   {/* Logo */}
                   <div className="flex-1 flex items-center justify-center">
-                    <div className="border border-white/50 rounded-full w-32 h-32 flex flex-col items-center justify-center text-white text-center p-4">
-                      <span className="text-xl font-bold leading-none">edere</span>
-                      <span className="text-[10px] tracking-widest uppercase mt-1">Enterprise</span>
-                    </div>
+                    <Image
+                      src="/edere_logo.svg"
+                      alt="Restaurant Service"
+                      width={100}
+                      height={100}
+                      className="object-cover"
+                    />
                   </div>
                 </div>
               </div>
