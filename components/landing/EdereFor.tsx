@@ -19,7 +19,7 @@ const items = [
     id: 2,
     title: "For friends, family & colleagues who know people with dietary needs",
     description: "Planning a dinner with someone? With Edere you will always be prepared and informed to find options to fit your guests needs.",
-    image: "/edere2.jpg",
+    image: "/restro.jpg",
     icon: Users,
     iconBg: "bg-[#BD6E00]",
   },

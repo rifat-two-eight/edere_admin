@@ -1,6 +1,7 @@
 "use client";
 
-import { Instagram, Linkedin, Mail } from "lucide-react";
+
+import { Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -30,13 +31,13 @@ export default function Footer({
                   href="#"
                   className="w-10 h-10 bg-[#055E2C] rounded-full flex items-center justify-center text-white hover:bg-[#044c23] transition-colors"
                 >
-                  <Instagram size={20} />
+                  <img src="/instagram.svg" />
                 </Link>
                 <Link
                   href="#"
                   className="w-10 h-10 bg-[#055E2C] rounded-full flex items-center justify-center text-white hover:bg-[#044c23] transition-colors"
                 >
-                  <Linkedin size={20} />
+                  <img src="/linkedin.svg" alt="" />
                 </Link>
               </div>
             </div>
@@ -49,6 +50,7 @@ export default function Footer({
               <ul className="space-y-3 text-[#2D2A26]/80">
                 <li><Link href="/mission" className="hover:text-[#055E2C]">Our Mission</Link></li>
                 <li><Link href="/faq" className="hover:text-[#055E2C]">FAQs</Link></li>
+                <li><Link href="/blog" className="hover:text-[#055E2C]">Blog</Link></li>
                 <li><Link href="/terms" className="hover:text-[#055E2C]">Terms + Conditions</Link></li>
                 <li><Link href="/policy" className="hover:text-[#055E2C]">Privacy Policy</Link></li>
               </ul>
@@ -79,7 +81,7 @@ export default function Footer({
 
         {/* ── DESKTOP layout (lg+) — 100% ORIGINAL ── */}
         <div className="hidden lg:block">
-          <div className="grid grid-cols-4 gap-12 mb-16 items-start">
+          <div className="flex justify-between gap-0 mb-16 items-start">
             {/* Column 1: Logo & Social */}
             <div className="space-y-8">
               <Image src="/logo.png" alt="Logo" width={100} height={100} />
@@ -90,43 +92,46 @@ export default function Footer({
                     href="#"
                     className="w-10 h-10 bg-[#055E2C] rounded-full flex items-center justify-center text-white hover:bg-[#044c23] transition-colors"
                   >
-                    <Instagram size={20} />
+                    <img src="/instagram.svg" />
                   </Link>
                   <Link
                     href="#"
                     className="w-10 h-10 bg-[#055E2C] rounded-full flex items-center justify-center text-white hover:bg-[#044c23] transition-colors"
                   >
-                    <Linkedin size={20} />
+                    <img src="/linkedin.svg" alt="" />
                   </Link>
                 </div>
               </div>
             </div>
 
             {/* Column 2: Navigate */}
-            <div>
-              <h4 className="font-bold text-[#2D2A26] mb-6">Navigate</h4>
-              <ul className="space-y-4 text-[#2D2A26]/80">
-                <li><Link href="/mission" className="hover:text-[#055E2C]">Our Mission</Link></li>
-                <li><Link href="/faq" className="hover:text-[#055E2C]">FAQs</Link></li>
-                <li><Link href="/terms" className="hover:text-[#055E2C]">Terms + Conditions</Link></li>
-                <li><Link href="/policy" className="hover:text-[#055E2C]">Privacy Policy</Link></li>
-              </ul>
-            </div>
+            <div className="flex justify-center gap-10">
+              <div>
+                <h4 className="font-bold text-[#2D2A26] mb-6">Navigate</h4>
+                <ul className="space-y-4 text-[#2D2A26]/80">
+                  <li><Link href="/mission" className="hover:text-[#055E2C]">Our Mission</Link></li>
+                  <li><Link href="/faq" className="hover:text-[#055E2C]">FAQs</Link></li>
+                  <li><Link href="/blog" className="hover:text-[#055E2C]">Blog</Link></li>
+                  <li><Link href="/terms" className="hover:text-[#055E2C]">Terms + Conditions</Link></li>
+                  <li><Link href="/policy" className="hover:text-[#055E2C]">Privacy Policy</Link></li>
+                </ul>
+              </div>
 
-            {/* Column 3: Contact */}
-            <div>
-              <h4 className="font-bold text-[#2D2A26] mb-6">Contact</h4>
-              <ul className="space-y-4 text-[#2D2A26]/80">
-                <li className="flex items-center gap-2">
-                  <Mail className="w-4 h-4 text-[#055E2C]" />
-                  <a href="mailto:hello@edere.life" className="hover:text-[#055E2C]">hello@edere.life</a>
-                </li>
-              </ul>
+              {/* Column 3: Contact */}
+              <div>
+                <h4 className="font-bold text-[#2D2A26] mb-6">Contact</h4>
+                <ul className="space-y-4 text-[#2D2A26]/80">
+                  <li className="flex items-center gap-2">
+                    <Mail className="w-4 h-4 text-[#055E2C]" />
+                    <a href="mailto:hello@edere.life" className="hover:text-[#055E2C]">hello@edere.life</a>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             {/* Column 4: Download */}
             <div className="text-right font-medium md:text-right flex flex-col items-start md:items-end">
-              <div className="mb-6 max-w-[450px] text-left md:text-right ml-auto">
+              <div className="mb-6 text-left md:text-right ml-auto">
                 <p className="text-[#2D2A26] text-sm font-medium leading-relaxed">
                   The ultimate restaurant discovery app for <br /> food allergies, dietary restrictions & preferences... <br /> all before you step through the doors.
                 </p>
