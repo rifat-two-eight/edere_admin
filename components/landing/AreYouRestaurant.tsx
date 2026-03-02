@@ -1,13 +1,12 @@
 "use client";
 
-import { Rocket, FileCode } from "lucide-react";
 import Image from "next/image";
 
 export default function AreYouRestaurant() {
   return (
     <section className="py-20 bg-white" id="for-restaurants">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center text-[#2D2A26]" style={{ fontFamily: 'athletics' }}>
+        <h2 className="text-4xl md:text-6xl font-bold mb-8 text-center text-[#2D2A26]" style={{ fontFamily: 'athletics' }}>
           Are you a restaurant?
         </h2>
 
@@ -30,10 +29,10 @@ export default function AreYouRestaurant() {
             desc="in untapped annual restaurant spending from this market"
           />
         </div>
-        <hr className="mb-8 -mt-8" />
+        <hr className="mb-8 border-gray-200 -mt-8" />
         {/* Middle CTA */}
         <div className="text-center mb-20">
-          <h3 className="text-2xl md:text-3xl font-medium mb-8 text-[#2D2A26]" style={{ fontFamily: 'athletics' }}>
+          <h3 className="text-2xl md:text-4xl font-semibold mb-8 text-[#2D2A26]" style={{ fontFamily: 'athletics' }}>
             We want to get your menu{" "}
             <span className="text-[#055E2C] font-bold">chef-verified</span> on
             Edere!
@@ -145,12 +144,12 @@ export default function AreYouRestaurant() {
                 </a>
 
                 {/* Full-width HR */}
-                <hr className="border-white/30 my-6 w-full" />
+                <hr className="border-white/30 mt-6 w-full" />
 
                 {/* Features + Logo: 3 blocks evenly spaced */}
-                <div className="flex flex-row justify-between items-center gap-8">
+                <div className="flex justify-between items-center">
                   {/* Feature 1 */}
-                  <div className="text-white flex-1 flex flex-col gap-2 ">
+                  <div className="text-white flex flex-col gap-4">
                     <Image src="/rocket.svg" alt="Rocket" width={36} height={36} />
                     <h4 className="font-medium text-2xl" style={{ fontFamily: 'athletics' }}>Edere-Powered Menu</h4>
                     <p className="text-[16px] opacity-80">
@@ -159,22 +158,23 @@ export default function AreYouRestaurant() {
                   </div>
 
                   {/* Feature 2 */}
-                  <div className="text-white flex-1 flex flex-col gap-2">
-                    <Image src="/api.svg" alt="API" width={36} height={36} />
-                    <h4 className="font-medium text-2xl" style={{ fontFamily: 'athletics' }}>Edere API Integration</h4>
-                    <p className="text-[16px] opacity-80">
-                      Leverage our API within your website for a <br /> seamless, frictionless menu-filtering experience
-                    </p>
+                  <div className="text-white flex flex-col items-center gap-4">
+                    <div className="flex flex-col gap-4">
+                      <Image src="/api.svg" alt="API" width={36} height={36} />
+                      <h4 className="font-medium text-2xl" style={{ fontFamily: 'athletics' }}>Edere API Integration</h4>
+                      <p className="text-[16px] opacity-80">
+                        Leverage our API within your website for a <br /> seamless, frictionless menu-filtering experience
+                      </p>
+                    </div>
                   </div>
 
                   {/* Logo */}
-                  <div className="flex-1 flex items-center justify-center">
+                  <div className="flex justify-end w-1/6 justify-self-end">
                     <Image
                       src="/edere_logo.svg"
                       alt="Restaurant Service"
-                      width={100}
-                      height={100}
-                      className="object-cover"
+                      width={170}
+                      height={170}
                     />
                   </div>
                 </div>
@@ -191,13 +191,13 @@ export default function AreYouRestaurant() {
 function StatCard({ value, desc }: { value: string; desc: string }) {
   return (
     <div className="bg-[#F9F7F5] rounded-[12px] pt-2 px-2 overflow-hidden flex flex-col">
-      <div className="bg-[#055E2C] py-5 flex items-center justify-center rounded-[12px]">
-        <span className="text-4xl md:text-5xl font-bold text-white" style={{ fontFamily: 'athletics' }}>
+      <div className="bg-[#055E2C] py-8 flex items-center justify-center rounded-[12px]">
+        <span className="text-4xl md:text-6xl font-extrabold text-white" style={{ fontFamily: 'athletics' }}>
           {value}
         </span>
       </div>
-      <div className="p-5 flex-1 flex items-center justify-center text-center">
-        <p className="text-[#2D2A26] font-medium leading-relaxed">{desc}</p>
+      <div className="px-2 py-3 flex-1 flex items-center justify-center text-center">
+        <p className="text-[#2D2A26] font-semibold  text-[15px] leading-relaxed">{desc}</p>
       </div>
     </div>
   );
