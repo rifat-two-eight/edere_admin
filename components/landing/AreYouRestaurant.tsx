@@ -84,8 +84,8 @@ export default function AreYouRestaurant() {
               <div className="flex flex-col gap-8">
                 {/* Feature 1 */}
                 <div className="text-white flex flex-col gap-2">
-                  <Rocket className="w-7 h-7" />
-                  <h4 className="font-bold text-lg" style={{ fontFamily: 'athletics' }}>Edere-Powered Menu</h4>
+                  <Image src="/rocket.svg" alt="Rocket" width={36} height={36} />
+                  <h4 className="font-medium text-lg" style={{ fontFamily: 'athletics' }}>Edere-Powered Menu</h4>
                   <p className="text-sm opacity-80">
                     Dynamic hosted menu page for customers to filter dishes by allergens and preferences
                   </p>
@@ -93,8 +93,8 @@ export default function AreYouRestaurant() {
 
                 {/* Feature 2 */}
                 <div className="text-white flex flex-col gap-2">
-                  <FileCode className="w-7 h-7" />
-                  <h4 className="font-bold text-lg" style={{ fontFamily: 'athletics' }}>Edere API Integration</h4>
+                  <Image src="/api.svg" alt="API" width={36} height={36} />
+                  <h4 className="font-medium text-lg" style={{ fontFamily: 'athletics' }}>Edere API Integration</h4>
                   <p className="text-sm opacity-80">
                     Leverage our API within your website for a seamless, frictionless menu-filtering experience
                   </p>
@@ -125,7 +125,7 @@ export default function AreYouRestaurant() {
             <div className="absolute inset-0 z-10 flex items-center px-12">
               <div className="flex-1 flex flex-col justify-center gap-6">
                 {/* Heading */}
-                <h3 className="text-5xl font-bold text-white leading-tight" style={{ fontFamily: 'athletics' }}>
+                <h3 className="text-6xl font-bold text-white leading-tight" style={{ fontFamily: 'athletics' }}>
                   Need more for
                   <br />
                   your business?
@@ -151,18 +151,18 @@ export default function AreYouRestaurant() {
                 <div className="flex flex-row justify-between items-center gap-8">
                   {/* Feature 1 */}
                   <div className="text-white flex-1 flex flex-col gap-2 ">
-                    <Rocket className="w-8 h-8" />
-                    <h4 className="font-bold text-lg" style={{ fontFamily: 'athletics' }}>Edere-Powered Menu</h4>
-                    <p className="text-sm opacity-80">
+                    <Image src="/rocket.svg" alt="Rocket" width={36} height={36} />
+                    <h4 className="font-medium text-2xl" style={{ fontFamily: 'athletics' }}>Edere-Powered Menu</h4>
+                    <p className="text-[16px] opacity-80">
                       Dynamic hosted menu page for customers to <br /> filter dishes by allergens and preferences
                     </p>
                   </div>
 
                   {/* Feature 2 */}
                   <div className="text-white flex-1 flex flex-col gap-2">
-                    <FileCode className="w-8 h-8" />
-                    <h4 className="font-bold text-lg" style={{ fontFamily: 'athletics' }}>Edere API Integration</h4>
-                    <p className="text-sm opacity-80">
+                    <Image src="/api.svg" alt="API" width={36} height={36} />
+                    <h4 className="font-medium text-2xl" style={{ fontFamily: 'athletics' }}>Edere API Integration</h4>
+                    <p className="text-[16px] opacity-80">
                       Leverage our API within your website for a <br /> seamless, frictionless menu-filtering experience
                     </p>
                   </div>

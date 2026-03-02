@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function SignupFooter() {
     return (
-        <div className="relative w-full bg-[#F5F2EE] overflow-hidden">
+        <div className="relative w-full rounded-t-[28px] bg-[#F5F2EE] overflow-hidden">
             {/* ── MOBILE/TABLET layout (< lg) ── */}
             <div className="lg:hidden relative">
                 {/* Background Swoosh */}

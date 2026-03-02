@@ -15,7 +15,7 @@ export default function Signup({ transparent = false }: { transparent?: boolean 
           <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-[#2D2A26] leading-tight flex flex-wrap justify-center items-center gap-x-2 sm:gap-x-3" style={{ fontFamily: 'athletics' }}>
             <span>Sign up for</span>
             <span className="inline-block relative">
-              <Image src="/mail.svg" alt="Mail" width={48} height={48} className="sm:w-[60px] sm:h-[60px]" />
+              <Image src="/newsletter.svg" alt="Mail" width={48} height={48} className="sm:w-[60px] sm:h-[60px]" />
             </span>
             <span>the </span>
             <span className="w-full">latest news and verified restaurants!</span>
@@ -43,7 +43,7 @@ export default function Signup({ transparent = false }: { transparent?: boolean 
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-[#2D2A26] leading-tight flex flex-wrap justify-center items-center gap-x-3" style={{ fontFamily: 'athletics' }}>
             <span>Sign up for</span>
             <span className="inline-block relative">
-              <Image src="/mail.svg" alt="Mail" width={60} height={60} />
+              <Image src="/newsletter.svg" alt="Mail" width={60} height={60} />
             </span>
             <span>the latest news</span>
             <span className="w-full"> and verified restaurants!</span>

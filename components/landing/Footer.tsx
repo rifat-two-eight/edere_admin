@@ -1,7 +1,6 @@
 "use client";
 
 
-import { Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,7 +11,7 @@ export default function Footer({
 }) {
   return (
     <footer
-      className={`py-16 ${transparent
+      className={`pt-16 pb-8 ${transparent
         ? "bg-transparent border-t-0"
         : "bg-[#F5F2EE] border-t border-gray-200"
         }`}
@@ -61,7 +60,7 @@ export default function Footer({
               <h4 className="font-bold text-[#2D2A26] mb-5">Contact</h4>
               <ul className="space-y-4 text-[#2D2A26]/80 text-sm">
                 <li className="flex items-center gap-2">
-                  <Mail className="w-4 h-4 text-[#055E2C]" />
+                  <Image src="/mail.svg" alt="Mail" width={20} height={20} />
                   <a href="mailto:hello@edere.life" className="hover:text-[#055E2C]">hello@edere.life</a>
                 </li>
               </ul>
@@ -105,7 +104,7 @@ export default function Footer({
             </div>
 
             {/* Column 2: Navigate */}
-            <div className="flex justify-center gap-10">
+            <div className="flex justify-center gap-20">
               <div>
                 <h4 className="font-bold text-[#2D2A26] mb-6">Navigate</h4>
                 <ul className="space-y-4 text-[#2D2A26]/80">
@@ -122,7 +121,7 @@ export default function Footer({
                 <h4 className="font-bold text-[#2D2A26] mb-6">Contact</h4>
                 <ul className="space-y-4 text-[#2D2A26]/80">
                   <li className="flex items-center gap-2">
-                    <Mail className="w-4 h-4 text-[#055E2C]" />
+                    <Image src="/mail.svg" alt="Mail" width={20} height={20} />
                     <a href="mailto:hello@edere.life" className="hover:text-[#055E2C]">hello@edere.life</a>
                   </li>
                 </ul>
