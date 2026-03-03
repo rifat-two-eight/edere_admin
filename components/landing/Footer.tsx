@@ -88,13 +88,15 @@ export default function Footer({
                 <h4 className="font-bold text-[#2D2A26] mb-4">Follow us</h4>
                 <div className="flex gap-4">
                   <Link
-                    href="#"
+                    target="_blank"
+                    href="https://www.instagram.com/edere.life"
                     className="w-10 h-10 bg-[#055E2C] rounded-full flex items-center justify-center text-white hover:bg-[#044c23] transition-colors"
                   >
                     <img src="/instagram.svg" />
                   </Link>
                   <Link
-                    href="#"
+                    target="_blank"
+                    href="https://www.linkedin.com/company/edere"
                     className="w-10 h-10 bg-[#055E2C] rounded-full flex items-center justify-center text-white hover:bg-[#044c23] transition-colors"
                   >
                     <img src="/linkedin.svg" alt="" />
