@@ -66,7 +66,7 @@ export default function HowItWorks() {
                   <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-[#055E2C] flex items-center justify-center shrink-0">
                     <Lightbulb size={14} className="text-white" />
                   </div>
-                  <span className="text-xs sm:text-sm text-gray-700 font-medium dm-sans">
+                  <span className="text-xs sm:text-sm text-gray-700 font-medium dm-sans whitespace-nowrap">
                     Always inform staff about your allergies! We help you discover your options.
                   </span>
                 </div>
@@ -104,7 +104,7 @@ export default function HowItWorks() {
                   <div className="w-6 h-6 rounded-full bg-[#055E2C] flex items-center justify-center">
                     <Lightbulb size={16} className="text-white" />
                   </div>
-                  <span className="text-sm text-gray-700 font-medium dm-sans">
+                  <span className="text-sm text-gray-700 font-medium dm-sans whitespace-nowrap">
                     Always inform staff about your allergies! We help you discover your options.
                   </span>
                 </div>
@@ -154,7 +154,7 @@ export default function HowItWorks() {
                   <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-[#BD6E00] flex items-center justify-center flex-shrink-0">
                     <Lightbulb size={14} className="text-white" />
                   </div>
-                  <span className="text-xs sm:text-sm text-gray-700 font-medium dm-sans">
+                  <span className="text-xs sm:text-sm text-gray-700 font-medium dm-sans whitespace-nowrap">
                     Green checkmarks indicate chef-verified restaurants!
                   </span>
                 </div>
@@ -193,7 +193,7 @@ export default function HowItWorks() {
                   <div className="w-6 h-6 rounded-full bg-[#BD6E00] flex items-center justify-center">
                     <Lightbulb size={16} className="text-white" />
                   </div>
-                  <span className="text-sm text-gray-700 font-medium dm-sans">
+                  <span className="text-sm text-gray-700 font-medium dm-sans whitespace-nowrap">
                     Green checkmarks indicate chef-verified restaurants!
                   </span>
                 </div>
@@ -247,7 +247,7 @@ export default function HowItWorks() {
                   <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-[#2D2A26] flex items-center justify-center flex-shrink-0">
                     <Lightbulb size={14} className="text-white" />
                   </div>
-                  <span className="text-xs sm:text-sm text-gray-700 font-medium dm-sans">
+                  <span className="text-xs sm:text-sm text-gray-700 font-medium dm-sans whitespace-nowrap">
                     Build collections and save your favorite restaurants for quick reference.
                   </span>
                 </div>
@@ -290,7 +290,7 @@ export default function HowItWorks() {
                   <div className="w-6 h-6 rounded-full bg-[#2D2A26] flex items-center justify-center">
                     <Lightbulb size={16} className="text-white" />
                   </div>
-                  <span className="text-sm text-gray-700 font-medium dm-sans">
+                  <span className="text-sm text-gray-700 font-medium dm-sans whitespace-nowrap">
                     Build collections and save your favorite restaurants for quick reference.
                   </span>
                 </div>
