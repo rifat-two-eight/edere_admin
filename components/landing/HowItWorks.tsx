@@ -21,7 +21,7 @@ export default function HowItWorks() {
     <section
       ref={sectionRef}
       id="how-it-works"
-      className="py-16 lg:py-20 bg-white"
+      className="py-16 lg:py-28 bg-white"
     >
       <div className="container mx-auto px-4">
         {/* Heading: Mobile/Tablet (< lg) */}
@@ -30,7 +30,7 @@ export default function HowItWorks() {
         </h2>
 
         {/* Heading: Desktop (lg+) — 100% Original Style */}
-        <h2 className="hidden lg:block text-4xl md:text-5xl font-bold mb-8 text-center text-black text-start" style={{ fontFamily: 'athletics' }}>
+        <h2 className="hidden lg:block text-4xl md:text-[80px] font-extrabold mb-8 text-black text-start" style={{ fontFamily: 'athletics' }}>
           How it <span className="text-[#055E2C]">works</span>
         </h2>
 
@@ -63,7 +63,7 @@ export default function HowItWorks() {
                   including gluten sensitivity – in seconds.
                 </p>
                 <div className="bg-white rounded-2xl md:rounded-full py-3 px-4 md:px-6 inline-flex items-center gap-3 w-fit shadow-sm">
-                  <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-[#055E2C] flex items-center justify-center flex-shrink-0">
+                  <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-[#055E2C] flex items-center justify-center shrink-0">
                     <Lightbulb size={14} className="text-white" />
                   </div>
                   <span className="text-xs sm:text-sm text-gray-700 font-medium dm-sans">
@@ -100,7 +100,7 @@ export default function HowItWorks() {
                   Set your allergies, restrictions, and preferences – <br />
                   including gluten sensitivity – in seconds.
                 </p>
-                <div className="bg-white rounded-full py-3 px-6 inline-flex items-center gap-3 w-fit shadow-sm">
+                <div className="bg-white rounded-full py-3 px-6 inline-flex items-center gap-3 shadow-sm">
                   <div className="w-6 h-6 rounded-full bg-[#055E2C] flex items-center justify-center">
                     <Lightbulb size={16} className="text-white" />
                   </div>
