@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { Check } from "lucide-react";
 
 export default function HowItWorks() {
   const sectionRef = useRef(null);
@@ -91,15 +92,15 @@ export default function HowItWorks() {
                 <div className="mb-6">
                   <Image src="/user1.svg" alt="User" width={64} height={64} />
                 </div>
-                <h3 className="text-3xl md:text-4xl font-bold mb-4 text-[#2D2A26]" style={{ fontFamily: 'athletics' }}>
+                <h3 className="text-3xl md:text-4xl font-extrabold mb-4 text-[#2D2A26]" style={{ fontFamily: 'athletics' }}>
                   Set your profile
                 </h3>
-                <p className="text-[#2D2A26]/80 text-lg mb-8 dm-sans font-semibold">
+                <p className="text-[#2D2A26]/80 text-lg mb-8 dm-sans font-medium">
                   Customize your profile to match your dietary needs. <br />
                   Set your allergies, restrictions, and preferences – <br />
                   including gluten sensitivity – in seconds.
                 </p>
-                <div className="bg-white rounded-full py-3 px-6 inline-flex items-center gap-3 shadow-sm">
+                <div className="bg-white rounded-full py-2 px-3 inline-flex items-center gap-2 shadow-sm">
                   <div className="w-6 h-6 rounded-full bg-[#055E2C] flex items-center justify-center">
                     <Image src="/bulb.svg" alt="Bulb" width={16} height={16} />
                   </div>
@@ -179,21 +180,27 @@ export default function HowItWorks() {
                 <div className="mb-6">
                   <Image src="/home.svg" alt="Store" width={64} height={64} />
                 </div>
-                <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white" style={{ fontFamily: 'athletics' }}>
+                <h3 className="text-3xl md:text-4xl font-extrabold mb-4 text-white" style={{ fontFamily: 'athletics' }}>
                   Explore restaurants
                 </h3>
-                <p className="text-white/80 text-lg mb-8 dm-sans font-semibold">
+                <p className="text-white/80 text-lg mb-8 dm-sans font-medium">
                   Browse restaurants near you and see how many dishes <br />
                   you can have. Green indicates dishes that are completely <br />
                   safe as prepared. Copper orange shows dishes you can <br />
                   modify to fit your needs.
                 </p>
-                <div className="bg-white rounded-full py-3 px-6 inline-flex items-center gap-3 w-fit shadow-sm">
+                <div className="bg-white rounded-full py-2 px-3 inline-flex items-center gap-2 w-fit shadow-sm">
                   <div className="w-6 h-6 rounded-full bg-[#BD6E00] flex items-center justify-center">
                     <Image src="/bulb.svg" alt="Bulb" width={16} height={16} />
                   </div>
-                  <span className="text-sm text-gray-700 font-medium dm-sans whitespace-nowrap">
-                    Green checkmarks indicate chef-verified restaurants!
+                  <span className="text-sm text-gray-700 font-medium dm-sans flex items-center gap-1">
+                    Green checkmarks
+                    <Check
+                      width={16}
+                      height={16}
+                      className="bg-[#055E2C] rounded-full text-white p-[2px]"
+                    />
+                    indicate chef-verified restaurants!
                   </span>
                 </div>
               </div>
@@ -277,15 +284,15 @@ export default function HowItWorks() {
                     className="object-contain brightness-0 invert"
                   />
                 </div>
-                <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white" style={{ fontFamily: 'athletics' }}>
+                <h3 className="text-3xl md:text-4xl font-extrabold mb-4 text-white" style={{ fontFamily: 'athletics' }}>
                   Dish-level recommendations
                 </h3>
-                <p className="text-white/80 text-lg mb-8 dm-sans font-semibold">
+                <p className="text-white/80 text-lg mb-8 dm-sans font-medium">
                   Browse menus at the dish level. See safe options <br />
                   and get specific modification recommendations for <br />
                   dishes that can be adapted to your needs.
                 </p>
-                <div className="bg-white rounded-full py-3 px-6 inline-flex items-center gap-3 w-fit shadow-sm">
+                <div className="bg-white rounded-full py-2 px-3 inline-flex items-center gap-2 w-fit shadow-sm">
                   <div className="w-6 h-6 rounded-full bg-[#2D2A26] flex items-center justify-center">
                     <Image src="/bulb.svg" alt="Bulb" width={16} height={16} />
                   </div>
