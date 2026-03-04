@@ -1,6 +1,5 @@
 "use client";
 
-import { Lightbulb } from "lucide-react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
@@ -64,7 +63,7 @@ export default function HowItWorks() {
                 </p>
                 <div className="bg-white rounded-2xl md:rounded-full py-3 px-4 md:px-6 inline-flex items-center gap-3 w-fit shadow-sm">
                   <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-[#055E2C] flex items-center justify-center shrink-0">
-                    <Lightbulb size={14} className="text-white" />
+                    <Image src="/bulb.svg" alt="Bulb" width={14} height={14} />
                   </div>
                   <span className="text-xs sm:text-sm text-gray-700 font-medium dm-sans whitespace-nowrap">
                     Always inform staff about your allergies! We help you discover your options.
@@ -102,7 +101,7 @@ export default function HowItWorks() {
                 </p>
                 <div className="bg-white rounded-full py-3 px-6 inline-flex items-center gap-3 shadow-sm">
                   <div className="w-6 h-6 rounded-full bg-[#055E2C] flex items-center justify-center">
-                    <Lightbulb size={16} className="text-white" />
+                    <Image src="/bulb.svg" alt="Bulb" width={16} height={16} />
                   </div>
                   <span className="text-sm text-gray-700 font-medium dm-sans whitespace-nowrap">
                     Always inform staff about your allergies! We help you discover your options.
@@ -152,7 +151,7 @@ export default function HowItWorks() {
                 </p>
                 <div className="bg-white rounded-2xl md:rounded-full py-3 px-4 md:px-6 inline-flex items-center gap-3 w-fit shadow-sm">
                   <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-[#BD6E00] flex items-center justify-center flex-shrink-0">
-                    <Lightbulb size={14} className="text-white" />
+                    <Image src="/bulb.svg" alt="Bulb" width={14} height={14} />
                   </div>
                   <span className="text-xs sm:text-sm text-gray-700 font-medium dm-sans whitespace-nowrap">
                     Green checkmarks indicate chef-verified restaurants!
@@ -176,7 +175,7 @@ export default function HowItWorks() {
                   className="object-right ml-[550px]"
                 />
               </div>
-              <div className="relative z-10 p-8 md:p-16 md:w-1/2 flex flex-col justify-center text-left items-start md:h-[500px]">
+              <div className="relative z-10 p-8 md:p-16 w-full flex flex-col justify-center text-left items-start md:h-[500px]">
                 <div className="mb-6">
                   <Image src="/home.svg" alt="Store" width={64} height={64} />
                 </div>
@@ -191,14 +190,14 @@ export default function HowItWorks() {
                 </p>
                 <div className="bg-white rounded-full py-3 px-6 inline-flex items-center gap-3 w-fit shadow-sm">
                   <div className="w-6 h-6 rounded-full bg-[#BD6E00] flex items-center justify-center">
-                    <Lightbulb size={16} className="text-white" />
+                    <Image src="/bulb.svg" alt="Bulb" width={16} height={16} />
                   </div>
                   <span className="text-sm text-gray-700 font-medium dm-sans whitespace-nowrap">
                     Green checkmarks indicate chef-verified restaurants!
                   </span>
                 </div>
               </div>
-              <div className="relative z-10 md:w-1/2 flex justify-center md:justify-end items-end h-[400px] md:h-auto mr-12 self-end">
+              <div className="absolute right-0 bottom-0 z-10 md:w-1/2 flex justify-center md:justify-end items-end h-[400px] md:h-auto mr-12 self-end">
                 <div className="relative w-[300px] h-[450px] md:h-[500px] md:translate-y-10">
                   <Image
                     src="/phone.svg"
@@ -245,7 +244,7 @@ export default function HowItWorks() {
                 </p>
                 <div className="bg-white rounded-2xl md:rounded-full py-3 px-4 md:px-6 inline-flex items-center gap-3 w-fit shadow-sm">
                   <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-[#2D2A26] flex items-center justify-center flex-shrink-0">
-                    <Lightbulb size={14} className="text-white" />
+                    <Image src="/bulb.svg" alt="Bulb" width={14} height={14} />
                   </div>
                   <span className="text-xs sm:text-sm text-gray-700 font-medium dm-sans whitespace-nowrap">
                     Build collections and save your favorite restaurants for quick reference.
@@ -288,7 +287,7 @@ export default function HowItWorks() {
                 </p>
                 <div className="bg-white rounded-full py-3 px-6 inline-flex items-center gap-3 w-fit shadow-sm">
                   <div className="w-6 h-6 rounded-full bg-[#2D2A26] flex items-center justify-center">
-                    <Lightbulb size={16} className="text-white" />
+                    <Image src="/bulb.svg" alt="Bulb" width={16} height={16} />
                   </div>
                   <span className="text-sm text-gray-700 font-medium dm-sans whitespace-nowrap">
                     Build collections and save your favorite restaurants for quick reference.
