@@ -19,7 +19,7 @@ export default function Discovery() {
 
             <ul className="space-y-6 mb-10 text-left max-w-lg mx-auto lg:mx-0">
               <li className="flex items-start gap-4">
-                <div className="w-5 h-5 rounded bg-[#055E2C] flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-5 h-5 rounded bg-[#055E2C] flex items-center justify-center shrink-0 mt-1">
                   <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                   </svg>
@@ -30,7 +30,7 @@ export default function Discovery() {
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <div className="w-5 h-5 rounded bg-[#055E2C] flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-5 h-5 rounded bg-[#055E2C] flex items-center justify-center shrink-0 mt-1">
                   <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                   </svg>
@@ -40,7 +40,7 @@ export default function Discovery() {
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <div className="w-5 h-5 rounded bg-[#055E2C] flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-5 h-5 rounded bg-[#055E2C] flex items-center justify-center shrink-0 mt-1">
                   <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                   </svg>
@@ -77,7 +77,7 @@ export default function Discovery() {
                 <Image src="/safe.png" alt="Safe options" width={222} height={193} className="w-full h-auto" />
               </div>
               <div className="absolute -bottom-6 -left-4 md:-bottom-8 md:-left-12 bg-white p-2 sm:p-3 rounded-xl shadow-2xl flex items-center gap-2 sm:gap-3 pr-4 max-w-[200px] sm:max-w-xs border border-gray-100 z-20">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 relative flex-shrink-0 rounded-lg overflow-hidden">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 relative shrink-0 rounded-lg overflow-hidden">
                   <Image src="/modification.png" alt="Modification" fill className="object-cover" />
                 </div>
                 <div>
@@ -113,7 +113,7 @@ export default function Discovery() {
 
               {/* Overlay: Modification (Bottom Left) */}
               <div className="absolute bottom-16 -left-14 bg-white p-2 rounded-xl shadow-lg flex items-center gap-3 pr-4 max-w-xs border border-gray-100 z-20">
-                <div className="w-12 h-12 relative flex-shrink-0 rounded-lg overflow-hidden">
+                <div className="w-12 h-12 relative shrink-0 rounded-lg overflow-hidden">
                   <Image src="/modification.png" alt="Modification" fill className="object-cover" />
                 </div>
                 <div>
