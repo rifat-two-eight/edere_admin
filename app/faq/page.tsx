@@ -5,7 +5,7 @@ import { useState } from "react";
 
 type FAQItem = {
     q: string;
-    a: string;
+    a: string | React.ReactNode;
 };
 
 function FAQAccordion({ title, items }: { title: string; items: FAQItem[] }) {
@@ -79,7 +79,7 @@ export default function FAQPage() {
                             },
                             {
                                 q: "How is Edere different from other apps?",
-                                a: "We're the only platform with dish-level, chef-verified allergen information and modification options. Others rely on restaurant-level tags or crowdsourced data that can become outdated.",
+                                a: "We're the only platform with dish-level, chef-verified allergen information and modification options. Others show only restaurant-level tags or rely on crowdsourced data that could be outdated over time.",
                             },
                             {
                                 q: "How do I get started?",
@@ -87,7 +87,7 @@ export default function FAQPage() {
                             },
                             {
                                 q: "Which cities is Edere available in?",
-                                a: "We're launching in New York City and surrounding areas in May 2026, with plans to expand throughout the year. You can request your city in the app.",
+                                a: "We're launching in New York City and surrounding areas in May 2026, with plans to expand to additional cities throughout the year. Want Edere in your city? Email us and we'll prioritize based on demand.",
                             },
                         ]}
                     />
@@ -97,23 +97,27 @@ export default function FAQPage() {
                         items={[
                             {
                                 q: "What food allergies does Edere support?",
-                                a: "All major allergens including peanuts, tree nuts, milk, eggs, wheat, soy, fish, shellfish, sesame, plus less common allergens. You can add any food or ingredient to your profile.",
+                                a: "All major allergies (peanuts, tree nuts, milk, eggs, wheat, soy, fish, shellfish, sesame) plus other less common allergens. You can add any food and ingredient to your profile.",
                             },
                             {
                                 q: "Does Edere work for gluten-free diets?",
-                                a: "Yes. We support celiac disease, gluten sensitivity, and gluten-free preferences with cross-contamination information.",
+                                a: "Yes! We help people with celiac disease, gluten sensitivity, or those choosing gluten-free find safe options with cross-contamination information.",
                             },
                             {
-                                q: "Can I use Edere for vegan or vegetarian diets?",
-                                a: "Absolutely. Vegan and vegetarian dietary needs are fully supported.",
+                                q: "Can I use Edere for vegan diets?",
+                                a: "Absolutely. We support vegan and vegetarian dietary needs.",
                             },
                             {
-                                q: "Can I filter for multiple dietary needs?",
-                                a: "Yes. Edere only shows dishes that meet all of your selected requirements.",
+                                q: "Can I filter for multiple dietary needs at once?",
+                                a: "Yes. Set as many restrictions as you need - Edere shows only dishes that meet all your requirements.",
                             },
                             {
                                 q: "Does Edere show cross-contamination information?",
-                                a: "Yes. We highlight cross-contamination risks and identify restaurants with dedicated prep areas.",
+                                a: "Yes. We indicate cross-contamination risks and show which restaurants have dedicated prep areas for gluten and nuts.",
+                            },
+                            {
+                                q: "I'm trying a diet temporarily. Is Edere useful?",
+                                a: "Absolutely. Whether it's one month or long-term, Edere adapts to your current needs.",
                             },
                         ]}
                     />
@@ -123,30 +127,78 @@ export default function FAQPage() {
                         items={[
                             {
                                 q: "How does Edere verify restaurant information?",
-                                a: "Our AI analyzes menus, then chefs and managers review and verify ingredients, modifications, and kitchen practices for accuracy.",
+                                a: "We have our custom AI model analyze menus, then chefs and managers review and verify the allergen information, confirming dish ingredients, modifications and that it meets their kitchen practices. This hybrid approach ensures speed and accuracy.",
                             },
                             {
                                 q: "How accurate is the allergen information?",
-                                a: "Information is chef-verified, but we always recommend confirming with restaurant staff since menus and practices can change.",
+                                a: "Edere provides chef-verified menu data (indicated by a checkmark next to the restaurant), but we always recommend confirming with restaurant staff about your specific allergies. Menus and kitchen practices can change, and cross-contamination risks vary. Edere is a discovery tool to help you find safe options, not a replacement for communication with your server and chef.",
                             },
                             {
-                                q: "What do green and orange indicators mean?",
-                                a: "Green means completely safe as prepared. Orange means the dish can be modified safely with specific instructions.",
+                                q: "What does \"chef-verified\" mean?",
+                                a: "Restaurant kitchen staff have reviewed and confirmed all allergen information, including ingredients, preparation methods, and cross-contamination risks.",
                             },
                             {
-                                q: "How often is menu data updated?",
-                                a: "Menus are updated in real-time by restaurants through our portal.",
+                                q: "How often is menu information updated?",
+                                a: "Restaurants update menus in real-time through our restaurant portal.",
+                            },
+                            {
+                                q: "What do the green and orange indicators mean?",
+                                a: "Green = completely safe (for our dietary profile) as prepared. Orange = can be modified (with specific instructions and recommendations).",
+                            },
+                            {
+                                q: "How do I know which dishes I can modify?",
+                                a: "Dishes marked orange include specific modification instructions—for example, \"Remove cheese\" or \"Ask for gluten-free bun.\" These modifications come from the restaurant's own guidance about how they can safely adapt dishes for dietary needs.",
+                            },
+                        ]}
+                    />
+
+                    <FAQAccordion
+                        title="Using the App"
+                        items={[
+                            {
+                                q: "How do I find restaurants near me?",
+                                a: "Open the app and enable location services. Browse the map or list view, or restaurant name. Each restaurant indicates how many dishes you can have - as prepared or with option to modify.",
+                            },
+                            {
+                                q: "What if a restaurant isn't listed on Edere yet?",
+                                a: "You can request that we add a restaurant through the app. We're constantly expanding our restaurant network and prioritize additions based on user requests. You can also encourage your favorite restaurants to join Edere's platform.",
+                            },
+                            {
+                                q: "Can I save my favorite restaurants?",
+                                a: "Yes! Users can create custom collections like \"Date Night,\" \"Family Friendly,\" or \"Quick Lunch\" to organize their favorite safe dining spots.",
+                            },
+                            {
+                                q: "What if restaurant information seems wrong?",
+                                a: "Please email us at hello@edere.life and we'll work with the restaurant to verify and update immediately.",
+                            },
+                        ]}
+                    />
+
+                    <FAQAccordion
+                        title="Safety & Privacy"
+                        items={[
+                            {
+                                q: "Should I still tell my server about my allergies?",
+                                a: "YES, always. Edere helps you discover restaurants and make informed dining decisions, but you must always inform staff about your allergies and dietary restrictions.",
+                            },
+                            {
+                                q: "Is my dietary information private?",
+                                a: "Yes. Your profile is completely private and never shared with restaurants or third parties.",
+                            },
+                            {
+                                q: "Can restaurants see who's searching for them?",
+                                a: "No. Restaurants only see aggregate data (e.g., \"150 users viewed your menu\"), never individual users.",
                             },
                         ]}
                     />
 
                     {/* RESTAURANT FAQS */}
                     <FAQAccordion
-                        title="Restaurant Questions"
+                        title="Restaurant Questions — Getting Started"
                         items={[
                             {
                                 q: "How do I add my restaurant to Edere?",
-                                a: "Email hello@edere.life for an invite. Onboarding takes about 10 minutes.",
+                                a: "Email hello@edere.life for an invite to your custom restaurant portal. Onboarding takes about 10 minutes.",
                             },
                             {
                                 q: "Is there a contract?",
@@ -157,12 +209,74 @@ export default function FAQPage() {
                                 a: "Currently, we are offering free verification listings.",
                             },
                             {
-                                q: "Can I manage multiple locations?",
-                                a: "Yes. Multi-location operators can manage all locations from a single account.",
+                                q: "I'm interested in the B2B opportunities for restaurants, where can I find more information?",
+                                a: (
+                                    <div className="space-y-3">
+                                        <p>We offer our restaurant partners turnkey solutions to power and enhance the dining experience for those with food restrictions.</p>
+                                        <p><span className="font-semibold text-zinc-900">The Edere-Powered Menu</span> is a dynamic hosted page customers use to filter your menu by dietary needs before visiting or provided via QR code in the restaurant.</p>
+                                        <p><span className="font-semibold text-zinc-900">The Edere API Integration</span> will embed our filtering technology directly into your website, POS, or app for seamless allergen filtering.</p>
+                                    </div>
+                                ),
                             },
                             {
+                                q: "How much do enterprise solutions cost?",
+                                a: "Pricing is customized based on size, locations, and integration needs. Email hello@edere.life for a quote.",
+                            },
+                            {
+                                q: "What types of restaurants can join?",
+                                a: "Any food establishment from quick-service to fine dining, independent to chains! Our mission is to welcome all restaurants to join to share information about their menu.",
+                            },
+                            {
+                                q: "Can I manage multiple locations?",
+                                a: "Yes. Multi-location operators manage all locations from one account with location-specific customization.",
+                            },
+                            {
+                                q: "Do I need to be in a specific city?",
+                                a: "We're launching in select cities first but accepting partners nationwide for early access.",
+                            },
+                        ]}
+                    />
+
+                    <FAQAccordion
+                        title="Restaurant Questions — Setup & Verification"
+                        items={[
+                            {
                                 q: "How does chef verification work?",
-                                a: "Our AI pre-analyzes your menu, then your chef or manager reviews and confirms the information.",
+                                a: "Our AI analyzes your menu, then your chef or manager reviews, confirms or edits the information in our restaurant portal.",
+                            },
+                            {
+                                q: "How long does setup take?",
+                                a: "About 10 minutes. AI pre-populates most information - you just review and confirm.",
+                            },
+                            {
+                                q: "What information do I need?",
+                                a: "Your current menu, ingredient lists, preparation methods, and cross-contamination protocols.",
+                            },
+                            {
+                                q: "Can I update my menu?",
+                                a: "Yes. 24/7 access to update dishes, ingredients, prices, and allergen information anytime through our restaurant portal.",
+                            },
+                        ]}
+                    />
+
+                    <FAQAccordion
+                        title="Restaurant Questions — Benefits & Results"
+                        items={[
+                            {
+                                q: "Why should I join Edere?",
+                                a: "Reach 200M+ Americans with dietary restrictions who spend $50B+ annually at restaurants. Connect with loyal, high-spending customers actively searching for safe options.",
+                            },
+                            {
+                                q: "How will Edere help my restaurant?",
+                                a: "Reach new customers, reduce staff time on allergen questions, increase loyalty. 92% of diners with restrictions return to accommodating restaurants.",
+                            },
+                            {
+                                q: "Will this replace my allergen menu?",
+                                a: "Edere complements existing resources. Many restaurants link to their Edere-powered menu or integrate our API for a seamless menu-filtering functionality on your website.",
+                            },
+                            {
+                                q: "Can Edere integrate with my POS?",
+                                a: "More to come as we'd look to partner and integrate with major POS systems. Contact us about direct integration.",
                             },
                         ]}
                     />
@@ -173,7 +287,7 @@ export default function FAQPage() {
                             Still have questions?
                         </h2>
                         <p className="text-white/90 mb-8">
-                            Reach out anytime—we’re happy to help.
+                            Reach out anytime—we're happy to help.
                         </p>
                         <a
                             href="mailto:hello@edere.life"

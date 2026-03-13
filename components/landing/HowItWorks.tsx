@@ -80,7 +80,7 @@ export default function HowItWorks() {
 
             {/* DESKTOP CONTENT (lg+) — 100% ORIGINAL */}
             <div className="hidden lg:flex flex-row w-full h-full relative">
-              <div className="absolute top-0 right-0 h-full w-full md:w-3/5 z-0 pointer-events-none">
+              <div className="absolute top-0 -right-6 h-full w-full md:w-3/5 z-0 pointer-events-none">
                 <Image
                   src="/how1.svg"
                   alt="Background"
@@ -110,7 +110,7 @@ export default function HowItWorks() {
                 </div>
               </div>
               <div className="relative z-10 md:w-1/2 flex justify-center md:justify-end items-end h-[400px] md:h-auto mr-12 self-end">
-                <div className="relative w-[300px] h-[450px] md:h-[500px] md:translate-y-10">
+                <div className="relative w-[300px] h-[450px] md:h-[550px] md:translate-y-10">
                   <Image
                     src="/phone.svg"
                     alt="App Screenshot"
@@ -168,7 +168,7 @@ export default function HowItWorks() {
 
             {/* DESKTOP CONTENT (lg+) — 100% ORIGINAL */}
             <div className="hidden lg:flex flex-row w-full h-full relative">
-              <div className="absolute top-0 right-0 w-full h-full z-0 pointer-events-none">
+              <div className="absolute top-0 right-28 w-full h-full z-0 pointer-events-none">
                 <Image
                   src="/how2.svg"
                   alt="Background shape"
@@ -205,7 +205,7 @@ export default function HowItWorks() {
                 </div>
               </div>
               <div className="absolute right-0 bottom-0 z-10 md:w-1/2 flex justify-center md:justify-end items-end h-[400px] md:h-auto mr-12 self-end">
-                <div className="relative w-[300px] h-[450px] md:h-[500px] md:translate-y-10">
+                <div className="relative w-[300px] h-[450px] md:h-[550px] md:translate-y-10">
                   <Image
                     src="/phone.svg"
                     alt="App Screenshot"
@@ -302,7 +302,7 @@ export default function HowItWorks() {
                 </div>
               </div>
               <div className="relative z-10 md:w-1/2 flex justify-center md:justify-end items-end h-[400px] md:h-auto mr-12 self-end">
-                <div className="relative w-[300px] h-[450px] md:h-[500px] md:translate-y-10">
+                <div className="relative w-[300px] h-[450px] md:h-[550px] md:translate-y-10">
                   <Image
                     src="/phone.svg"
                     alt="App Screenshot"

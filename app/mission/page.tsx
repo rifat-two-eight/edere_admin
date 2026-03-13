@@ -25,18 +25,7 @@ export default function OurMissionPage() {
                     <section className="bg-white/80 backdrop-blur rounded-3xl p-8 md:p-12 shadow-sm mb-20">
                         <div className="space-y-6 leading-relaxed text-[17px]">
                             <p>
-                                At age 30, I developed six additional food allergies on top of
-                                the one I'd had since childhood. Suddenly, dining out in New
-                                York—once my favorite pastime—became an anxiety-filled research
-                                project.
-                            </p>
-
-                            <p>
-                                Not knowing who could accommodate me, how many dishes I could
-                                have, or what modifications were possible without stripping the
-                                flavor away. Every meal meant phone calls, uncertainty, and too
-                                often, watching friends enjoy elaborate dishes while I picked
-                                at a plain salad.
+                                At age 30, I developed six additional food allergies on top of the one I'd had since childhood. Suddenly, dining out in New York—once my favorite pastime—became an anxiety-filled research project. Not knowing who could accommodate me, how many dishes I could have, and what modifications could they make without stripping the flavor away. Every meal meant phone calls, uncertainty, and too often, watching friends enjoy elaborate dishes while I picked at a plain salad.
                             </p>
 
                             <p>
@@ -44,17 +33,11 @@ export default function OurMissionPage() {
                                 <span className="font-semibold text-zinc-900">
                                     200 million Americans
                                 </span>{" "}
-                                have allergies, dietary restrictions, or preferences.
+                                have allergies, dietary restrictions or preferences. We're all doing the same anxious research, making the same exhausting phone calls, missing the same social connections. So I created Edere.
                             </p>
 
-                            <p>
-                                We're all doing the same anxious research, making the same
-                                exhausting phone calls, and missing the same social
-                                connections.
-                            </p>
-
-                            <p className="font-semibold text-[#055E2C] text-lg">
-                                So I created Edere.
+                            <p className="font-semibold">
+                                - Amy, Founder + CEO
                             </p>
                         </div>
                     </section>
@@ -65,34 +48,39 @@ export default function OurMissionPage() {
                             What We Do
                         </h2>
 
-                        <div className="grid md:grid-cols-2 gap-8">
-                            <div className="bg-white rounded-2xl p-8 shadow-sm">
+                        <div className="grid md:grid-cols-2 gap-8 items-stretch">
+                            <div className="bg-white rounded-2xl p-8 shadow-sm flex flex-col justify-between">
                                 <p className="leading-relaxed mb-4">
                                     Edere transforms dining from anxiety to joy for everyone with
-                                    dietary restrictions. Our platform combines AI with chef
-                                    verification to show exactly what you can eat—at the dish
-                                    level—before you arrive.
+                                    dietary restrictions. Our platform uses AI combined with chef
+                                    verification to show exactly what you can eat at each restaurant—at
+                                    the dish level, before you arrive.
                                 </p>
 
                                 <p className="leading-relaxed">
-                                    We're building a world where date nights feel exciting again,
-                                    family dinners go beyond the same three restaurants, and
+                                    We're creating a world where date nights feel exciting again,
+                                    family dinners expand beyond the same three restaurants, and
                                     dining out brings joy instead of isolation.
                                 </p>
                             </div>
 
-                            <div className="bg-gradient-to-br from-[#055E2C]/10 to-[#055E2C]/5 rounded-2xl p-8">
-                                <div className="space-y-4">
-                                    <div>
+                            <div className="bg-gradient-to-br from-[#055E2C]/10 to-[#055E2C]/5 rounded-2xl p-8 flex flex-col justify-center gap-6">
+                                <div className="flex items-start gap-3">
+                                    <span className="mt-1 w-3 h-3 rounded-full bg-green-600 shrink-0"></span>
+                                    <p>
                                         <span className="font-semibold text-green-700">Green</span>{" "}
                                         means completely safe.
-                                    </div>
-                                    <div>
-                                        <span className="font-semibold text-orange-600">
-                                            Copper Orange
-                                        </span>{" "}
-                                        means modifiable with clear recommendations.
-                                    </div>
+                                    </p>
+                                </div>
+
+                                <div className="w-full h-px bg-[#055E2C]/10"></div>
+
+                                <div className="flex items-start gap-3">
+                                    <span className="mt-1 w-3 h-3 rounded-full bg-orange-500 shrink-0"></span>
+                                    <p>
+                                        <span className="font-semibold text-orange-600">Copper orange</span>{" "}
+                                        means modifiable with specific recommendations.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -109,17 +97,17 @@ export default function OurMissionPage() {
                                 {
                                     title: "Safety First",
                                     desc:
-                                        "Menus are chef-verified, but we always encourage communication with servers about allergies and dietary needs.",
+                                        "While menus are chef-verified (indicated by the checkmark) always communicate with their server about allergies and other dietary needs..",
                                 },
                                 {
                                     title: "Empowerment Through Information",
                                     desc:
-                                        "Clear, reliable information removes anxiety and enables confident dining decisions.",
+                                        "Clear information eliminates anxiety and enables confident decisions.",
                                 },
                                 {
                                     title: "Inclusion at Every Table",
                                     desc:
-                                        "Everyone deserves to fully participate in dining experiences—not just get by.",
+                                        "Everyone deserves to participate fully in dining experiences, not just survive them.",
                                 },
                             ].map((item) => (
                                 <div
@@ -145,7 +133,7 @@ export default function OurMissionPage() {
 
                         <p className="max-w-2xl mx-auto text-white/90 mb-8">
                             Whether you're a diner searching for safe options or a restaurant
-                            ready to serve this underserved community—join the Edere movement.
+                            ready to serve this underserved community, join the Edere movement.
                         </p>
 
                         <p className="font-medium mb-10">
@@ -160,13 +148,15 @@ export default function OurMissionPage() {
                                 Download the App
                             </Link>
 
-                            <Link
-                                href="#restaurants"
-                                className="px-8 py-3 border border-white/40 rounded-full font-semibold hover:bg-white/10 transition"
-                            >
-                                For Restaurant Owners
-                            </Link>
                         </div>
+
+                        <p className="mt-8 text-white/80">
+                            Ready to discover safe dining options near you? Download the Edere app and start exploring.
+                        </p>
+
+                        <p className="mt-4 text-white/80">
+                            Restaurant owner? Learn how Edere can connect you with motivated diners searching for exactly what you offer.
+                        </p>
                     </section>
 
                 </div>
