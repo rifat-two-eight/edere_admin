@@ -48,7 +48,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[#F7F3EF]">
+    <nav className="absolute top-0 left-0 w-full z-50 bg-transparent">
       <div className="container mx-auto px-4 h-25 flex items-center justify-between relative">
 
         {/* Mobile Hamburger */}

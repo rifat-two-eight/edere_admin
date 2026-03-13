@@ -27,7 +27,7 @@ function BenefitBadge({ label, icon }: { label: string; icon: "check" | "filter"
 
 export default function Hero() {
   return (
-    <section className="w-full flex flex-col mt-20 items-center pt-12 md:pt-24 overflow-hidden h-auto md:h-auto lg:h-[950px]">
+    <section className="w-full flex flex-col items-center pt-32 md:pt-48 overflow-hidden h-auto md:h-auto lg:h-[1100px]">
       {/* Text + Buttons */}
       <div className="container mx-auto px-4 text-center">
         <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6 tracking-tight text-black" style={{ fontFamily: 'athletics' }}>
@@ -45,10 +45,10 @@ export default function Hero() {
           restrictions &amp; preferences... all before you step through the
           doors.
         </p>
-        <button className="px-8 py-3 mr-4 bg-[#055E2C] dm-sans text-white rounded-full text-md font-semibold hover:opacity-90 transition-opacity">
+        <button className="px-6 py-3 mr-4 bg-[#055E2C] dm-sans text-white rounded-full text-md font-semibold hover:opacity-90 transition-opacity">
           Download App
         </button>
-        <button className="px-8 py-3 bg-[#2D2A26] dm-sans text-white rounded-full text-md font-semibold hover:opacity-90 transition-opacity">
+        <button className="px-6 py-3 bg-[#2D2A26] dm-sans text-white rounded-full text-md font-semibold hover:opacity-90 transition-opacity">
           Join Us
         </button>
       </div>
@@ -110,7 +110,7 @@ export default function Hero() {
           </div>
 
           {/* Personalized Filtering - middle right */}
-          <div className="absolute top-1/3 -right-16 transform rotate-[2deg]">
+          <div className="absolute top-1/3 -right-16 transform rotate-2">
             <BenefitBadge label="Personalized Filtering" icon="filter" />
           </div>
 
@@ -138,71 +138,79 @@ export default function Hero() {
       </div>
 
       {/* ── DESKTOP layout (lg+) — your original code, untouched ── */}
-      <div className="hidden lg:flex relative w-full items-end justify-between mt-16">
+      <div className="hidden lg:flex justify-between items-center w-full mt-auto relative">
 
         {/* Far Left image - hero1 */}
-        <div className="flex-shrink-0 overflow-hidden mb-36" style={{ width: 191, height: 220 }}>
-          <Image src="/hero1.png" alt="Food 1" width={191} height={220} className="w-full h-full" />
-        </div>
+        <Image
+          src="/hero1.png"
+          alt="Food 1"
+          width={121}
+          height={200}
+          className="w-[120px] h-[200px]"
+        />
 
         {/* Second Left image - hero2 */}
-        <div className="flex-shrink-0 overflow-hidden mb-16" style={{ width: 360, height: 380 }}>
-          <Image src="/hero2.png" alt="Food 2" width={360} height={380} className="w-full h-full" />
-        </div>
+        <Image
+          src="/hero2.png"
+          alt="Food 2"
+          width={300}
+          height={350}
+          className="w-[300px] h-[350px]"
+        />
 
         {/* Phone - Center */}
-        <div className="relative flex-shrink-0 overflow-hidden" style={{ width: 398, height: 500 }}>
+        <div className="relative shrink-0 overflow-hidden" style={{ width: 398, height: 500 }}>
           <Image
             src="/herophone.svg"
             alt="App Phone"
             width={398}
             height={746}
-            className="object-contain object-top w-full"
-            style={{ height: 746 }}
+            className=" w-[400px] h-[746px]"
           />
         </div>
 
         {/* Second Right image - hero3 */}
-        <div className="flex-shrink-0 overflow-hidden rounded-2xl mb-16" style={{ width: 360, height: 380 }}>
-          <Image src="/hero3.png" alt="Food 3" width={360} height={380} className="w-full h-full" />
-        </div>
+        <Image
+          src="/hero3.png"
+          alt="Food 3"
+          width={300}
+          height={350}
+          className="w-[300px] h-[350px]"
+        />
 
         {/* Far Right image - hero4 */}
-        <div className="flex-shrink-0 overflow-hidden mb-36" style={{ width: 191, height: 220 }}>
-          <Image src="/hero4.png" alt="Food 4" width={191} height={220} className="w-full h-full" />
+        <Image
+          src="/hero4.png"
+          alt="Food 4"
+          width={191}
+          height={220}
+          className="w-[130px]"
+        />
+
+        {/* Desktop Badges */}
+
+        {/* Personalized Filtering */}
+        <div className="absolute top-[15%] right-[29%] bg-white rounded-full p-2 flex items-center gap-2 shadow-xl z-50">
+          <Image src="/personalized.svg" alt="Personalized Filtering" width={40} height={40} className="w-7 h-7 bg-[#055E2C] p-1 rounded-full" />
+          <span className="text-[#2D2A26] text-sm font-semibold dm-sans whitespace-nowrap">Personalized Filtering</span>
         </div>
 
-        {/* Chef Verified badge */}
-        <div className="absolute bottom-52 left-175 bg-white rounded-full px-3 py-1.5 flex items-center gap-2 shadow-md whitespace-nowrap z-50">
-          <span className="bg-[#055E2C] rounded-full p-0.5">
-            <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-            </svg>
-          </span>
-          <span className="text-xs font-semibold text-gray-800 dm-sans">Chef Verified</span>
+
+        {/* Chef Verified */}
+        <div className="absolute top-[50%] left-[30%] bg-white rounded-full p-2 flex items-center gap-2 shadow-xl z-50">
+          <Image src="/verified.svg" alt="Chef Verified" width={20} height={20} className="w-7 h-7 p-1 bg-[#055E2C] rounded-full" />
+          <span className="text-[#2D2A26] text-sm font-semibold dm-sans whitespace-nowrap">Chef Verified</span>
         </div>
 
-        {/* Personalized Filtering badge */}
-        <div className="absolute top-16 right-170 bg-white rounded-full px-3 py-1.5 flex items-center gap-2 shadow-md whitespace-nowrap z-50">
-          <span className="bg-[#055E2C] rounded-full p-1">
-            <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-.293.707L13 13.414V19a1 1 0 01-.553.894l-4 2A1 1 0 017 21v-7.586L3.293 6.707A1 1 0 013 6V4z" />
-            </svg>
-          </span>
-          <span className="text-xs font-semibold text-gray-800 dm-sans">Personalized Filtering</span>
-        </div>
 
-        {/* Dine Assured badge */}
-        <div className="absolute bottom-30 left-1/2 translate-x-24 bg-white rounded-full px-3 py-1.5 flex items-center gap-2 shadow-md whitespace-nowrap z-50">
-          <span className="bg-[#055E2C] rounded-full p-1">
-            <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-            </svg>
-          </span>
-          <span className="text-xs font-semibold text-gray-800 dm-sans">Dine Assured</span>
+
+        {/* Dine Assured */}
+        <div className="absolute bottom-[10%] left-[57%] bg-white rounded-full p-2 flex items-center gap-2 shadow-xl z-50">
+          <Image src="/dine.svg" alt="Dine Assured" width={20} height={20} className="w-7 h-7 p-1 bg-[#055E2C] rounded-full" />
+          <span className="text-[#2D2A26] text-sm font-semibold dm-sans whitespace-nowrap">Dine Assured</span>
         </div>
 
       </div>
-    </section>
+    </section >
   );
 }

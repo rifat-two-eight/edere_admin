@@ -21,6 +21,7 @@ const items = [
     image: "/restro.jpg",
     icon: "/Users.svg",
     iconBg: "bg-[#BD6E00]",
+    imageClassName: "scale-160 -translate-y-27",
   },
   {
     id: 3,
@@ -61,7 +62,7 @@ export default function EdereFor() {
                   src={item.image}
                   alt="Background"
                   fill
-                  className="object-cover"
+                  className={`object-cover ${item.imageClassName || ""}`}
                 />
                 {/* Dark Overlay - Visible when active */}
                 <div
@@ -153,7 +154,7 @@ function Card({
           src={item.image}
           alt="Background"
           fill
-          className="object-cover transition-transform duration-700"
+          className={`object-cover transition-transform duration-700 ${item.imageClassName || ""}`}
         />
         {/* Dark Overlay - Visible when active */}
         <div
