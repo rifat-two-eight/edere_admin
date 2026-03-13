@@ -67,7 +67,7 @@ export default function Navbar() {
             <button
               key={link.href}
               onClick={() => handleScroll(link.href)}
-              className={`transition-colors font-semibold cursor-pointer hover:opacity-70 dm-sans ${active === link.href ? "text-[#055E2C] font-semibold" : "text-black"
+              className={`transition-colors font-semibold cursor-pointer hover:text-[#055E2C] dm-sans ${active === link.href ? "text-[#055E2C] font-semibold" : "text-black"
                 }`}
             >
               {link.label}
