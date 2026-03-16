@@ -154,7 +154,7 @@ export default function OurMissionPage() {
                             Ready to discover safe dining options near you? Download the Edere app and start exploring.
                         </p>
 
-                        <p className="mt-4 text-white/80">
+                        <p className="mt-4 text-white/80 italic">
                             Restaurant owner? Learn how Edere can connect you with motivated diners searching for exactly what you offer.
                         </p>
                     </section>

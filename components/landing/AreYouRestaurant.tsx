@@ -37,7 +37,7 @@ export default function AreYouRestaurant() {
             <span className="text-[#055E2C] font-bold">chef-verified</span> on
             Edere!
           </h3>
-          <a href="mailto:hello@edere.com">
+          <a href="mailto:hello@edere.life">
             <button className="px-8 py-3 bg-[#2D2A26] text-white rounded-full font-bold hover:bg-black transition-colors">
               Say hello to us!
             </button>
@@ -72,7 +72,7 @@ export default function AreYouRestaurant() {
                 Let's partner together!
               </p>
 
-              <a href="mailto:hello@edere.com" className="w-fit">
+              <a href="mailto:hello@edere.life" className="w-fit">
                 <button className="px-8 py-3 bg-[#055E2C] text-white rounded-full font-bold hover:bg-[#044c23] transition-colors">
                   Contact us
                 </button>
@@ -134,7 +134,7 @@ export default function AreYouRestaurant() {
                 </p>
 
                 {/* Contact Button */}
-                <a href="mailto:hello@edere.com">
+                <a href="mailto:hello@edere.life">
                   <button className="px-8 py-3 bg-[#055E2C] text-white rounded-full font-bold hover:bg-[#044c23] transition-colors">
                     Contact us
                   </button>

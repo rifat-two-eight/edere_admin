@@ -49,7 +49,7 @@ export default function Footer({
               <ul className="space-y-3 text-[#2D2A26]/80">
                 <li><Link href="/mission" className="hover:text-[#055E2C]">Our Mission</Link></li>
                 <li><Link href="/faq" className="hover:text-[#055E2C]">FAQs</Link></li>
-                <li><Link href="/blog" className="hover:text-[#055E2C]">Blog</Link></li>
+                <li><Link href="https://edere.beehiiv.com/" target="_blank" className="hover:text-[#055E2C]">Blog</Link></li>
                 <li><Link href="/terms" className="hover:text-[#055E2C]">Terms + Conditions</Link></li>
                 <li><Link href="/policy" className="hover:text-[#055E2C]">Privacy Policy</Link></li>
               </ul>
@@ -112,7 +112,7 @@ export default function Footer({
                 <ul className="space-y-4 text-[#2D2A26]/80">
                   <li><Link href="/mission" className="hover:text-[#055E2C]">Our Mission</Link></li>
                   <li><Link href="/faq" className="hover:text-[#055E2C]">FAQs</Link></li>
-                  <li><Link href="/blog" className="hover:text-[#055E2C]">Blog</Link></li>
+                  <li><Link href="https://edere.beehiiv.com/" target="_blank" className="hover:text-[#055E2C]">Blog</Link></li>
                   <li><Link href="/terms" className="hover:text-[#055E2C]">Terms + Conditions</Link></li>
                   <li><Link href="/policy" className="hover:text-[#055E2C]">Privacy Policy</Link></li>
                 </ul>
