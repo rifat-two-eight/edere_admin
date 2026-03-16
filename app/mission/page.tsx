@@ -21,109 +21,107 @@ export default function OurMissionPage() {
                         </p>
                     </section>
 
-                    {/* Story Card */}
-                    <section className="bg-white/80 backdrop-blur rounded-3xl p-8 md:p-12 shadow-sm mb-20">
-                        <div className="space-y-6 leading-relaxed text-[17px]">
-                            <p>
-                                At age 30, I developed six additional food allergies on top of the one I'd had since childhood. Suddenly, dining out in New York—once my favorite pastime—became an anxiety-filled research project. Not knowing who could accommodate me, how many dishes I could have, and what modifications could they make without stripping the flavor away. Every meal meant phone calls, uncertainty, and too often, watching friends enjoy elaborate dishes while I picked at a plain salad.
-                            </p>
-
-                            <p>
-                                I realized I wasn't alone. Over{" "}
-                                <span className="font-semibold text-zinc-900">
-                                    200 million Americans
-                                </span>{" "}
-                                have allergies, dietary restrictions or preferences. We're all doing the same anxious research, making the same exhausting phone calls, missing the same social connections. So I created Edere.
-                            </p>
-
-                            <p className="font-semibold">
-                                - Amy, Founder + CEO
-                            </p>
-                        </div>
-                    </section>
-
-                    {/* What We Do */}
-                    <section className="mb-20">
-                        <h2 className="text-3xl md:text-4xl font-semibold text-zinc-900 mb-8" style={{ fontFamily: 'athletics' }}>
-                            What We Do
-                        </h2>
-
-                        <div className="grid md:grid-cols-2 gap-8 items-stretch">
-                            <div className="bg-white rounded-2xl p-8 shadow-sm flex flex-col justify-between">
-                                <p className="leading-relaxed mb-4">
-                                    Edere transforms dining from anxiety to joy for everyone with
-                                    dietary restrictions. Our platform uses AI combined with chef
-                                    verification to show exactly what you can eat at each restaurant—at
-                                    the dish level, before you arrive.
+                    {/* Main Content Area */}
+                    <div className="bg-white rounded-[32px] p-8 md:p-16 shadow-sm mb-20 space-y-24">
+                        {/* Story */}
+                        <section>
+                            <div className="space-y-6 leading-relaxed text-[17px]">
+                                <p>
+                                    At age 30, I developed six additional food allergies on top of the one I'd had since childhood. Suddenly, dining out in New York—once my favorite pastime—became an anxiety-filled research project. Not knowing who could accommodate me, how many dishes I could have, and what modifications could they make without stripping the flavor away. Every meal meant phone calls, uncertainty, and too often, watching friends enjoy elaborate dishes while I picked at a plain salad.
                                 </p>
 
-                                <p className="leading-relaxed">
-                                    We're creating a world where date nights feel exciting again,
-                                    family dinners expand beyond the same three restaurants, and
-                                    dining out brings joy instead of isolation.
+                                <p>
+                                    I realized I wasn't alone. Over{" "}
+                                    <span className="font-semibold text-zinc-900">
+                                        200 million Americans
+                                    </span>{" "}
+                                    have allergies, dietary restrictions or preferences. We're all doing the same anxious research, making the same exhausting phone calls, missing the same social connections. So I created Edere.
+                                </p>
+
+                                <p className="font-semibold">
+                                    - Amy, Founder + CEO
                                 </p>
                             </div>
+                        </section>
 
-                            <div className="bg-gradient-to-br from-[#055E2C]/10 to-[#055E2C]/5 rounded-2xl p-8 flex flex-col justify-center gap-6">
-                                <div className="flex items-start gap-3">
-                                    <span className="mt-1 w-3 h-3 rounded-full bg-green-600 shrink-0"></span>
-                                    <p>
-                                        <span className="font-semibold text-green-700">Green</span>{" "}
-                                        means completely safe.
+                        {/* What We Do */}
+                        <section>
+                            <h2 className="text-3xl md:text-4xl font-semibold text-zinc-900 mb-8" style={{ fontFamily: 'athletics' }}>
+                                What We Do
+                            </h2>
+
+                            <div className="grid lg:grid-cols-5 gap-12 items-center">
+                                <div className="lg:col-span-3 space-y-6">
+                                    <p className="leading-relaxed text-lg text-zinc-600">
+                                        Edere transforms dining from anxiety to joy for everyone with
+                                        dietary restrictions. Our platform uses AI combined with chef
+                                        verification to show exactly what you can eat at each restaurant—at
+                                        the dish level, before you arrive.
+                                    </p>
+
+                                    <p className="leading-relaxed text-lg text-zinc-600">
+                                        We're creating a world where date nights feel exciting again,
+                                        family dinners expand beyond the same three restaurants, and
+                                        dining out brings joy instead of isolation.
                                     </p>
                                 </div>
 
-                                <div className="w-full h-px bg-[#055E2C]/10"></div>
+                                <div className="lg:col-span-2 space-y-8 lg:border-l lg:border-[#2D2A26]/10 lg:pl-12">
+                                    <div className="flex items-start gap-4">
+                                        <span className="mt-1 w-4 h-4 rounded-full bg-[#055E2C] shrink-0 shadow-sm"></span>
+                                        <p className="text-lg">
+                                            <span className="font-bold text-[#055E2C]">Green</span>{" "}
+                                            means completely safe.
+                                        </p>
+                                    </div>
 
-                                <div className="flex items-start gap-3">
-                                    <span className="mt-1 w-3 h-3 rounded-full bg-orange-500 shrink-0"></span>
-                                    <p>
-                                        <span className="font-semibold text-orange-600">Copper orange</span>{" "}
-                                        means modifiable with specific recommendations.
-                                    </p>
+                                    <div className="flex items-start gap-4">
+                                        <span className="mt-1 w-4 h-4 rounded-full bg-[#D47A46] shrink-0 shadow-sm"></span>
+                                        <p className="text-lg">
+                                            <span className="font-bold text-[#D47A46]">Copper orange</span>{" "}
+                                            means modifiable with specific recommendations.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
+                        </section>
 
-                    {/* Values */}
-                    <section className="mb-24">
-                        <h2 className="text-3xl md:text-4xl font-semibold text-zinc-900 mb-10" style={{ fontFamily: 'athletics' }}>
-                            Our Values
-                        </h2>
+                        {/* Values */}
+                        <section>
+                            <h2 className="text-3xl md:text-4xl font-semibold text-zinc-900 mb-10" style={{ fontFamily: 'athletics' }}>
+                                Our Values
+                            </h2>
 
-                        <div className="grid md:grid-cols-3 gap-6">
-                            {[
-                                {
-                                    title: "Safety First",
-                                    desc:
-                                        "While menus are chef-verified (indicated by the checkmark) always communicate with their server about allergies and other dietary needs..",
-                                },
-                                {
-                                    title: "Empowerment Through Information",
-                                    desc:
-                                        "Clear information eliminates anxiety and enables confident decisions.",
-                                },
-                                {
-                                    title: "Inclusion at Every Table",
-                                    desc:
-                                        "Everyone deserves to participate fully in dining experiences, not just survive them.",
-                                },
-                            ].map((item) => (
-                                <div
-                                    key={item.title}
-                                    className="bg-white rounded-2xl p-6 shadow-sm"
-                                >
-                                    <h3 className="font-semibold text-lg text-zinc-900 mb-3">
-                                        {item.title}
-                                    </h3>
-                                    <p className="text-sm leading-relaxed text-zinc-600">
-                                        {item.desc}
-                                    </p>
-                                </div>
-                            ))}
-                        </div>
-                    </section>
+                            <div className="grid md:grid-cols-3 gap-12">
+                                {[
+                                    {
+                                        title: "Safety First",
+                                        desc:
+                                            "While menus are chef-verified (indicated by the checkmark) always communicate with their server about allergies and other dietary needs..",
+                                    },
+                                    {
+                                        title: "Empowerment Through Information",
+                                        desc:
+                                            "Clear information eliminates anxiety and enables confident decisions.",
+                                    },
+                                    {
+                                        title: "Inclusion at Every Table",
+                                        desc:
+                                            "Everyone deserves to participate fully in dining experiences, not just survive them.",
+                                    },
+                                ].map((item) => (
+                                    <div key={item.title}>
+                                        <h3 className="font-semibold text-xl text-zinc-900 mb-4">
+                                            {item.title}
+                                        </h3>
+                                        <p className="text-base leading-relaxed text-zinc-600">
+                                            {item.desc}
+                                        </p>
+                                    </div>
+                                ))}
+                            </div>
+                        </section>
+                    </div>
 
                     {/* CTA */}
                     <section className="text-center bg-[#055E2C] rounded-3xl px-8 py-14 text-white">

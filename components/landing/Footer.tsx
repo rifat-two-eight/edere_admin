@@ -72,9 +72,9 @@ export default function Footer({
             <p className="text-[#2D2A26] text-sm font-medium leading-relaxed max-w-sm">
               The ultimate restaurant discovery app for food allergies, dietary restrictions & preferences... all before you step through the doors.
             </p>
-            <button className="w-full sm:w-auto px-8 py-3 bg-[#055E2C] text-white rounded-full font-bold hover:bg-[#044c23] transition-colors">
+            <Link href="/#download" className="w-full sm:w-auto px-8 py-3 bg-[#055E2C] text-white rounded-full font-bold hover:bg-[#044c23] transition-colors text-center">
               Download app
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -137,9 +137,9 @@ export default function Footer({
                   The ultimate restaurant discovery app for <br /> food allergies, dietary restrictions & preferences... <br /> all before you step through the doors.
                 </p>
               </div>
-              <button className="px-6 py-3 bg-[#055E2C] text-white rounded-full font-bold hover:bg-[#044c23] transition-colors">
+              <Link href="/#download" className="px-6 py-3 bg-[#055E2C] text-white rounded-full font-bold hover:bg-[#044c23] transition-colors">
                 Download app
-              </button>
+              </Link>
             </div>
           </div>
         </div>

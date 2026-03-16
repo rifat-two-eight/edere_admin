@@ -3,10 +3,13 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [active, setActive] = useState("home");
+  const pathname = usePathname();
+  const router = useRouter();
 
   const navLinks = [
     { href: "about", label: "About" },
@@ -19,6 +22,12 @@ export default function Navbar() {
 
   // Scroll to section smoothly
   const handleScroll = (id: string) => {
+    if (pathname !== "/") {
+      router.push(`/#${id}`);
+      setIsOpen(false);
+      return;
+    }
+
     const element = document.getElementById(id);
     if (element) {
       const top = element.getBoundingClientRect().top + window.scrollY - offset;
@@ -45,7 +54,19 @@ export default function Navbar() {
 
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [pathname]);
+
+  // Handle scroll when arriving on home page with a hash
+  useEffect(() => {
+    const hash = window.location.hash.substring(1);
+    if (pathname === "/" && hash) {
+      // Small delay to ensure the page has rendered
+      const timer = setTimeout(() => {
+        handleScroll(hash);
+      }, 500);
+      return () => clearTimeout(timer);
+    }
+  }, [pathname]);
 
   return (
     <nav className="absolute top-0 left-0 w-full z-50 bg-transparent">
@@ -77,14 +98,9 @@ export default function Navbar() {
 
         {/* Logo */}
         <div className="absolute cursor-pointer left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-          <button
-            onClick={() => handleScroll("home")}
-            className="block"
-          >
-            <Link href="/" className="text-2xl font-bold text-[#055E2C]">
-              <Image src="/logo.png" alt="Edere Logo" width={100} height={40} className="object-contain cursor-pointer" />
-            </Link>
-          </button>
+          <Link href="/#home" onClick={() => pathname === "/" && handleScroll("home")} className="block">
+            <Image src="/logo.png" alt="Edere Logo" width={100} height={40} className="object-contain cursor-pointer" />
+          </Link>
         </div>
 
         {/* Desktop Download */}

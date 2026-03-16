@@ -27,10 +27,26 @@ function BenefitBadge({ label, icon }: { label: string; icon: "check" | "filter"
 }
 
 export default function Hero() {
+  const handleScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = 80; // navbar height
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = element.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <section className="w-full flex flex-col items-center pt-32 md:pt-48 overflow-hidden h-auto md:h-auto lg:h-[1100px]">
       {/* Text + Buttons */}
-      <div className="container mx-auto px-4 text-center">
+      <div className="container mx-auto px-4 text-center relative z-50">
         <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6 tracking-tight text-black" style={{ fontFamily: 'athletics' }}>
           Find restaurants you can <br /> actually eat at{" "}
           <Image
@@ -49,7 +65,10 @@ export default function Hero() {
         <button className="px-6 py-3 mr-4 bg-[#055E2C] dm-sans text-white rounded-full text-md font-semibold hover:opacity-90 transition-opacity">
           Download App
         </button>
-        <button id="signup" className="px-6 py-3 bg-[#2D2A26] dm-sans text-white rounded-full text-md font-semibold hover:opacity-90 transition-opacity">
+        <button 
+          onClick={() => handleScroll('signup')}
+          className="px-6 py-3 bg-[#2D2A26] dm-sans text-white rounded-full text-md font-semibold hover:opacity-90 transition-opacity"
+        >
           Join Us
         </button>
       </div>

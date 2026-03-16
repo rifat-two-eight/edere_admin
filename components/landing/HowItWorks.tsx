@@ -109,8 +109,8 @@ export default function HowItWorks() {
                   </span>
                 </div>
               </div>
-              <div className="relative z-10 md:w-1/2 flex justify-center md:justify-end items-end h-[400px] md:h-auto mr-12 self-end">
-                <div className="relative w-[300px] h-[450px] md:h-[550px] md:translate-y-10">
+              <div className="relative z-10 md:w-1/2 flex justify-center md:justify-end items-end h-[400px] md:h-auto mr-14 self-end">
+                <div className="relative w-[350px] h-[450px] md:h-[550px] md:translate-y-10">
                   <Image
                     src="/phone.svg"
                     alt="App Screenshot"
@@ -204,8 +204,8 @@ export default function HowItWorks() {
                   </span>
                 </div>
               </div>
-              <div className="absolute right-0 bottom-0 z-10 md:w-1/2 flex justify-center md:justify-end items-end h-[400px] md:h-auto mr-12 self-end">
-                <div className="relative w-[300px] h-[450px] md:h-[550px] md:translate-y-10">
+              <div className="absolute right-0 bottom-0 z-10 md:w-1/2 flex justify-center md:justify-end items-end h-[400px] md:h-auto mr-14 self-end">
+                <div className="relative w-[350px] h-[450px] md:h-[550px] md:translate-y-10">
                   <Image
                     src="/phone.svg"
                     alt="App Screenshot"
@@ -301,8 +301,8 @@ export default function HowItWorks() {
                   </span>
                 </div>
               </div>
-              <div className="relative z-10 md:w-1/2 flex justify-center md:justify-end items-end h-[400px] md:h-auto mr-12 self-end">
-                <div className="relative w-[300px] h-[450px] md:h-[550px] md:translate-y-10">
+              <div className="relative z-10 md:w-1/2 flex justify-center md:justify-end items-end h-[400px] md:h-auto mr-14 self-end">
+                <div className="relative w-[350px] h-[450px] md:h-[550px] md:translate-y-10">
                   <Image
                     src="/phone.svg"
                     alt="App Screenshot"
