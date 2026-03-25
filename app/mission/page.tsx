@@ -38,7 +38,7 @@ export default function OurMissionPage() {
                                     have allergies, dietary restrictions or preferences. We're all doing the same anxious research, making the same exhausting phone calls, missing the same social connections. So I created Edere.
                                 </p>
 
-                                <p className="font-semibold">
+                                <p className="text-2xl" style={{ fontFamily: 'var(--font-dancing-script)', fontWeight: 600 }}>
                                     - Amy, Founder + CEO
                                 </p>
                             </div>

@@ -143,7 +143,7 @@ export default function FAQPage() {
                             },
                             {
                                 q: "What do the green and orange indicators mean?",
-                                a: "Green = completely safe (for our dietary profile) as prepared. Orange = can be modified (with specific instructions and recommendations).",
+                                a: "Green = completely safe (for your dietary profile) as prepared. Orange = can be modified (with specific instructions and recommendations).",
                             },
                             {
                                 q: "How do I know which dishes I can modify?",
@@ -161,7 +161,10 @@ export default function FAQPage() {
                             },
                             {
                                 q: "What if a restaurant isn't listed on Edere yet?",
-                                a: "You can request that we add a restaurant through the app. We're constantly expanding our restaurant network and prioritize additions based on user requests. You can also encourage your favorite restaurants to join Edere's platform.",
+                                a: `We're constantly expanding our restaurant network and prioritize additions based
+on user requests -
+                            please email us at hello@edere.life. You can also encourage your favorite restaurants to join Edere's
+platform.`,
                             },
                             {
                                 q: "Can I save my favorite restaurants?",
@@ -182,10 +185,6 @@ export default function FAQPage() {
                                 a: "YES, always. Edere helps you discover restaurants and make informed dining decisions, but you must always inform staff about your allergies and dietary restrictions.",
                             },
                             {
-                                q: "Is my dietary information private?",
-                                a: "Yes. Your profile is completely private and never shared with restaurants or third parties.",
-                            },
-                            {
                                 q: "Can restaurants see who's searching for them?",
                                 a: "No. Restaurants only see aggregate data (e.g., \"150 users viewed your menu\"), never individual users.",
                             },
@@ -198,11 +197,7 @@ export default function FAQPage() {
                         items={[
                             {
                                 q: "How do I add my restaurant to Edere?",
-                                a: "Email hello@edere.life for an invite to your custom restaurant portal. Onboarding takes about 10 minutes.",
-                            },
-                            {
-                                q: "Is there a contract?",
-                                a: "No. Month-to-month service with no long-term commitment.",
+                                a: "Email hello@edere.life for an invite to your custom restaurant portal. Onboarding takes about 15-20 minutes.",
                             },
                             {
                                 q: "How much does Edere cost for restaurants?",
@@ -246,7 +241,7 @@ export default function FAQPage() {
                             },
                             {
                                 q: "How long does setup take?",
-                                a: "About 10 minutes. AI pre-populates most information - you just review and confirm.",
+                                a: "About 15-20 minutes. AI pre-populates most information - you just review and confirm.",
                             },
                             {
                                 q: "What information do I need?",
