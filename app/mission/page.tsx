@@ -92,12 +92,12 @@ export default function OurMissionPage() {
                                 Our Values
                             </h2>
 
-                            <div className="grid md:grid-cols-3 gap-12">
+                            <div className="grid md:grid-cols-3 gap-5">
                                 {[
                                     {
                                         title: "Safety First",
                                         desc:
-                                            "While menus are chef-verified (indicated by the checkmark) always communicate with their server about allergies and other dietary needs..",
+                                            "While menus are chef-verified (indicated by the checkmark) always communicate with your server about allergies and other dietary needs.",
                                     },
                                     {
                                         title: "Empowerment Through Information",
@@ -111,7 +111,7 @@ export default function OurMissionPage() {
                                     },
                                 ].map((item) => (
                                     <div key={item.title}>
-                                        <h3 className="font-semibold text-xl text-zinc-900 mb-4">
+                                        <h3 className="font-semibold text-xl text-zinc-900 h-16">
                                             {item.title}
                                         </h3>
                                         <p className="text-base leading-relaxed text-zinc-600">
