@@ -77,7 +77,7 @@ export default function HowItWorks() {
                   {/* Video inside phone */}
                   <div className="absolute top-[1.6%] left-[2.6%] w-[94.0%] h-[96.8%] overflow-hidden rounded-[1.8rem] z-10">
                     <video
-                      src="/setup.mov"
+                      src="/setup.MOV"
                       autoPlay
                       loop
                       muted
@@ -132,7 +132,7 @@ export default function HowItWorks() {
                   {/* Video inside phone */}
                   <div className="absolute top-[16.0%] left-[4.0%] w-[92.0%] h-[96.8%] overflow-hidden rounded-[3.2rem] z-10">
                     <video
-                      src="/setup.mov"
+                      src="/setup.MOV"
                       autoPlay
                       loop
                       muted
@@ -188,7 +188,7 @@ export default function HowItWorks() {
                   {/* Video inside phone */}
                   <div className="absolute top-[1.6%] left-[2.6%] w-[94.0%] h-[96.8%] overflow-hidden rounded-[1.8rem] z-10">
                     <video
-                      src="/explore.mov"
+                      src="/explore.MOV"
                       autoPlay
                       loop
                       muted
@@ -249,7 +249,7 @@ export default function HowItWorks() {
                   {/* Video inside phone */}
                   <div className="absolute top-[16.0%] left-[4.0%] w-[92.0%] h-[96.8%] overflow-hidden rounded-[3.2rem] z-10">
                     <video
-                      src="/explore.mov"
+                      src="/explore.MOV"
                       autoPlay
                       loop
                       muted
@@ -309,7 +309,7 @@ export default function HowItWorks() {
                   {/* Video inside phone */}
                   <div className="absolute top-[1.6%] left-[2.6%] w-[94.0%] h-[96.8%] overflow-hidden rounded-[1.8rem] z-10">
                     <video
-                      src="/dish.mov"
+                      src="/dish.MOV"
                       autoPlay
                       loop
                       muted
@@ -368,7 +368,7 @@ export default function HowItWorks() {
                   {/* Video inside phone */}
                   <div className="absolute top-[16.0%] left-[4.0%] w-[92.0%] h-[96.8%] overflow-hidden rounded-[3.2rem] z-10">
                     <video
-                      src="/dish.mov"
+                      src="/dish.MOV"
                       autoPlay
                       loop
                       muted
