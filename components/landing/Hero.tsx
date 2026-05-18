@@ -77,27 +77,38 @@ export default function Hero() {
       {/* ── MOBILE layout (< md) ── */}
       <div className="flex md:hidden flex-col items-center mt-12 w-full px-4">
         {/* Phone mockup with overlapping badges */}
-        <div className="relative w-[260px]">
+        <div className="relative w-[260px] aspect-[260/486]">
           <Image
             src="/herophone.svg"
             alt="App Phone"
             width={260}
             height={486}
-            className="object-contain w-full"
+            className="object-contain w-full relative z-0 pointer-events-none"
           />
+          {/* Video inside phone */}
+          <div className="absolute top-[1.6%] left-[2.6%] w-[94.0%] h-[96.8%] overflow-hidden rounded-[2.6rem] z-10">
+            <video
+              src="/Edere_homepage.mov"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            />
+          </div>
 
           {/* Chef Verified badge - top left */}
-          <div className="absolute top-12 -left-6 transform rotate-[-5deg]">
+          <div className="absolute top-12 -left-6 transform rotate-[-5deg] z-20">
             <BenefitBadge label="Chef Verified" icon="check" />
           </div>
 
           {/* Personalized Filtering - middle right */}
-          <div className="absolute top-1/2 -right-8 -translate-y-1/2 transform rotate-[3deg]">
+          <div className="absolute top-1/2 -right-8 -translate-y-1/2 transform rotate-[3deg] z-20">
             <BenefitBadge label="Personalized Filtering" icon="filter" />
           </div>
 
           {/* Dine Assured - bottom left */}
-          <div className="absolute bottom-12 -left-4 transform rotate-[2deg]">
+          <div className="absolute bottom-12 -left-4 transform rotate-[2deg] z-20">
             <BenefitBadge label="Dine Assured" icon="shield" />
           </div>
         </div>
@@ -116,27 +127,38 @@ export default function Hero() {
       {/* ── TABLET layout (md to lg) ── */}
       <div className="hidden md:flex lg:hidden flex-col items-center mt-16 w-full px-6">
         {/* Phone with more space for badges */}
-        <div className="relative w-[320px]">
+        <div className="relative w-[320px] aspect-[320/600]">
           <Image
             src="/herophone.svg"
             alt="App Phone"
             width={320}
             height={600}
-            className="object-contain w-full"
+            className="object-contain w-full relative z-0 pointer-events-none"
           />
+          {/* Video inside phone */}
+          <div className="absolute top-[2.0%] left-[6.5%] w-[87.0%] h-[95.8%] overflow-hidden rounded-[1.6rem] z-10">
+            <video
+              src="/Edere_homepage.mov"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            />
+          </div>
 
           {/* Chef Verified - top left */}
-          <div className="absolute top-16 -left-12 transform rotate-[-4deg]">
+          <div className="absolute top-16 -left-12 transform rotate-[-4deg] z-20">
             <BenefitBadge label="Chef Verified" icon="check" />
           </div>
 
           {/* Personalized Filtering - middle right */}
-          <div className="absolute top-1/3 -right-16 transform rotate-2">
+          <div className="absolute top-1/3 -right-16 transform rotate-2 z-20">
             <BenefitBadge label="Personalized Filtering" icon="filter" />
           </div>
 
           {/* Dine Assured - bottom left */}
-          <div className="absolute bottom-20 -left-10 transform rotate-[3deg]">
+          <div className="absolute bottom-20 -left-10 transform rotate-[3deg] z-20">
             <BenefitBadge label="Dine Assured" icon="shield" />
           </div>
         </div>
@@ -181,13 +203,26 @@ export default function Hero() {
 
         {/* Phone - Center */}
         <div className="relative shrink-0 overflow-hidden" style={{ width: 398, height: 500 }}>
-          <Image
-            src="/herophone.svg"
-            alt="App Phone"
-            width={398}
-            height={746}
-            className=" w-[400px] h-[746px]"
-          />
+          <div className="relative w-[398px] h-[746px]">
+            <Image
+              src="/herophone.svg"
+              alt="App Phone"
+              width={398}
+              height={746}
+              className="w-full h-full object-contain relative z-0 pointer-events-none"
+            />
+            {/* Video inside phone */}
+            <div className="absolute top-[1.42%] left-[8.0%] w-[84.0%] h-[95.8%] overflow-hidden rounded-[3.5rem] z-10">
+              <video
+                src="/Edere_homepage.mov"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Second Right image - hero3 */}

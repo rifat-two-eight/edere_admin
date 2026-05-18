@@ -73,7 +73,18 @@ export default function HowItWorks() {
               </div>
               <div className="relative z-10 flex justify-center items-end h-[250px] sm:h-[300px] md:h-[350px] mt-auto">
                 <div className="relative w-[220px] sm:w-[260px] h-full translate-y-6 sm:translate-y-10">
-                  <Image src="/phone.svg" alt="App Screenshot" fill className="object-contain object-bottom" />
+                  <Image src="/phone.svg" alt="App Screenshot" fill className="object-contain object-bottom relative z-0 pointer-events-none" />
+                  {/* Video inside phone */}
+                  <div className="absolute top-[1.6%] left-[2.6%] w-[94.0%] h-[96.8%] overflow-hidden rounded-[1.8rem] z-10">
+                    <video
+                      src="/setup.mov"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -115,8 +126,19 @@ export default function HowItWorks() {
                     src="/phone.svg"
                     alt="App Screenshot"
                     fill
-                    className="object-bottom"
+                    className="object-bottom relative z-0 pointer-events-none"
                   />
+                  {/* Video inside phone */}
+                  <div className="absolute top-[16.0%] left-[4.0%] w-[92.0%] h-[96.8%] overflow-hidden rounded-[3.2rem] z-10">
+                    <video
+                      src="/setup.mov"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -161,7 +183,18 @@ export default function HowItWorks() {
               </div>
               <div className="relative z-10 flex justify-center items-end h-[250px] sm:h-[300px] md:h-[350px] mt-auto">
                 <div className="relative w-[220px] sm:w-[260px] h-full translate-y-6 sm:translate-y-10">
-                  <Image src="/phone.svg" alt="App Screenshot" fill className="object-contain object-bottom" />
+                  <Image src="/phone.svg" alt="App Screenshot" fill className="object-contain object-bottom relative z-0 pointer-events-none" />
+                  {/* Video inside phone */}
+                  <div className="absolute top-[1.6%] left-[2.6%] w-[94.0%] h-[96.8%] overflow-hidden rounded-[1.8rem] z-10">
+                    <video
+                      src="/explore.mov"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -210,8 +243,19 @@ export default function HowItWorks() {
                     src="/phone.svg"
                     alt="App Screenshot"
                     fill
-                    className="object-bottom"
+                    className="object-bottom relative z-0 pointer-events-none"
                   />
+                  {/* Video inside phone */}
+                  <div className="absolute top-[16.0%] left-[4.0%] w-[92.0%] h-[96.8%] overflow-hidden rounded-[3.2rem] z-10">
+                    <video
+                      src="/explore.mov"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -260,7 +304,18 @@ export default function HowItWorks() {
               </div>
               <div className="relative z-10 flex justify-center items-end h-[250px] sm:h-[300px] md:h-[350px] mt-auto">
                 <div className="relative w-[220px] sm:w-[260px] h-full translate-y-6 sm:translate-y-10">
-                  <Image src="/phone.svg" alt="App Screenshot" fill className="object-contain object-bottom" />
+                  <Image src="/phone.svg" alt="App Screenshot" fill className="object-contain object-bottom relative z-0 pointer-events-none" />
+                  {/* Video inside phone */}
+                  <div className="absolute top-[1.6%] left-[2.6%] w-[94.0%] h-[96.8%] overflow-hidden rounded-[1.8rem] z-10">
+                    <video
+                      src="/dish.mov"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -307,8 +362,19 @@ export default function HowItWorks() {
                     src="/phone.svg"
                     alt="App Screenshot"
                     fill
-                    className="object-bottom"
+                    className="object-bottom relative z-0 pointer-events-none"
                   />
+                  {/* Video inside phone */}
+                  <div className="absolute top-[16.0%] left-[4.0%] w-[92.0%] h-[96.8%] overflow-hidden rounded-[3.2rem] z-10">
+                    <video
+                      src="/dish.mov"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             </div>

@@ -17,6 +17,9 @@ const dancingScript = Dancing_Script({
 export const metadata: Metadata = {
   title: "Edere",
   description: "Safe dining for food allergies and dietary needs",
+  icons: {
+    icon: "/ederefav.png",
+  },
 };
 
 export default function RootLayout({

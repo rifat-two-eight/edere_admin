@@ -38,7 +38,7 @@ export default function OurMissionPage() {
                                     have allergies, dietary restrictions or preferences. We're all doing the same anxious research, making the same exhausting phone calls, missing the same social connections. So I created Edere.
                                 </p>
 
-                                <p className="text-2xl font-semibold">
+                                <p className="text-xl font-semibold">
                                     - Amy, Founder + CEO
                                 </p>
                             </div>
@@ -54,8 +54,8 @@ export default function OurMissionPage() {
                                 <div className="lg:col-span-3 space-y-6">
                                     <p className="leading-relaxed text-lg text-zinc-600">
                                         Edere transforms dining from anxiety to joy for everyone with
-                                        dietary restrictions. Our platform uses AI combined with chef
-                                        verification to show exactly what you can eat at each restaurant—at
+                                        dietary restrictions. Our platform uses our Edere AI intelligence combined with chef
+                                        verification to show exactly what you can eat at each restaurant — at
                                         the dish level, before you arrive.
                                     </p>
 
@@ -110,7 +110,7 @@ export default function OurMissionPage() {
                                             "Everyone deserves to participate fully in dining experiences, not just survive them.",
                                     },
                                 ].map((item) => (
-                                    <div 
+                                    <div
                                         key={item.title}
                                         className="bg-zinc-50 border border-zinc-100 rounded-2xl p-2 text-center flex flex-col items-center"
                                     >
@@ -156,7 +156,7 @@ export default function OurMissionPage() {
                         </p>
 
                         <p className="mt-4 text-white/80 italic">
-                            Restaurant owner? Learn how Edere can connect you with motivated diners searching for exactly what you offer.
+                            Restaurant owner? Learn how Edere can connect you with motivated diners searching for exactly what you offer. <br />Email <a className="underline" href="mailto:hello@edere.life">hello@edere.life</a>
                         </p>
                     </section>
 
