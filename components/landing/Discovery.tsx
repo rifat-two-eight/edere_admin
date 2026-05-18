@@ -9,7 +9,7 @@ export default function Discovery() {
           <div className="w-full lg:w-1/2 text-center lg:text-left">
             <h2 className="text-3xl sm:text-4xl md:text-[64px] font-extrabold mb-6 text-gray-900" style={{ fontFamily: 'athletics' }}>
               Restaurant
-              <br className="hidden lg:block" />
+              <br className="block" />
               discovery{" "}
               <span className="text-[#055E2C]">simplified</span>
             </h2>

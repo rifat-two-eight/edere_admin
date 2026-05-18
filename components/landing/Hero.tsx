@@ -202,7 +202,7 @@ export default function Hero() {
         />
 
         {/* Phone - Center */}
-        <div className="relative shrink-0 overflow-hidden" style={{ width: 398, height: 500 }}>
+        <div className="relative shrink-0 overflow-hidden transform -translate-y-12 mt-20" style={{ width: 398, height: 700 }}>
           <div className="relative w-[398px] h-[746px]">
             <Image
               src="/herophone.svg"
@@ -261,7 +261,7 @@ export default function Hero() {
 
 
         {/* Dine Assured */}
-        <div className="absolute bottom-[10%] left-[57%] bg-white rounded-full p-2 flex items-center gap-2 shadow-xl z-50">
+        <div className="absolute bottom-[25%] left-[57%] bg-white rounded-full p-2 flex items-center gap-2 shadow-xl z-50">
           <Image src="/dine.svg" alt="Dine Assured" width={20} height={20} className="w-7 h-7 p-1 bg-[#055E2C] rounded-full" />
           <span className="text-[#2D2A26] text-sm font-semibold dm-sans whitespace-nowrap">Dine Assured</span>
         </div>
