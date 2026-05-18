@@ -72,7 +72,7 @@ export default function HowItWorks() {
                 </div>
               </div>
               <div className="relative z-10 flex justify-center items-end h-[250px] sm:h-[300px] md:h-[350px] mt-auto">
-                <div className="relative w-[220px] sm:w-[260px] h-full translate-y-6 sm:translate-y-10">
+                <div className="relative w-[220px] sm:w-[260px] h-full translate-y-2 sm:translate-y-4">
                   <Image src="/phone.svg" alt="App Screenshot" fill className="object-contain object-bottom relative z-0 pointer-events-none" />
                   {/* Video inside phone */}
                   <div className="absolute top-[1.6%] left-[2.6%] w-[94.0%] h-[96.8%] overflow-hidden rounded-[1.8rem] z-10">
@@ -122,7 +122,7 @@ export default function HowItWorks() {
                 </div>
               </div>
               <div className="relative z-10 md:w-1/2 flex justify-center md:justify-end items-end h-[400px] md:h-auto mr-14 self-end">
-                <div className="relative w-[350px] h-[450px] md:h-[550px] md:translate-y-10">
+                <div className="relative w-[350px] h-[450px] md:h-[550px] md:translate-y-0">
                   <Image
                     src="/phone.svg"
                     alt="App Screenshot"
@@ -183,7 +183,7 @@ export default function HowItWorks() {
                 </div>
               </div>
               <div className="relative z-10 flex justify-center items-end h-[250px] sm:h-[300px] md:h-[350px] mt-auto">
-                <div className="relative w-[220px] sm:w-[260px] h-full translate-y-6 sm:translate-y-10">
+                <div className="relative w-[220px] sm:w-[260px] h-full translate-y-2 sm:translate-y-4">
                   <Image src="/phone.svg" alt="App Screenshot" fill className="object-contain object-bottom relative z-0 pointer-events-none" />
                   {/* Video inside phone */}
                   <div className="absolute top-[1.6%] left-[2.6%] w-[94.0%] h-[96.8%] overflow-hidden rounded-[1.8rem] z-10">
@@ -239,7 +239,7 @@ export default function HowItWorks() {
                 </div>
               </div>
               <div className="absolute right-0 bottom-0 z-10 md:w-1/2 flex justify-center md:justify-end items-end h-[400px] md:h-auto mr-14 self-end">
-                <div className="relative w-[350px] h-[450px] md:h-[550px] md:translate-y-10">
+                <div className="relative w-[350px] h-[450px] md:h-[550px] md:translate-y-0">
                   <Image
                     src="/phone.svg"
                     alt="App Screenshot"
@@ -304,7 +304,7 @@ export default function HowItWorks() {
                 </div>
               </div>
               <div className="relative z-10 flex justify-center items-end h-[250px] sm:h-[300px] md:h-[350px] mt-auto">
-                <div className="relative w-[220px] sm:w-[260px] h-full translate-y-6 sm:translate-y-10">
+                <div className="relative w-[220px] sm:w-[260px] h-full translate-y-2 sm:translate-y-4">
                   <Image src="/phone.svg" alt="App Screenshot" fill className="object-contain object-bottom relative z-0 pointer-events-none" />
                   {/* Video inside phone */}
                   <div className="absolute top-[1.6%] left-[2.6%] w-[94.0%] h-[96.8%] overflow-hidden rounded-[1.8rem] z-10">
@@ -358,7 +358,7 @@ export default function HowItWorks() {
                 </div>
               </div>
               <div className="relative z-10 md:w-1/2 flex justify-center md:justify-end items-end h-[400px] md:h-auto mr-14 self-end">
-                <div className="relative w-[350px] h-[450px] md:h-[550px] md:translate-y-10">
+                <div className="relative w-[350px] h-[450px] md:h-[550px] md:translate-y-0">
                   <Image
                     src="/phone.svg"
                     alt="App Screenshot"

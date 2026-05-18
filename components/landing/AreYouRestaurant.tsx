@@ -21,8 +21,8 @@ export default function AreYouRestaurant() {
             desc="of diners with dietary restrictions return to restaurants that accommodate their needs"
           />
           <StatCard
-            value="37%"
-            desc="of diners with dietary restrictions report having few safe dining options"
+            value="26%"
+            desc="higher average check from diners with dietary needs"
           />
           <StatCard
             value="$50B+"

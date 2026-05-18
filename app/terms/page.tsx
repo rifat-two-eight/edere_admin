@@ -629,7 +629,7 @@ export default function TermsAndConditionsPage() {
                         <div className="leading-relaxed text-zinc-700 space-y-2">
                             <p>For questions about these Terms, contact us at:</p>
                             <p>📧 Email: <a href="mailto:support@edere.life" className="text-[#055E2C] underline underline-offset-2">support@edere.life</a></p>
-                            <p>📍 Address: 145 E 27th St, 7B, New York NY 10016</p>
+                            {/* <p>📍 Address: 145 E 27th St, 7B, New York NY 10016</p> */}
                         </div>
                     </section>
 
