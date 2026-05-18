@@ -115,6 +115,7 @@ export default function HowItWorks() {
                   <div className="w-6 h-6 rounded-full bg-[#055E2C] flex items-center justify-center">
                     <Image src="/bulb.svg" alt="Bulb" width={16} height={16} />
                   </div>
+                  {/* spanning */}
                   <span className="text-sm text-gray-700 font-medium dm-sans whitespace-nowrap">
                     Always inform staff about your allergies! We help you discover your options.
                   </span>
