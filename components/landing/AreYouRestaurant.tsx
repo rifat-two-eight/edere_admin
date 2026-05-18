@@ -21,12 +21,12 @@ export default function AreYouRestaurant() {
             desc="of diners with dietary restrictions return to restaurants that accommodate their needs"
           />
           <StatCard
-            value="26%"
-            desc="higher average check from diners with dietary needs"
+            value="24%"
+            desc="higher profit margins for restaurants that offer allergy-friendly dining"
           />
           <StatCard
-            value="$50B+"
-            desc="in untapped annual restaurant spending from this market"
+            value="$19B"
+            desc="in restaurant spending from food allergy diners specifically"
           />
         </div>
         <hr className="mb-8 border-gray-200 -mt-8" />
