@@ -51,9 +51,11 @@ export default function Discovery() {
               </li>
             </ul>
 
-            <button className="bg-[#055E2C] text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700 transition-colors dm-sans">
-              Download app
-            </button>
+            <a href="https://forms.gle/koKkMqfVpKrB26gL7" target="_blank">
+              <button className="bg-[#055E2C] text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700 transition-colors dm-sans">
+                Join the Waitlist
+              </button>
+            </a>
           </div>
 
           {/* Right Images Collage - 50% width */}

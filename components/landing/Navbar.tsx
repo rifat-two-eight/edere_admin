@@ -105,12 +105,9 @@ export default function Navbar() {
 
         {/* Desktop Download */}
         <div className="hidden md:flex items-center gap-4">
-          <button
-            onClick={() => handleScroll("download")}
-            className="px-6 py-3 dm-sans bg-[#055E2C] text-white rounded-full font-medium hover:opacity-90 transition-opacity"
-          >
-            Download app
-          </button>
+          <Link href="https://forms.gle/koKkMqfVpKrB26gL7" target="_blank" className="px-6 py-3 dm-sans bg-[#055E2C] text-white rounded-full font-medium hover:opacity-90 transition-opacity">
+            Join the Waitlist
+          </Link>
         </div>
 
         {/* Mobile Menu */}
@@ -147,12 +144,9 @@ export default function Navbar() {
               </nav>
 
               <div className="mt-auto pb-8">
-                <button
-                  onClick={() => handleScroll("download")}
-                  className="block dm-sans w-full text-center px-6 py-3 bg-[#055E2C] text-white rounded-full font-medium text-lg hover:opacity-90 transition-opacity"
-                >
-                  Download app
-                </button>
+                <Link href="https://forms.gle/koKkMqfVpKrB26gL7" target="_blank" className="block dm-sans w-full text-center px-6 py-3 bg-[#055E2C] text-white rounded-full font-medium text-lg hover:opacity-90 transition-opacity">
+                  Join the Waitlist
+                </Link>
               </div>
             </div>
           </>

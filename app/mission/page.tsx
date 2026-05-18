@@ -38,7 +38,7 @@ export default function OurMissionPage() {
                                     have allergies, dietary restrictions or preferences. We're all doing the same anxious research, making the same exhausting phone calls, missing the same social connections. So I created Edere.
                                 </p>
 
-                                <p className="text-2xl" style={{ fontFamily: 'var(--font-dancing-script)', fontWeight: 600 }}>
+                                <p className="text-2xl font-semibold">
                                     - Amy, Founder + CEO
                                 </p>
                             </div>
@@ -110,8 +110,11 @@ export default function OurMissionPage() {
                                             "Everyone deserves to participate fully in dining experiences, not just survive them.",
                                     },
                                 ].map((item) => (
-                                    <div key={item.title}>
-                                        <h3 className="font-semibold text-xl text-zinc-900 h-16">
+                                    <div 
+                                        key={item.title}
+                                        className="bg-zinc-50 border border-zinc-100 rounded-2xl p-2 text-center flex flex-col items-center"
+                                    >
+                                        <h3 className="font-semibold text-xl text-zinc-900 mb-4">
                                             {item.title}
                                         </h3>
                                         <p className="text-base leading-relaxed text-zinc-600">
@@ -125,9 +128,9 @@ export default function OurMissionPage() {
 
                     {/* CTA */}
                     <section className="text-center bg-[#055E2C] rounded-3xl px-8 py-14 text-white">
-                        <h2 className="text-3xl md:text-4xl font-semibold mb-4" style={{ fontFamily: 'athletics' }}>
+                        {/* <h2 className="text-3xl md:text-4xl font-semibold mb-4" style={{ fontFamily: 'athletics' }}>
                             Join Us
-                        </h2>
+                        </h2> */}
 
                         <p className="max-w-2xl mx-auto text-white/90 mb-8">
                             Whether you're a diner searching for safe options or a restaurant

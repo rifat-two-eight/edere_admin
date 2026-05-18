@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image";
+import Link from "next/link";
 
 function BenefitBadge({ label, icon }: { label: string; icon: "check" | "filter" | "shield" }) {
   return (
@@ -62,15 +63,15 @@ export default function Hero() {
           restrictions &amp; preferences... all before you step through the
           doors.
         </p>
-        <button className="px-6 py-3 mr-4 bg-[#055E2C] dm-sans text-white rounded-full text-md font-semibold hover:opacity-90 transition-opacity">
-          Download App
-        </button>
-        <button 
+        <Link href="https://forms.gle/koKkMqfVpKrB26gL7" target="_blank" className="px-6 py-3 mr-4 bg-[#055E2C] dm-sans text-white rounded-full text-md font-semibold hover:opacity-90 transition-opacity">
+          Join the Waitlist
+        </Link>
+        {/* <button
           onClick={() => handleScroll('signup')}
           className="px-6 py-3 bg-[#2D2A26] dm-sans text-white rounded-full text-md font-semibold hover:opacity-90 transition-opacity"
         >
           Join Us
-        </button>
+        </button> */}
       </div>
 
       {/* ── MOBILE layout (< md) ── */}
