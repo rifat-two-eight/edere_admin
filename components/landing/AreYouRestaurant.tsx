@@ -22,7 +22,11 @@ export default function AreYouRestaurant() {
           />
           <StatCard
             value="24%"
-            desc="higher profit margins for restaurants that offer allergy-friendly dining"
+            desc={
+              <>
+                higher profit margins for restaurants that offer <br className="hidden lg:block" /> allergy-friendly dining
+              </>
+            }
           />
           <StatCard
             value="$19B"
@@ -185,7 +189,7 @@ export default function AreYouRestaurant() {
   );
 }
 
-function StatCard({ value, desc }: { value: string; desc: string }) {
+function StatCard({ value, desc }: { value: string; desc: React.ReactNode }) {
   return (
     <div className="bg-[#F9F7F5] rounded-[12px] pt-2 px-2 overflow-hidden flex flex-col">
       <div className="bg-[#055E2C] py-8 flex items-center justify-center rounded-[12px]">
