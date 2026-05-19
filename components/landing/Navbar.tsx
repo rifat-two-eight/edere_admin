@@ -69,7 +69,7 @@ export default function Navbar() {
   }, [pathname]);
 
   return (
-    <nav className="absolute top-0 left-0 w-full z-50 bg-transparent">
+    <nav className="absolute top-0 left-0 w-full z-[100] bg-transparent">
       <div className="container mx-auto px-4 h-25 flex items-center justify-between relative">
 
         {/* Mobile Hamburger */}
@@ -114,10 +114,10 @@ export default function Navbar() {
         {isOpen && (
           <>
             <div
-              className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 md:hidden"
+              className="fixed inset-0 bg-black/20 backdrop-blur-sm z-[9998] md:hidden"
               onClick={() => setIsOpen(false)}
             />
-            <div className="fixed top-0 left-0 h-full w-[75%] max-w-sm bg-white z-50 shadow-xl p-6 flex flex-col md:hidden">
+            <div className="fixed top-0 left-0 h-full w-[75%] max-w-sm bg-white z-[9999] shadow-xl p-6 flex flex-col md:hidden">
               <div className="flex justify-between items-center mb-8">
                 <span className="text-xl font-bold">Menu</span>
                 <button

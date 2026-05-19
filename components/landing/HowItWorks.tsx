@@ -62,11 +62,11 @@ export default function HowItWorks() {
                   Set your allergies, restrictions, and preferences – <br className="hidden md:block" />
                   including gluten sensitivity – in seconds.
                 </p>
-                <div className="bg-white rounded-2xl md:rounded-full py-3 px-4 md:px-6 inline-flex items-center gap-3 w-fit shadow-sm">
+                <div className="bg-white rounded-2xl md:rounded-full py-3 px-4 md:px-6 flex items-center gap-3 w-full sm:w-fit shadow-sm">
                   <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-[#055E2C] flex items-center justify-center shrink-0">
                     <Image src="/bulb.svg" alt="Bulb" width={14} height={14} />
                   </div>
-                  <span className="text-xs sm:text-sm text-gray-700 font-medium dm-sans whitespace-nowrap">
+                  <span className="text-xs sm:text-sm text-gray-700 font-medium dm-sans whitespace-normal sm:whitespace-nowrap flex-1">
                     Always inform staff about your allergies! We help you discover your options.
                   </span>
                 </div>
@@ -75,7 +75,7 @@ export default function HowItWorks() {
                 <div className="relative w-[220px] sm:w-[260px] h-full translate-y-2 sm:translate-y-4">
                   <Image src="/phone.svg" alt="App Screenshot" fill className="object-contain object-bottom relative z-0 pointer-events-none" />
                   {/* Video inside phone */}
-                  <div className="absolute top-[1.6%] left-[2.6%] w-[94.0%] h-[96.8%] overflow-hidden rounded-[1.8rem] z-10">
+                  <div className="absolute top-[4%] left-[5.0%] w-[90.0%] h-[96.8%] overflow-hidden rounded-[1.5rem] z-10">
                     <video
                       src="/setup.MOV"
                       autoPlay
@@ -173,11 +173,11 @@ export default function HowItWorks() {
                   safe as prepared. Copper orange shows dishes you can <br className="hidden md:block" />
                   modify to fit your needs.
                 </p>
-                <div className="bg-white rounded-2xl md:rounded-full py-3 px-4 md:px-6 inline-flex items-center gap-3 w-fit shadow-sm">
+                <div className="bg-white rounded-2xl md:rounded-full py-3 px-4 md:px-6 flex items-center gap-3 w-full sm:w-fit shadow-sm">
                   <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-[#BD6E00] flex items-center justify-center flex-shrink-0">
                     <Image src="/bulb.svg" alt="Bulb" width={14} height={14} />
                   </div>
-                  <span className="text-xs sm:text-sm text-gray-700 font-medium dm-sans whitespace-nowrap">
+                  <span className="text-xs sm:text-sm text-gray-700 font-medium dm-sans whitespace-normal sm:whitespace-nowrap flex-1">
                     Green checkmarks indicate chef-verified restaurants!
                   </span>
                 </div>
@@ -186,7 +186,7 @@ export default function HowItWorks() {
                 <div className="relative w-[220px] sm:w-[260px] h-full translate-y-2 sm:translate-y-4">
                   <Image src="/phone.svg" alt="App Screenshot" fill className="object-contain object-bottom relative z-0 pointer-events-none" />
                   {/* Video inside phone */}
-                  <div className="absolute top-[1.6%] left-[2.6%] w-[94.0%] h-[96.8%] overflow-hidden rounded-[1.8rem] z-10">
+                  <div className="absolute top-[4%] left-[5.0%] w-[90.0%] h-[96.8%] overflow-hidden rounded-[1.5rem] z-10">
                     <video
                       src="/explore.MOV"
                       autoPlay
@@ -294,11 +294,11 @@ export default function HowItWorks() {
                   and get specific modification recommendations for <br className="hidden md:block" />
                   dishes that can be adapted to your needs.
                 </p>
-                <div className="bg-white rounded-2xl md:rounded-full py-3 px-4 md:px-6 inline-flex items-center gap-3 w-fit shadow-sm">
+                <div className="bg-white rounded-2xl md:rounded-full py-3 px-4 md:px-6 flex items-center gap-3 w-full sm:w-fit shadow-sm">
                   <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-[#2D2A26] flex items-center justify-center flex-shrink-0">
                     <Image src="/bulb.svg" alt="Bulb" width={14} height={14} />
                   </div>
-                  <span className="text-xs sm:text-sm text-gray-700 font-medium dm-sans whitespace-nowrap">
+                  <span className="text-xs sm:text-sm text-gray-700 font-medium dm-sans whitespace-normal sm:whitespace-nowrap flex-1">
                     Build collections and save your favorite restaurants for quick reference.
                   </span>
                 </div>
@@ -307,7 +307,7 @@ export default function HowItWorks() {
                 <div className="relative w-[220px] sm:w-[260px] h-full translate-y-2 sm:translate-y-4">
                   <Image src="/phone.svg" alt="App Screenshot" fill className="object-contain object-bottom relative z-0 pointer-events-none" />
                   {/* Video inside phone */}
-                  <div className="absolute top-[1.6%] left-[2.6%] w-[94.0%] h-[96.8%] overflow-hidden rounded-[1.8rem] z-10">
+                  <div className="absolute top-[4%] left-[5.0%] w-[90.0%] h-[96.8%] overflow-hidden rounded-[1.5rem] z-10">
                     <video
                       src="/dish.MOV"
                       autoPlay
