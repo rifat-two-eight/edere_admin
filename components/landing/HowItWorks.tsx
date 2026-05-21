@@ -38,7 +38,7 @@ export default function HowItWorks() {
           {/* Card 1 */}
           <motion.div
             style={{ scale: scale1 }}
-            className="sticky top-[80px] md:top-[100px] relative overflow-hidden rounded-[30px] md:rounded-[40px] bg-[#EFE5D6] h-auto min-h-[550px] md:min-h-[500px] lg:h-[450px] flex flex-col md:flex-row"
+            className="sticky top-[80px] md:top-[100px] relative overflow-hidden rounded-[30px] md:rounded-[40px] bg-[#EFE5D6] h-auto min-h-[550px] md:min-h-[500px] lg:h-[400px] xl:h-[450px] flex flex-col md:flex-row"
           >
             {/* MOBILE/TABLET CONTENT (< lg) */}
             <div className="lg:hidden flex flex-col h-full w-full">
@@ -71,11 +71,11 @@ export default function HowItWorks() {
                   </span>
                 </div>
               </div>
-              <div className="relative z-10 flex justify-center items-end h-[250px] sm:h-[300px] md:h-[350px] mt-auto">
-                <div className="relative w-[220px] sm:w-[260px] h-full translate-y-2 sm:translate-y-4">
+              <div className="relative z-10 flex justify-center items-end h-[250px] sm:h-[300px] md:h-[410px] mt-auto">
+                <div className="relative w-[220px] sm:w-[260px] md:w-[310px] h-full translate-y-2 sm:translate-y-4">
                   <Image src="/phone.svg" alt="App Screenshot" fill className="object-contain object-bottom relative z-0 pointer-events-none" />
                   {/* Video inside phone */}
-                  <div className="absolute top-[4%] left-[5.0%] w-[90.0%] h-[96.8%] overflow-hidden rounded-[1.5rem] z-10">
+                  <div className="absolute top-[4%] left-[5.0%] w-[90.0%] h-[96.8%] md:top-[17.0%] md:left-[3.2%] md:w-[93.6%] md:h-[83.0%] md:rounded-[2.3rem] overflow-hidden rounded-[1.5rem] z-10">
                     <video
                       src="/setup.MOV"
                       autoPlay
@@ -99,7 +99,7 @@ export default function HowItWorks() {
                   className="object-left md:object-center"
                 />
               </div>
-              <div className="relative z-10 p-8 md:p-16 md:w-1/2 flex flex-col justify-center text-left items-start md:h-[500px]">
+              <div className="relative z-10 p-8 md:p-16 md:w-1/2 flex flex-col justify-center text-left items-start lg:h-full xl:h-[500px]">
                 <div className="mb-6">
                   <Image src="/user1.svg" alt="User" width={64} height={64} />
                 </div>
@@ -111,18 +111,18 @@ export default function HowItWorks() {
                   Set your allergies, restrictions, and preferences – <br />
                   including gluten sensitivity – in seconds.
                 </p>
-                <div className="bg-white rounded-full py-2 px-3 inline-flex items-center gap-2 shadow-sm">
-                  <div className="w-6 h-6 rounded-full bg-[#055E2C] flex items-center justify-center">
+                <div className="bg-white rounded-2xl lg:rounded-2xl xl:rounded-full py-2 px-3 inline-flex items-center gap-2 shadow-sm lg:max-w-[340px] xl:max-w-none">
+                  <div className="w-6 h-6 rounded-full bg-[#055E2C] flex items-center justify-center shrink-0">
                     <Image src="/bulb.svg" alt="Bulb" width={16} height={16} />
                   </div>
                   {/* spanning */}
-                  <span className="text-sm text-gray-700 font-medium dm-sans whitespace-nowrap">
+                  <span className="text-sm text-gray-700 font-medium dm-sans lg:whitespace-normal xl:whitespace-nowrap">
                     Always inform staff about your allergies! We help you discover your options.
                   </span>
                 </div>
               </div>
               <div className="relative z-10 md:w-1/2 flex justify-center md:justify-end items-end h-[400px] md:h-auto mr-14 self-end">
-                <div className="relative w-[350px] h-[450px] md:h-[550px] md:translate-y-0">
+                <div className="relative w-[350px] lg:w-[300px] xl:w-[350px] h-[450px] lg:h-[480px] xl:h-[550px] md:translate-y-0">
                   <Image
                     src="/phone.svg"
                     alt="App Screenshot"
@@ -130,7 +130,7 @@ export default function HowItWorks() {
                     className="object-bottom relative z-0 pointer-events-none"
                   />
                   {/* Video inside phone */}
-                  <div className="absolute top-[16.0%] left-[4.0%] w-[92.0%] h-[96.8%] overflow-hidden rounded-[3.2rem] z-10">
+                  <div className="absolute top-[16.0%] left-[4.0%] w-[92.0%] h-[96.8%] lg:rounded-[2.7rem] xl:rounded-[3.2rem] overflow-hidden rounded-[3.2rem] z-10">
                     <video
                       src="/setup.MOV"
                       autoPlay
@@ -148,7 +148,7 @@ export default function HowItWorks() {
           {/* Card 2 */}
           <motion.div
             style={{ scale: scale2 }}
-            className="sticky top-[80px] md:top-[100px] relative overflow-hidden rounded-[30px] md:rounded-[40px] bg-[#2D2A26] h-auto min-h-[550px] md:min-h-[500px] lg:h-[450px] flex flex-col md:flex-row"
+            className="sticky top-[80px] md:top-[100px] relative overflow-hidden rounded-[30px] md:rounded-[40px] bg-[#2D2A26] h-auto min-h-[550px] md:min-h-[500px] lg:h-[400px] xl:h-[450px] flex flex-col md:flex-row"
           >
             {/* MOBILE/TABLET CONTENT (< lg) */}
             <div className="lg:hidden flex flex-col h-full w-full">
@@ -182,11 +182,11 @@ export default function HowItWorks() {
                   </span>
                 </div>
               </div>
-              <div className="relative z-10 flex justify-center items-end h-[250px] sm:h-[300px] md:h-[350px] mt-auto">
-                <div className="relative w-[220px] sm:w-[260px] h-full translate-y-2 sm:translate-y-4">
+              <div className="relative z-10 flex justify-center items-end h-[250px] sm:h-[300px] md:h-[410px] mt-auto">
+                <div className="relative w-[220px] sm:w-[260px] md:w-[310px] h-full translate-y-2 sm:translate-y-4">
                   <Image src="/phone.svg" alt="App Screenshot" fill className="object-contain object-bottom relative z-0 pointer-events-none" />
                   {/* Video inside phone */}
-                  <div className="absolute top-[4%] left-[5.0%] w-[90.0%] h-[96.8%] overflow-hidden rounded-[1.5rem] z-10">
+                  <div className="absolute top-[4%] left-[5.0%] w-[90.0%] h-[96.8%] md:top-[17.0%] md:left-[3.2%] md:w-[93.6%] md:h-[83.0%] md:rounded-[2.3rem] overflow-hidden rounded-[1.5rem] z-10">
                     <video
                       src="/explore.MOV"
                       autoPlay
@@ -210,7 +210,7 @@ export default function HowItWorks() {
                   className="object-right ml-[550px]"
                 />
               </div>
-              <div className="relative z-10 p-8 md:p-16 w-full flex flex-col justify-center text-left items-start md:h-[500px]">
+              <div className="relative z-10 p-8 md:p-16 w-full flex flex-col justify-center text-left items-start lg:h-full xl:h-[500px]">
                 <div className="mb-6">
                   <Image src="/home.svg" alt="Store" width={64} height={64} />
                 </div>
@@ -223,23 +223,23 @@ export default function HowItWorks() {
                   safe as prepared. Copper orange shows dishes you can <br />
                   modify to fit your needs.
                 </p>
-                <div className="bg-white rounded-full py-2 px-3 inline-flex items-center gap-2 w-fit shadow-sm">
-                  <div className="w-6 h-6 rounded-full bg-[#BD6E00] flex items-center justify-center">
+                <div className="bg-white rounded-2xl lg:rounded-2xl xl:rounded-full py-2 px-3 inline-flex items-center gap-2 w-fit shadow-sm lg:max-w-[340px] xl:max-w-none">
+                  <div className="w-6 h-6 rounded-full bg-[#BD6E00] flex items-center justify-center shrink-0">
                     <Image src="/bulb.svg" alt="Bulb" width={16} height={16} />
                   </div>
-                  <span className="text-sm text-gray-700 font-medium dm-sans flex items-center gap-1">
+                  <span className="text-sm text-gray-700 font-medium dm-sans flex items-center gap-1 lg:whitespace-normal xl:whitespace-nowrap lg:flex-wrap">
                     Green checkmarks
                     <Check
                       width={16}
                       height={16}
-                      className="bg-[#055E2C] rounded-full text-white p-[2px]"
+                      className="bg-[#055E2C] rounded-full text-white p-[2px] shrink-0"
                     />
                     indicate chef-verified restaurants!
                   </span>
                 </div>
               </div>
               <div className="absolute right-0 bottom-0 z-10 md:w-1/2 flex justify-center md:justify-end items-end h-[400px] md:h-auto mr-14 self-end">
-                <div className="relative w-[350px] h-[450px] md:h-[550px] md:translate-y-0">
+                <div className="relative w-[350px] lg:w-[300px] xl:w-[350px] h-[450px] lg:h-[480px] xl:h-[550px] md:translate-y-0">
                   <Image
                     src="/phone.svg"
                     alt="App Screenshot"
@@ -247,7 +247,7 @@ export default function HowItWorks() {
                     className="object-bottom relative z-0 pointer-events-none"
                   />
                   {/* Video inside phone */}
-                  <div className="absolute top-[16.0%] left-[4.0%] w-[92.0%] h-[96.8%] overflow-hidden rounded-[3.2rem] z-10">
+                  <div className="absolute top-[16.0%] left-[4.0%] w-[92.0%] h-[96.8%] lg:rounded-[2.7rem] xl:rounded-[3.2rem] overflow-hidden rounded-[3.2rem] z-10">
                     <video
                       src="/explore.MOV"
                       autoPlay
@@ -265,7 +265,7 @@ export default function HowItWorks() {
           {/* Card 3 */}
           <motion.div
             style={{ scale: scale3 }}
-            className="sticky top-[80px] md:top-[100px] relative overflow-hidden rounded-[30px] md:rounded-[40px] bg-[#055E2C] h-auto min-h-[550px] md:min-h-[500px] lg:h-[450px] flex flex-col md:flex-row"
+            className="sticky top-[80px] md:top-[100px] relative overflow-hidden rounded-[30px] md:rounded-[40px] bg-[#055E2C] h-auto min-h-[550px] md:min-h-[500px] lg:h-[400px] xl:h-[450px] flex flex-col md:flex-row"
           >
             {/* MOBILE/TABLET CONTENT (< lg) */}
             <div className="lg:hidden flex flex-col h-full w-full">
@@ -303,11 +303,11 @@ export default function HowItWorks() {
                   </span>
                 </div>
               </div>
-              <div className="relative z-10 flex justify-center items-end h-[250px] sm:h-[300px] md:h-[350px] mt-auto">
-                <div className="relative w-[220px] sm:w-[260px] h-full translate-y-2 sm:translate-y-4">
+              <div className="relative z-10 flex justify-center items-end h-[250px] sm:h-[300px] md:h-[410px] mt-auto">
+                <div className="relative w-[220px] sm:w-[260px] md:w-[310px] h-full translate-y-2 sm:translate-y-4">
                   <Image src="/phone.svg" alt="App Screenshot" fill className="object-contain object-bottom relative z-0 pointer-events-none" />
                   {/* Video inside phone */}
-                  <div className="absolute top-[4%] left-[5.0%] w-[90.0%] h-[96.8%] overflow-hidden rounded-[1.5rem] z-10">
+                  <div className="absolute top-[4%] left-[5.0%] w-[90.0%] h-[96.8%] md:top-[17.0%] md:left-[3.2%] md:w-[93.6%] md:h-[83.0%] md:rounded-[2.3rem] overflow-hidden rounded-[1.5rem] z-10">
                     <video
                       src="/dish.MOV"
                       autoPlay
@@ -331,7 +331,7 @@ export default function HowItWorks() {
                   className="object-left md:object-center ml-[220px]"
                 />
               </div>
-              <div className="relative z-10 p-8 md:p-16 md:w-1/2 flex flex-col justify-center text-left items-start md:h-[500px]">
+              <div className="relative z-10 p-8 md:p-16 md:w-1/2 flex flex-col justify-center text-left items-start lg:h-full xl:h-[500px]">
                 <div className="mb-6 w-16 h-16 relative">
                   <Image
                     src="/dish.svg"
@@ -348,17 +348,17 @@ export default function HowItWorks() {
                   and get specific modification recommendations for <br />
                   dishes that can be adapted to your needs.
                 </p>
-                <div className="bg-white rounded-full py-2 px-3 inline-flex items-center gap-2 w-fit shadow-sm">
-                  <div className="w-6 h-6 rounded-full bg-[#2D2A26] flex items-center justify-center">
+                <div className="bg-white rounded-2xl lg:rounded-2xl xl:rounded-full py-2 px-3 inline-flex items-center gap-2 w-fit shadow-sm lg:max-w-[340px] xl:max-w-none">
+                  <div className="w-6 h-6 rounded-full bg-[#2D2A26] flex items-center justify-center shrink-0">
                     <Image src="/bulb.svg" alt="Bulb" width={16} height={16} />
                   </div>
-                  <span className="text-sm text-gray-700 font-medium dm-sans whitespace-nowrap">
+                  <span className="text-sm text-gray-700 font-medium dm-sans lg:whitespace-normal xl:whitespace-nowrap">
                     Build collections and save your favorite restaurants for quick reference.
                   </span>
                 </div>
               </div>
               <div className="relative z-10 md:w-1/2 flex justify-center md:justify-end items-end h-[400px] md:h-auto mr-14 self-end">
-                <div className="relative w-[350px] h-[450px] md:h-[550px] md:translate-y-0">
+                <div className="relative w-[350px] lg:w-[300px] xl:w-[350px] h-[450px] lg:h-[480px] xl:h-[550px] md:translate-y-0">
                   <Image
                     src="/phone.svg"
                     alt="App Screenshot"
@@ -366,7 +366,7 @@ export default function HowItWorks() {
                     className="object-bottom relative z-0 pointer-events-none"
                   />
                   {/* Video inside phone */}
-                  <div className="absolute top-[16.0%] left-[4.0%] w-[92.0%] h-[96.8%] overflow-hidden rounded-[3.2rem] z-10">
+                  <div className="absolute top-[16.0%] left-[4.0%] w-[92.0%] h-[96.8%] lg:rounded-[2.7rem] xl:rounded-[3.2rem] overflow-hidden rounded-[3.2rem] z-10">
                     <video
                       src="/dish.MOV"
                       autoPlay

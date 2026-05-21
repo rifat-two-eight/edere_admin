@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, Dancing_Script } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -16,7 +17,7 @@ const dancingScript = Dancing_Script({
 
 export const metadata: Metadata = {
   title: "Edere",
-  description: "Safe dining for food allergies and dietary needs",
+  description: "Find Restaurants for Food Allergies, Dietary Restrictions & Preferences",
   icons: {
     icon: "/ederefav.png",
   },
@@ -31,6 +32,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${dmSans.className} ${dancingScript.variable} antialiased bg-white text-slate-900`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );

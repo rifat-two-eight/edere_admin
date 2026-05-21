@@ -74,7 +74,7 @@ export default function Navbar() {
 
         {/* Mobile Hamburger */}
         <button
-          className="md:hidden p-2 text-black z-50 relative"
+          className="lg:hidden p-2 text-black z-50 relative"
           onClick={() => setIsOpen(true)}
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
@@ -83,7 +83,7 @@ export default function Navbar() {
         </button>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex items-center gap-8 font-medium">
+        <div className="hidden lg:flex items-center gap-8 font-medium">
           {navLinks.map(link => (
             <button
               key={link.href}
@@ -104,7 +104,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Download */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-4">
           <Link href="https://forms.gle/koKkMqfVpKrB26gL7" target="_blank" className="px-6 py-3 dm-sans bg-[#055E2C] text-white rounded-full font-medium hover:opacity-90 transition-opacity">
             Join the Waitlist
           </Link>
@@ -114,10 +114,10 @@ export default function Navbar() {
         {isOpen && (
           <>
             <div
-              className="fixed inset-0 bg-black/20 backdrop-blur-sm z-[9998] md:hidden"
+              className="fixed inset-0 bg-black/20 backdrop-blur-sm z-[9998] lg:hidden"
               onClick={() => setIsOpen(false)}
             />
-            <div className="fixed top-0 left-0 h-full w-[75%] max-w-sm bg-white z-[9999] shadow-xl p-6 flex flex-col md:hidden">
+            <div className="fixed top-0 left-0 h-full w-[75%] max-w-sm bg-white z-[9999] shadow-xl p-6 flex flex-col lg:hidden">
               <div className="flex justify-between items-center mb-8">
                 <span className="text-xl font-bold">Menu</span>
                 <button

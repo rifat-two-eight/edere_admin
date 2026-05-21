@@ -45,7 +45,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="w-full flex flex-col items-center pt-32 md:pt-48 overflow-hidden h-auto md:h-auto lg:h-[1100px]">
+    <section className="w-full flex flex-col items-center pt-32 md:pt-48 overflow-hidden h-auto md:h-auto xl:h-[1100px]">
       {/* Text + Buttons */}
       <div className="container mx-auto px-4 text-center relative z-50">
         <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6 tracking-tight text-black" style={{ fontFamily: 'athletics' }}>
@@ -124,8 +124,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* ── TABLET layout (md to lg) ── */}
-      <div className="hidden md:flex lg:hidden flex-col items-center mt-16 w-full px-6">
+      {/* ── TABLET layout (md to xl) ── */}
+      <div className="hidden md:flex xl:hidden flex-col items-center mt-16 w-full px-6">
         {/* Phone with more space for badges */}
         <div className="relative w-[320px] aspect-[320/600]">
           <Image
@@ -136,7 +136,7 @@ export default function Hero() {
             className="object-contain w-full relative z-0 pointer-events-none"
           />
           {/* Video inside phone */}
-          <div className="absolute top-[2.0%] left-[6.5%] w-[87.0%] h-[95.8%] overflow-hidden rounded-[1.6rem] z-10">
+          <div className="absolute top-[1.5%] left-[3.5%] w-[93.0%] h-[97.0%] overflow-hidden rounded-[2.5rem] z-10">
             <video
               src="/Edere_homepage.mov"
               autoPlay
@@ -163,25 +163,25 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Four food images in a curated row */}
-        <div className="flex gap-6 justify-center w-full mt-16 mb-12">
-          <div className="rounded-2xl overflow-hidden w-[140px] h-[140px] shadow-md transform -translate-y-4">
+        {/* Four food images in a curated row - dynamically scaled for small vs large tablets */}
+        <div className="flex gap-4 min-[900px]:gap-6 justify-center w-full mt-16 mb-12">
+          <div className="rounded-2xl overflow-hidden w-[110px] min-[900px]:w-[140px] h-[110px] min-[900px]:h-[140px] shadow-md transform -translate-y-4">
             <Image src="/hero1.png" alt="Food 1" width={140} height={140} className="w-full h-full object-cover" />
           </div>
-          <div className="rounded-2xl overflow-hidden w-[180px] h-[180px] shadow-lg">
+          <div className="rounded-2xl overflow-hidden w-[140px] min-[900px]:w-[180px] h-[140px] min-[900px]:h-[180px] shadow-lg">
             <Image src="/hero2.png" alt="Food 2" width={180} height={180} className="w-full h-full object-cover" />
           </div>
-          <div className="rounded-2xl overflow-hidden w-[180px] h-[180px] shadow-lg">
+          <div className="rounded-2xl overflow-hidden w-[140px] min-[900px]:w-[180px] h-[140px] min-[900px]:h-[180px] shadow-lg">
             <Image src="/hero3.png" alt="Food 3" width={180} height={180} className="w-full h-full object-cover" />
           </div>
-          <div className="rounded-2xl overflow-hidden w-[140px] h-[140px] shadow-md transform -translate-y-4">
+          <div className="rounded-2xl overflow-hidden w-[110px] min-[900px]:w-[140px] h-[110px] min-[900px]:h-[140px] shadow-md transform -translate-y-4">
             <Image src="/hero4.png" alt="Food 4" width={140} height={140} className="w-full h-full object-cover" />
           </div>
         </div>
       </div>
 
-      {/* ── DESKTOP layout (lg+) — your original code, untouched ── */}
-      <div className="hidden lg:flex justify-between items-center w-full mt-auto relative">
+      {/* ── DESKTOP layout (xl+) — your original code, untouched ── */}
+      <div className="hidden xl:flex justify-between items-center w-full mt-auto relative">
 
         {/* Far Left image - hero1 */}
         <Image
